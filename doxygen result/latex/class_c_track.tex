@@ -1,0 +1,715 @@
+\hypertarget{class_c_track}{}\doxysection{CTrack类 参考}
+\label{class_c_track}\index{CTrack@{CTrack}}
+
+
+The \mbox{\hyperlink{class_c_track}{CTrack}} class  
+
+
+
+
+{\ttfamily \#include $<$track.\+h$>$}
+
+
+
+CTrack 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_track_a03fb35dc59f252ffb1a67c3270ee226c}{CTrack}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&region, \mbox{\hyperlink{namespacetracking_a83f2c4d58ea2737f7d6296dce3eb722a}{tracking\+::\+Kalman\+Type}} kalman\+Type, \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} delta\+Time, \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} accel\+Noise\+Mag, bool use\+Acceleration, size\+\_\+t track\+ID, bool filter\+Object\+Size, \mbox{\hyperlink{namespacetracking_a5377d69122ad915004ef68a518d22be3}{tracking\+::\+Lost\+Track\+Type}} external\+Tracker\+For\+Lost)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track}{CTrack}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_track_a39d863404d9d83735bd092a5a33ee447}{CTrack}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&region, const \mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} \&region\+Embedding, \mbox{\hyperlink{namespacetracking_a83f2c4d58ea2737f7d6296dce3eb722a}{tracking\+::\+Kalman\+Type}} kalman\+Type, \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} delta\+Time, \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} accel\+Noise\+Mag, bool use\+Acceleration, size\+\_\+t track\+ID, bool filter\+Object\+Size, \mbox{\hyperlink{namespacetracking_a5377d69122ad915004ef68a518d22be3}{tracking\+::\+Lost\+Track\+Type}} external\+Tracker\+For\+Lost)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a03fb35dc59f252ffb1a67c3270ee226c}{CTrack\+::\+CTrack}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6}{Calc\+Dist\+Center}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&reg) const
+\begin{DoxyCompactList}\small\item\em Calc\+Dist Euclidean distance in pixels between objects centres on two N and N+1 frames \end{DoxyCompactList}\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_ae89aec30ac60f352222fe20645606f1f}{Calc\+Dist\+Rect}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&reg) const
+\begin{DoxyCompactList}\small\item\em Calc\+Dist Euclidean distance in pixels between object contours on two N and N+1 frames \end{DoxyCompactList}\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_a37d8b005c65f317d70a8368996994e86}{Calc\+Dist\+Jaccard}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&reg) const
+\begin{DoxyCompactList}\small\item\em Calc\+Dist\+Jaccard Jaccard distance from 0 to 1 between object bounding rectangles on two N and N+1 frames \end{DoxyCompactList}\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_a2b03a38b339fa7dbd8f65c1d9929ea1e}{Calc\+Dist\+Hist}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&reg, cv\+::\+Mat \&hist, cv\+::\+Mat curr\+Frame) const
+\begin{DoxyCompactList}\small\item\em Calc\+Dist\+Jaccard Distance from 0 to 1 between objects histogramms on two N and N+1 frames \end{DoxyCompactList}\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_aa98cd3fd065d59f3a821a92176b5a8f8}{Calc\+Mahalanobis\+Dist}} (const cv\+::\+Rotated\+Rect \&rrect) const
+\item 
+cv\+::\+Rotated\+Rect \mbox{\hyperlink{class_c_track_a233abd3a7f9d71a136300160250c6361}{Calc\+Prediction\+Ellipse}} (cv\+::\+Size\+\_\+$<$ \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} $>$ min\+Radius) const
+\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_a804209059c71c75751842659e486e3b4}{Is\+Inside\+Area}} (const \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} \&pt, const cv\+::\+Rotated\+Rect \&rrect) const
+\begin{DoxyCompactList}\small\item\em Is\+Inside\+Area Test point inside in prediction area\+: prediction area + object velocity \end{DoxyCompactList}\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_a6cf460150ad8a9d248c560d46eba42f7}{Width\+Dist}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&reg) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a6cf460150ad8a9d248c560d46eba42f7}{CTrack\+::\+Width\+Dist}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \mbox{\hyperlink{class_c_track_a5b5148bc1610e1fd13c00b97dcce310d}{Height\+Dist}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&reg) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a5b5148bc1610e1fd13c00b97dcce310d}{CTrack\+::\+Height\+Dist}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_track_a7e2301cc3da951c0580bd4d8334b52d8}{Update}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&region, bool data\+Correct, size\+\_\+t max\+\_\+trace\+\_\+length, cv\+::\+Mat prev\+Frame, cv\+::\+Mat curr\+Frame, int traj\+Len)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a7e2301cc3da951c0580bd4d8334b52d8}{CTrack\+::\+Update}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_track_a72863798ece21541deb8aaa722e0ef66}{Update}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&region, const \mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} \&region\+Embedding, bool data\+Correct, size\+\_\+t max\+\_\+trace\+\_\+length, cv\+::\+Mat prev\+Frame, cv\+::\+Mat curr\+Frame, int traj\+Len)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a7e2301cc3da951c0580bd4d8334b52d8}{CTrack\+::\+Update}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_track_a4f3265c10e4ad24b8b7b10668edfa309}{Is\+Static}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a4f3265c10e4ad24b8b7b10668edfa309}{CTrack\+::\+Is\+Static}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_track_a815097c7b43655fcd5954d817493198c}{Is\+Static\+Timeout}} (int frames\+Time) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a815097c7b43655fcd5954d817493198c}{CTrack\+::\+Is\+Static\+Timeout}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_track_a93709a6b9f3d807dde857492dbb77d14}{Is\+Out\+Of\+The\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a93709a6b9f3d807dde857492dbb77d14}{CTrack\+::\+Is\+Out\+Of\+The\+Frame}} \end{DoxyCompactList}\item 
+cv\+::\+Rotated\+Rect \mbox{\hyperlink{class_c_track_a13102cdcea040804732269b17cf4bd92}{Get\+Last\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Last\+Rect \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} \& \mbox{\hyperlink{class_c_track_ac512dd3d22f88f542b29324196207da3}{Average\+Point}} () const
+\item 
+\mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} \& \mbox{\hyperlink{class_c_track_afb32b9543353540fa3fa29577e861898}{Average\+Point}} ()
+\item 
+const \mbox{\hyperlink{class_c_region}{CRegion}} \& \mbox{\hyperlink{class_c_track_a517648bad954f0c4347f3e9573ecdabf}{Last\+Region}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a517648bad954f0c4347f3e9573ecdabf}{CTrack\+::\+Last\+Region}} \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_track_abec4a9274447423cc10d5c632944dbb3}{Skipped\+Frames}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_abec4a9274447423cc10d5c632944dbb3}{CTrack\+::\+Skipped\+Frames}} \end{DoxyCompactList}\item 
+size\+\_\+t \& \mbox{\hyperlink{class_c_track_ad327fd7662430344a650a2abcaf623de}{Skipped\+Frames}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_abec4a9274447423cc10d5c632944dbb3}{CTrack\+::\+Skipped\+Frames}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tracking_object}{Tracking\+Object}} \mbox{\hyperlink{class_c_track_a25844b86df3cb8242741b26a202fc63c}{Construct\+Object}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a25844b86df3cb8242741b26a202fc63c}{CTrack\+::\+Construct\+Object}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_track_a8d5296e8fedd10ff4d9142dd5cd0ac6e}{Rect\+Update}} (const \mbox{\hyperlink{class_c_region}{CRegion}} \&region, bool data\+Correct, cv\+::\+Mat prev\+Frame, cv\+::\+Mat curr\+Frame)
+\begin{DoxyCompactList}\small\item\em Rect\+Update \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_track_ac57513aeb2cb8577b75c31ee7b1a6e1b}{Create\+External\+Tracker}} (int channels)
+\begin{DoxyCompactList}\small\item\em Create\+External\+Tracker \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_track_a6759699cc954928c935533830024fead}{Point\+Update}} (const \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} \&pt, const cv\+::\+Size \&new\+Obj\+Size, bool data\+Correct, const cv\+::\+Size \&frame\+Size)
+\begin{DoxyCompactList}\small\item\em Point\+Update \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_track_a8996d3f7168df237abdbb89717d4e628}{Check\+Static}} (int traj\+Len, cv\+::\+Mat curr\+Frame, const \mbox{\hyperlink{class_c_region}{CRegion}} \&region)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_track_a8996d3f7168df237abdbb89717d4e628}{CTrack\+::\+Check\+Static}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_kalman_filter}{TKalman\+Filter}} \mbox{\hyperlink{class_c_track_a85c7771b70f05a4f64ac53e2dd0afca3}{m\+\_\+kalman}}
+\item 
+\mbox{\hyperlink{class_c_region}{CRegion}} \mbox{\hyperlink{class_c_track_a5af91fbfad7ebf07bd0f681f915e440c}{m\+\_\+last\+Region}}
+\item 
+\mbox{\hyperlink{class_trace}{Trace}} \mbox{\hyperlink{class_c_track_adf88ff8678ec928ac3ca764f7308b96f}{m\+\_\+trace}}
+\item 
+cv\+::\+Rotated\+Rect \mbox{\hyperlink{class_c_track_abae9d26232876d478181ccbecd58322d}{m\+\_\+prediction\+Rect}}
+\item 
+\mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} \mbox{\hyperlink{class_c_track_a8ee3f8baaf290aeb113f34c26a446a76}{m\+\_\+prediction\+Point}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_track_a8aae01d68f5a1a6c0292476ea19c89f9}{m\+\_\+track\+ID}} = 0
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_track_a3308a34b70a90692b0fb863eb621bd37}{m\+\_\+skipped\+Frames}} = 0
+\item 
+\mbox{\hyperlink{namespacetracking_a5377d69122ad915004ef68a518d22be3}{tracking\+::\+Lost\+Track\+Type}} \mbox{\hyperlink{class_c_track_a7d1f6c9d8d56790a28a7139e85896dc8}{m\+\_\+external\+Tracker\+For\+Lost}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_v_o_t_tracker}{VOTTracker}} $>$ \mbox{\hyperlink{class_c_track_ae7741468d9b920aca0c51056ce93afda}{m\+\_\+\+VOTTracker}}
+\item 
+\mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} \mbox{\hyperlink{class_c_track_a4216df27820b99c96d5a3370df4584d0}{m\+\_\+region\+Embedding}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_c_track_a2f4e196b5dfd301639e6c1e3be14ea8a}{m\+\_\+static\+Frame}}
+\item 
+cv\+::\+Rect \mbox{\hyperlink{class_c_track_abbec66a84ee65ce5d6390565698e5156}{m\+\_\+static\+Rect}}
+\item 
+int \mbox{\hyperlink{class_c_track_abafeef3579e8b8ee12dd6e8c788c368e}{m\+\_\+static\+Frames}} = 0
+\item 
+bool \mbox{\hyperlink{class_c_track_a37f858466a4c5de19eea18ab829e4745}{m\+\_\+is\+Static}} = false
+\item 
+bool \mbox{\hyperlink{class_c_track_a5573dab5b9fe2e5143204355b8146c87}{m\+\_\+filter\+Object\+Size}} = false
+\item 
+bool \mbox{\hyperlink{class_c_track_ad97c3e53969dbb60e7690c4f2d038172}{m\+\_\+out\+Of\+The\+Frame}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+The \mbox{\hyperlink{class_c_track}{CTrack}} class 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_c_track_a03fb35dc59f252ffb1a67c3270ee226c}\label{class_c_track_a03fb35dc59f252ffb1a67c3270ee226c}} 
+\index{CTrack@{CTrack}!CTrack@{CTrack}}
+\index{CTrack@{CTrack}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CTrack()}{CTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CTrack\+::\+CTrack (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{region,  }\item[{\mbox{\hyperlink{namespacetracking_a83f2c4d58ea2737f7d6296dce3eb722a}{tracking\+::\+Kalman\+Type}}}]{kalman\+Type,  }\item[{\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}}}]{delta\+Time,  }\item[{\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}}}]{accel\+Noise\+Mag,  }\item[{bool}]{use\+Acceleration,  }\item[{size\+\_\+t}]{track\+ID,  }\item[{bool}]{filter\+Object\+Size,  }\item[{\mbox{\hyperlink{namespacetracking_a5377d69122ad915004ef68a518d22be3}{tracking\+::\+Lost\+Track\+Type}}}]{external\+Tracker\+For\+Lost }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_track}{CTrack}} 
+
+
+\begin{DoxyParams}{参数}
+{\em pt} & \\
+\hline
+{\em region} & \\
+\hline
+{\em delta\+Time} & \\
+\hline
+{\em accel\+Noise\+Mag} & \\
+\hline
+{\em track\+ID} & \\
+\hline
+{\em filter\+Object\+Size} & \\
+\hline
+{\em external\+Tracker\+For\+Lost} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 1
+\mbox{\Hypertarget{class_c_track_a39d863404d9d83735bd092a5a33ee447}\label{class_c_track_a39d863404d9d83735bd092a5a33ee447}} 
+\index{CTrack@{CTrack}!CTrack@{CTrack}}
+\index{CTrack@{CTrack}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CTrack()}{CTrack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CTrack\+::\+CTrack (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{region,  }\item[{const \mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} \&}]{region\+Embedding,  }\item[{\mbox{\hyperlink{namespacetracking_a83f2c4d58ea2737f7d6296dce3eb722a}{tracking\+::\+Kalman\+Type}}}]{kalman\+Type,  }\item[{\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}}}]{delta\+Time,  }\item[{\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}}}]{accel\+Noise\+Mag,  }\item[{bool}]{use\+Acceleration,  }\item[{size\+\_\+t}]{track\+ID,  }\item[{bool}]{filter\+Object\+Size,  }\item[{\mbox{\hyperlink{namespacetracking_a5377d69122ad915004ef68a518d22be3}{tracking\+::\+Lost\+Track\+Type}}}]{external\+Tracker\+For\+Lost }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_track_a03fb35dc59f252ffb1a67c3270ee226c}{CTrack\+::\+CTrack}} 
+
+
+\begin{DoxyParams}{参数}
+{\em region} & \\
+\hline
+{\em region\+Embedding} & \\
+\hline
+{\em kalman\+Type} & \\
+\hline
+{\em delta\+Time} & \\
+\hline
+{\em accel\+Noise\+Mag} & \\
+\hline
+{\em use\+Acceleration} & \\
+\hline
+{\em track\+ID} & \\
+\hline
+{\em filter\+Object\+Size} & \\
+\hline
+{\em external\+Tracker\+For\+Lost} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 2
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_c_track_afb32b9543353540fa3fa29577e861898}\label{class_c_track_afb32b9543353540fa3fa29577e861898}} 
+\index{CTrack@{CTrack}!AveragePoint@{AveragePoint}}
+\index{AveragePoint@{AveragePoint}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{AveragePoint()}{AveragePoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}}\& CTrack\+::\+Average\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_track_ac512dd3d22f88f542b29324196207da3}\label{class_c_track_ac512dd3d22f88f542b29324196207da3}} 
+\index{CTrack@{CTrack}!AveragePoint@{AveragePoint}}
+\index{AveragePoint@{AveragePoint}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{AveragePoint()}{AveragePoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}}\& CTrack\+::\+Average\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6}\label{class_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6}} 
+\index{CTrack@{CTrack}!CalcDistCenter@{CalcDistCenter}}
+\index{CalcDistCenter@{CalcDistCenter}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CalcDistCenter()}{CalcDistCenter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Calc\+Dist\+Center (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{reg }\end{DoxyParamCaption}) const}
+
+
+
+Calc\+Dist Euclidean distance in pixels between objects centres on two N and N+1 frames 
+
+\mbox{\hyperlink{class_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6}{CTrack\+::\+Calc\+Dist\+Center}}
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 3
+\mbox{\Hypertarget{class_c_track_a2b03a38b339fa7dbd8f65c1d9929ea1e}\label{class_c_track_a2b03a38b339fa7dbd8f65c1d9929ea1e}} 
+\index{CTrack@{CTrack}!CalcDistHist@{CalcDistHist}}
+\index{CalcDistHist@{CalcDistHist}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CalcDistHist()}{CalcDistHist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Calc\+Dist\+Hist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{reg,  }\item[{cv\+::\+Mat \&}]{hist,  }\item[{cv\+::\+Mat}]{curr\+Frame }\end{DoxyParamCaption}) const}
+
+
+
+Calc\+Dist\+Jaccard Distance from 0 to 1 between objects histogramms on two N and N+1 frames 
+
+\mbox{\hyperlink{class_c_track_a2b03a38b339fa7dbd8f65c1d9929ea1e}{CTrack\+::\+Calc\+Dist\+Hist}}
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & \\
+\hline
+{\em curr\+Frame} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em reg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a37d8b005c65f317d70a8368996994e86}\label{class_c_track_a37d8b005c65f317d70a8368996994e86}} 
+\index{CTrack@{CTrack}!CalcDistJaccard@{CalcDistJaccard}}
+\index{CalcDistJaccard@{CalcDistJaccard}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CalcDistJaccard()}{CalcDistJaccard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Calc\+Dist\+Jaccard (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{reg }\end{DoxyParamCaption}) const}
+
+
+
+Calc\+Dist\+Jaccard Jaccard distance from 0 to 1 between object bounding rectangles on two N and N+1 frames 
+
+\mbox{\hyperlink{class_c_track_a37d8b005c65f317d70a8368996994e86}{CTrack\+::\+Calc\+Dist\+Jaccard}}
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_ae89aec30ac60f352222fe20645606f1f}\label{class_c_track_ae89aec30ac60f352222fe20645606f1f}} 
+\index{CTrack@{CTrack}!CalcDistRect@{CalcDistRect}}
+\index{CalcDistRect@{CalcDistRect}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CalcDistRect()}{CalcDistRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Calc\+Dist\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{reg }\end{DoxyParamCaption}) const}
+
+
+
+Calc\+Dist Euclidean distance in pixels between object contours on two N and N+1 frames 
+
+\mbox{\hyperlink{class_c_track_ae89aec30ac60f352222fe20645606f1f}{CTrack\+::\+Calc\+Dist\+Rect}}
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 4
+\mbox{\Hypertarget{class_c_track_aa98cd3fd065d59f3a821a92176b5a8f8}\label{class_c_track_aa98cd3fd065d59f3a821a92176b5a8f8}} 
+\index{CTrack@{CTrack}!CalcMahalanobisDist@{CalcMahalanobisDist}}
+\index{CalcMahalanobisDist@{CalcMahalanobisDist}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CalcMahalanobisDist()}{CalcMahalanobisDist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Calc\+Mahalanobis\+Dist (\begin{DoxyParamCaption}\item[{const cv\+::\+Rotated\+Rect \&}]{rrect }\end{DoxyParamCaption}) const}
+
+函数调用图\+:
+% FIG 5
+\mbox{\Hypertarget{class_c_track_a233abd3a7f9d71a136300160250c6361}\label{class_c_track_a233abd3a7f9d71a136300160250c6361}} 
+\index{CTrack@{CTrack}!CalcPredictionEllipse@{CalcPredictionEllipse}}
+\index{CalcPredictionEllipse@{CalcPredictionEllipse}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CalcPredictionEllipse()}{CalcPredictionEllipse()}}
+{\footnotesize\ttfamily cv\+::\+Rotated\+Rect CTrack\+::\+Calc\+Prediction\+Ellipse (\begin{DoxyParamCaption}\item[{cv\+::\+Size\+\_\+$<$ \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} $>$}]{min\+Radius }\end{DoxyParamCaption}) const}
+
+函数调用图\+:
+% FIG 6
+\mbox{\Hypertarget{class_c_track_a8996d3f7168df237abdbb89717d4e628}\label{class_c_track_a8996d3f7168df237abdbb89717d4e628}} 
+\index{CTrack@{CTrack}!CheckStatic@{CheckStatic}}
+\index{CheckStatic@{CheckStatic}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CheckStatic()}{CheckStatic()}}
+{\footnotesize\ttfamily bool CTrack\+::\+Check\+Static (\begin{DoxyParamCaption}\item[{int}]{traj\+Len,  }\item[{cv\+::\+Mat}]{curr\+Frame,  }\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_c_track_a8996d3f7168df237abdbb89717d4e628}{CTrack\+::\+Check\+Static}} 
+
+
+\begin{DoxyParams}{参数}
+{\em traj\+Len} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 7
+\mbox{\Hypertarget{class_c_track_a25844b86df3cb8242741b26a202fc63c}\label{class_c_track_a25844b86df3cb8242741b26a202fc63c}} 
+\index{CTrack@{CTrack}!ConstructObject@{ConstructObject}}
+\index{ConstructObject@{ConstructObject}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{ConstructObject()}{ConstructObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tracking_object}{Tracking\+Object}} CTrack\+::\+Construct\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_a25844b86df3cb8242741b26a202fc63c}{CTrack\+::\+Construct\+Object}} 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 8
+\mbox{\Hypertarget{class_c_track_ac57513aeb2cb8577b75c31ee7b1a6e1b}\label{class_c_track_ac57513aeb2cb8577b75c31ee7b1a6e1b}} 
+\index{CTrack@{CTrack}!CreateExternalTracker@{CreateExternalTracker}}
+\index{CreateExternalTracker@{CreateExternalTracker}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{CreateExternalTracker()}{CreateExternalTracker()}}
+{\footnotesize\ttfamily void CTrack\+::\+Create\+External\+Tracker (\begin{DoxyParamCaption}\item[{int}]{channels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create\+External\+Tracker 
+
+\mbox{\Hypertarget{class_c_track_a13102cdcea040804732269b17cf4bd92}\label{class_c_track_a13102cdcea040804732269b17cf4bd92}} 
+\index{CTrack@{CTrack}!GetLastRect@{GetLastRect}}
+\index{GetLastRect@{GetLastRect}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{GetLastRect()}{GetLastRect()}}
+{\footnotesize\ttfamily cv\+::\+Rotated\+Rect CTrack\+::\+Get\+Last\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get\+Last\+Rect 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a5b5148bc1610e1fd13c00b97dcce310d}\label{class_c_track_a5b5148bc1610e1fd13c00b97dcce310d}} 
+\index{CTrack@{CTrack}!HeightDist@{HeightDist}}
+\index{HeightDist@{HeightDist}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{HeightDist()}{HeightDist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Height\+Dist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{reg }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_a5b5148bc1610e1fd13c00b97dcce310d}{CTrack\+::\+Height\+Dist}} 
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a804209059c71c75751842659e486e3b4}\label{class_c_track_a804209059c71c75751842659e486e3b4}} 
+\index{CTrack@{CTrack}!IsInsideArea@{IsInsideArea}}
+\index{IsInsideArea@{IsInsideArea}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{IsInsideArea()}{IsInsideArea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Is\+Inside\+Area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} \&}]{pt,  }\item[{const cv\+::\+Rotated\+Rect \&}]{rrect }\end{DoxyParamCaption}) const}
+
+
+
+Is\+Inside\+Area Test point inside in prediction area\+: prediction area + object velocity 
+
+\mbox{\hyperlink{class_c_track_a804209059c71c75751842659e486e3b4}{CTrack\+::\+Is\+Inside\+Area}} If result $<$= 1 then center of the object is inside ellipse with prediction and velocity
+
+
+\begin{DoxyParams}{参数}
+{\em pt} & \\
+\hline
+{\em min\+Val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em pt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 9
+\mbox{\Hypertarget{class_c_track_a93709a6b9f3d807dde857492dbb77d14}\label{class_c_track_a93709a6b9f3d807dde857492dbb77d14}} 
+\index{CTrack@{CTrack}!IsOutOfTheFrame@{IsOutOfTheFrame}}
+\index{IsOutOfTheFrame@{IsOutOfTheFrame}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{IsOutOfTheFrame()}{IsOutOfTheFrame()}}
+{\footnotesize\ttfamily bool CTrack\+::\+Is\+Out\+Of\+The\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_a93709a6b9f3d807dde857492dbb77d14}{CTrack\+::\+Is\+Out\+Of\+The\+Frame}} 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a4f3265c10e4ad24b8b7b10668edfa309}\label{class_c_track_a4f3265c10e4ad24b8b7b10668edfa309}} 
+\index{CTrack@{CTrack}!IsStatic@{IsStatic}}
+\index{IsStatic@{IsStatic}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{IsStatic()}{IsStatic()}}
+{\footnotesize\ttfamily bool CTrack\+::\+Is\+Static (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_a4f3265c10e4ad24b8b7b10668edfa309}{CTrack\+::\+Is\+Static}} 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a815097c7b43655fcd5954d817493198c}\label{class_c_track_a815097c7b43655fcd5954d817493198c}} 
+\index{CTrack@{CTrack}!IsStaticTimeout@{IsStaticTimeout}}
+\index{IsStaticTimeout@{IsStaticTimeout}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{IsStaticTimeout()}{IsStaticTimeout()}}
+{\footnotesize\ttfamily bool CTrack\+::\+Is\+Static\+Timeout (\begin{DoxyParamCaption}\item[{int}]{frames\+Time }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_a815097c7b43655fcd5954d817493198c}{CTrack\+::\+Is\+Static\+Timeout}} 
+
+
+\begin{DoxyParams}{参数}
+{\em frames\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a517648bad954f0c4347f3e9573ecdabf}\label{class_c_track_a517648bad954f0c4347f3e9573ecdabf}} 
+\index{CTrack@{CTrack}!LastRegion@{LastRegion}}
+\index{LastRegion@{LastRegion}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{LastRegion()}{LastRegion()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_region}{CRegion}} \& CTrack\+::\+Last\+Region (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_a517648bad954f0c4347f3e9573ecdabf}{CTrack\+::\+Last\+Region}} 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a6759699cc954928c935533830024fead}\label{class_c_track_a6759699cc954928c935533830024fead}} 
+\index{CTrack@{CTrack}!PointUpdate@{PointUpdate}}
+\index{PointUpdate@{PointUpdate}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{PointUpdate()}{PointUpdate()}}
+{\footnotesize\ttfamily void CTrack\+::\+Point\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} \&}]{pt,  }\item[{const cv\+::\+Size \&}]{new\+Obj\+Size,  }\item[{bool}]{data\+Correct,  }\item[{const cv\+::\+Size \&}]{frame\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Update 
+
+
+\begin{DoxyParams}{参数}
+{\em pt} & \\
+\hline
+{\em data\+Correct} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 10
+\mbox{\Hypertarget{class_c_track_a8d5296e8fedd10ff4d9142dd5cd0ac6e}\label{class_c_track_a8d5296e8fedd10ff4d9142dd5cd0ac6e}} 
+\index{CTrack@{CTrack}!RectUpdate@{RectUpdate}}
+\index{RectUpdate@{RectUpdate}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{RectUpdate()}{RectUpdate()}}
+{\footnotesize\ttfamily void CTrack\+::\+Rect\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{region,  }\item[{bool}]{data\+Correct,  }\item[{cv\+::\+Mat}]{prev\+Frame,  }\item[{cv\+::\+Mat}]{curr\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rect\+Update 
+
+
+\begin{DoxyParams}{参数}
+{\em region} & \\
+\hline
+{\em data\+Correct} & \\
+\hline
+{\em prev\+Frame} & \\
+\hline
+{\em curr\+Frame} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 11
+\mbox{\Hypertarget{class_c_track_ad327fd7662430344a650a2abcaf623de}\label{class_c_track_ad327fd7662430344a650a2abcaf623de}} 
+\index{CTrack@{CTrack}!SkippedFrames@{SkippedFrames}}
+\index{SkippedFrames@{SkippedFrames}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{SkippedFrames()}{SkippedFrames()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t \& CTrack\+::\+Skipped\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_track_abec4a9274447423cc10d5c632944dbb3}{CTrack\+::\+Skipped\+Frames}} 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_abec4a9274447423cc10d5c632944dbb3}\label{class_c_track_abec4a9274447423cc10d5c632944dbb3}} 
+\index{CTrack@{CTrack}!SkippedFrames@{SkippedFrames}}
+\index{SkippedFrames@{SkippedFrames}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{SkippedFrames()}{SkippedFrames()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily size\+\_\+t CTrack\+::\+Skipped\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_abec4a9274447423cc10d5c632944dbb3}{CTrack\+::\+Skipped\+Frames}} 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_track_a7e2301cc3da951c0580bd4d8334b52d8}\label{class_c_track_a7e2301cc3da951c0580bd4d8334b52d8}} 
+\index{CTrack@{CTrack}!Update@{Update}}
+\index{Update@{Update}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CTrack\+::\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{region,  }\item[{bool}]{data\+Correct,  }\item[{size\+\_\+t}]{max\+\_\+trace\+\_\+length,  }\item[{cv\+::\+Mat}]{prev\+Frame,  }\item[{cv\+::\+Mat}]{curr\+Frame,  }\item[{int}]{traj\+Len }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_track_a7e2301cc3da951c0580bd4d8334b52d8}{CTrack\+::\+Update}} 
+
+
+\begin{DoxyParams}{参数}
+{\em region} & \\
+\hline
+{\em data\+Correct} & \\
+\hline
+{\em max\+\_\+trace\+\_\+length} & \\
+\hline
+{\em prev\+Frame} & \\
+\hline
+{\em curr\+Frame} & \\
+\hline
+{\em traj\+Len} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 12
+\mbox{\Hypertarget{class_c_track_a72863798ece21541deb8aaa722e0ef66}\label{class_c_track_a72863798ece21541deb8aaa722e0ef66}} 
+\index{CTrack@{CTrack}!Update@{Update}}
+\index{Update@{Update}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CTrack\+::\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{region,  }\item[{const \mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} \&}]{region\+Embedding,  }\item[{bool}]{data\+Correct,  }\item[{size\+\_\+t}]{max\+\_\+trace\+\_\+length,  }\item[{cv\+::\+Mat}]{prev\+Frame,  }\item[{cv\+::\+Mat}]{curr\+Frame,  }\item[{int}]{traj\+Len }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_track_a7e2301cc3da951c0580bd4d8334b52d8}{CTrack\+::\+Update}} 
+
+
+\begin{DoxyParams}{参数}
+{\em region} & \\
+\hline
+{\em region\+Embedding} & \\
+\hline
+{\em data\+Correct} & \\
+\hline
+{\em max\+\_\+trace\+\_\+length} & \\
+\hline
+{\em prev\+Frame} & \\
+\hline
+{\em curr\+Frame} & \\
+\hline
+{\em traj\+Len} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 13
+\mbox{\Hypertarget{class_c_track_a6cf460150ad8a9d248c560d46eba42f7}\label{class_c_track_a6cf460150ad8a9d248c560d46eba42f7}} 
+\index{CTrack@{CTrack}!WidthDist@{WidthDist}}
+\index{WidthDist@{WidthDist}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{WidthDist()}{WidthDist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} CTrack\+::\+Width\+Dist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_region}{CRegion}} \&}]{reg }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_c_track_a6cf460150ad8a9d248c560d46eba42f7}{CTrack\+::\+Width\+Dist}} 
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_c_track_a7d1f6c9d8d56790a28a7139e85896dc8}\label{class_c_track_a7d1f6c9d8d56790a28a7139e85896dc8}} 
+\index{CTrack@{CTrack}!m\_externalTrackerForLost@{m\_externalTrackerForLost}}
+\index{m\_externalTrackerForLost@{m\_externalTrackerForLost}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_externalTrackerForLost}{m\_externalTrackerForLost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetracking_a5377d69122ad915004ef68a518d22be3}{tracking\+::\+Lost\+Track\+Type}} CTrack\+::m\+\_\+external\+Tracker\+For\+Lost\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a5573dab5b9fe2e5143204355b8146c87}\label{class_c_track_a5573dab5b9fe2e5143204355b8146c87}} 
+\index{CTrack@{CTrack}!m\_filterObjectSize@{m\_filterObjectSize}}
+\index{m\_filterObjectSize@{m\_filterObjectSize}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_filterObjectSize}{m\_filterObjectSize}}
+{\footnotesize\ttfamily bool CTrack\+::m\+\_\+filter\+Object\+Size = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a37f858466a4c5de19eea18ab829e4745}\label{class_c_track_a37f858466a4c5de19eea18ab829e4745}} 
+\index{CTrack@{CTrack}!m\_isStatic@{m\_isStatic}}
+\index{m\_isStatic@{m\_isStatic}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_isStatic}{m\_isStatic}}
+{\footnotesize\ttfamily bool CTrack\+::m\+\_\+is\+Static = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a85c7771b70f05a4f64ac53e2dd0afca3}\label{class_c_track_a85c7771b70f05a4f64ac53e2dd0afca3}} 
+\index{CTrack@{CTrack}!m\_kalman@{m\_kalman}}
+\index{m\_kalman@{m\_kalman}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_kalman}{m\_kalman}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_kalman_filter}{TKalman\+Filter}} CTrack\+::m\+\_\+kalman\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a5af91fbfad7ebf07bd0f681f915e440c}\label{class_c_track_a5af91fbfad7ebf07bd0f681f915e440c}} 
+\index{CTrack@{CTrack}!m\_lastRegion@{m\_lastRegion}}
+\index{m\_lastRegion@{m\_lastRegion}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_lastRegion}{m\_lastRegion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_region}{CRegion}} CTrack\+::m\+\_\+last\+Region\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_ad97c3e53969dbb60e7690c4f2d038172}\label{class_c_track_ad97c3e53969dbb60e7690c4f2d038172}} 
+\index{CTrack@{CTrack}!m\_outOfTheFrame@{m\_outOfTheFrame}}
+\index{m\_outOfTheFrame@{m\_outOfTheFrame}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_outOfTheFrame}{m\_outOfTheFrame}}
+{\footnotesize\ttfamily bool CTrack\+::m\+\_\+out\+Of\+The\+Frame = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a8ee3f8baaf290aeb113f34c26a446a76}\label{class_c_track_a8ee3f8baaf290aeb113f34c26a446a76}} 
+\index{CTrack@{CTrack}!m\_predictionPoint@{m\_predictionPoint}}
+\index{m\_predictionPoint@{m\_predictionPoint}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_predictionPoint}{m\_predictionPoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{defines_8h_a8c42696da8f098b91374a8e8bb84b430}{Point\+\_\+t}} CTrack\+::m\+\_\+prediction\+Point\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_abae9d26232876d478181ccbecd58322d}\label{class_c_track_abae9d26232876d478181ccbecd58322d}} 
+\index{CTrack@{CTrack}!m\_predictionRect@{m\_predictionRect}}
+\index{m\_predictionRect@{m\_predictionRect}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_predictionRect}{m\_predictionRect}}
+{\footnotesize\ttfamily cv\+::\+Rotated\+Rect CTrack\+::m\+\_\+prediction\+Rect\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a4216df27820b99c96d5a3370df4584d0}\label{class_c_track_a4216df27820b99c96d5a3370df4584d0}} 
+\index{CTrack@{CTrack}!m\_regionEmbedding@{m\_regionEmbedding}}
+\index{m\_regionEmbedding@{m\_regionEmbedding}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_regionEmbedding}{m\_regionEmbedding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} CTrack\+::m\+\_\+region\+Embedding\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a3308a34b70a90692b0fb863eb621bd37}\label{class_c_track_a3308a34b70a90692b0fb863eb621bd37}} 
+\index{CTrack@{CTrack}!m\_skippedFrames@{m\_skippedFrames}}
+\index{m\_skippedFrames@{m\_skippedFrames}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_skippedFrames}{m\_skippedFrames}}
+{\footnotesize\ttfamily size\+\_\+t CTrack\+::m\+\_\+skipped\+Frames = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a2f4e196b5dfd301639e6c1e3be14ea8a}\label{class_c_track_a2f4e196b5dfd301639e6c1e3be14ea8a}} 
+\index{CTrack@{CTrack}!m\_staticFrame@{m\_staticFrame}}
+\index{m\_staticFrame@{m\_staticFrame}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_staticFrame}{m\_staticFrame}}
+{\footnotesize\ttfamily cv\+::\+Mat CTrack\+::m\+\_\+static\+Frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_abafeef3579e8b8ee12dd6e8c788c368e}\label{class_c_track_abafeef3579e8b8ee12dd6e8c788c368e}} 
+\index{CTrack@{CTrack}!m\_staticFrames@{m\_staticFrames}}
+\index{m\_staticFrames@{m\_staticFrames}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_staticFrames}{m\_staticFrames}}
+{\footnotesize\ttfamily int CTrack\+::m\+\_\+static\+Frames = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_abbec66a84ee65ce5d6390565698e5156}\label{class_c_track_abbec66a84ee65ce5d6390565698e5156}} 
+\index{CTrack@{CTrack}!m\_staticRect@{m\_staticRect}}
+\index{m\_staticRect@{m\_staticRect}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_staticRect}{m\_staticRect}}
+{\footnotesize\ttfamily cv\+::\+Rect CTrack\+::m\+\_\+static\+Rect\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_adf88ff8678ec928ac3ca764f7308b96f}\label{class_c_track_adf88ff8678ec928ac3ca764f7308b96f}} 
+\index{CTrack@{CTrack}!m\_trace@{m\_trace}}
+\index{m\_trace@{m\_trace}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_trace}{m\_trace}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_trace}{Trace}} CTrack\+::m\+\_\+trace\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_a8aae01d68f5a1a6c0292476ea19c89f9}\label{class_c_track_a8aae01d68f5a1a6c0292476ea19c89f9}} 
+\index{CTrack@{CTrack}!m\_trackID@{m\_trackID}}
+\index{m\_trackID@{m\_trackID}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_trackID}{m\_trackID}}
+{\footnotesize\ttfamily size\+\_\+t CTrack\+::m\+\_\+track\+ID = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_track_ae7741468d9b920aca0c51056ce93afda}\label{class_c_track_ae7741468d9b920aca0c51056ce93afda}} 
+\index{CTrack@{CTrack}!m\_VOTTracker@{m\_VOTTracker}}
+\index{m\_VOTTracker@{m\_VOTTracker}!CTrack@{CTrack}}
+\doxysubsubsection{\texorpdfstring{m\_VOTTracker}{m\_VOTTracker}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_v_o_t_tracker}{VOTTracker}}$>$ CTrack\+::m\+\_\+\+VOTTracker\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/python\+\_\+based\+\_\+algo/\+MOT\+\_\+tracking\+\_\+haron/\+MOT\+\_\+\+Origin/\mbox{\hyperlink{track_8h}{track.\+h}}\item 
+G\+:/python\+\_\+based\+\_\+algo/\+MOT\+\_\+tracking\+\_\+haron/\+MOT\+\_\+\+Origin/\mbox{\hyperlink{track_8cpp}{track.\+cpp}}\end{DoxyCompactItemize}

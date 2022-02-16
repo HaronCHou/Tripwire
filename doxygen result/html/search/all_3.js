@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['debug_5fuse_119',['DEBUG_USE',['../defines_8h.html#a0cae9c2d40b9edec98f6525dde50e0db',1,'defines.h']]],
+  ['defines_2eh_120',['defines.h',['../defines_8h.html',1,'']]],
+  ['detectcontour_121',['DetectContour',['../main_8cpp.html#a41e1efbec666555c9c0a71150356c210',1,'main.cpp']]],
+  ['detection_122',['detection',['../main_8cpp.html#a2f312825464956f11d07430bb92c56e3',1,'main.cpp']]],
+  ['detectors_123',['Detectors',['../namespacetracking.html#a1edf574df68abf048988b7cbacc52760',1,'tracking']]],
+  ['detectorscount_124',['DetectorsCount',['../namespacetracking.html#a1edf574df68abf048988b7cbacc52760aef1186dd1961a61bdfc4f1f7df3ceb12',1,'tracking']]],
+  ['distance_5fis_5fclose_5f8u_5fc3r_125',['distance_is_close_8u_C3R',['../vibe-background-sequential_8c.html#a7a48ce50e5a937709ae0337bc4223be2',1,'vibe-background-sequential.c']]],
+  ['distcenters_126',['DistCenters',['../namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a30176bdc0b4f965c6812767a2fa52e1e',1,'tracking']]],
+  ['disthist_127',['DistHist',['../namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502afff03766300052463dcfeef33b8cd749',1,'tracking']]],
+  ['distjaccard_128',['DistJaccard',['../namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a731b827afcbde6eb19624ad6130b1798',1,'tracking']]],
+  ['distmatrix_5ft_129',['distMatrix_t',['../defines_8h.html#af6ab0ee8259a51215f62e8f96416d5bb',1,'defines.h']]],
+  ['distrects_130',['DistRects',['../namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a43af27628a9ee8e94a23c079eab5d448',1,'tracking']]],
+  ['distscount_131',['DistsCount',['../namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502ab02fa20dc54c6870b718d06c18a9714c',1,'tracking']]],
+  ['disttype_132',['DistType',['../namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502',1,'tracking']]],
+  ['dnn_5focv_133',['DNN_OCV',['../namespacetracking.html#a1edf574df68abf048988b7cbacc52760abdea7a6f6616904879fd0eb85f951dbb',1,'tracking']]],
+  ['drawdata_134',['DrawData',['../main_8cpp.html#a8bf4700624d20565c5067623d76497dd',1,'main.cpp']]],
+  ['drawdetect_135',['DrawDetect',['../main_8cpp.html#aeb4c6b2620a3028876842539f79afec6',1,'main.cpp']]],
+  ['drawfilledrect_136',['DrawFilledRect',['../main_8cpp.html#accca05b42ef44c98d56e76957bd53a94',1,'main.cpp']]],
+  ['drawtrack_137',['DrawTrack',['../main_8cpp.html#a8e5ae220104e25a97ec4daca5ddd0997',1,'main.cpp']]]
+];

@@ -1,0 +1,7 @@
+<map id="CTracker::UpdateTrackingState" name="CTracker::UpdateTrackingState">
+<area shape="rect" id="node1" title="CTracker::UpdateTrackingState" alt="" coords="5,74,177,115"/>
+<area shape="rect" id="node2" href="$class_c_tracker.html#a6e7f2a3e00ce62c1113f775ce863be0c" title="CTracker::CreateDistaceMatrix" alt="" coords="225,31,425,57"/>
+<area shape="rect" id="node5" href="$class_c_tracker.html#a4c0ba3374453202fa289cd3104b3d909" title="CTracker::Update" alt="" coords="264,81,387,108"/>
+<area shape="rect" id="node3" href="$struct_tracker_settings.html#a4389652b836557938741e5effd132b0e" title=" " alt="" coords="473,5,660,32"/>
+<area shape="rect" id="node4" href="$class_c_tracker.html#a1960f875d72d1fca6ed5054b2b1ed48e" title="GetTracks" alt="" coords="495,56,638,83"/>
+</map>

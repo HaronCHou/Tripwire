@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: G:/python_based_algo/MOT_tracking_haron/MOT_Origin/Ctracker.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9a6d6e2fd7164b8ab4fd13705b6eb0c.html">python_based_algo</a></li><li class="navelem"><a class="el" href="dir_70ba9663e0006689810b8ca36f51056c.html">MOT_tracking_haron</a></li><li class="navelem"><a class="el" href="dir_fb56db6ca622663f2ae11cd7b1c5e212.html">MOT_Origin</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Ctracker.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ctracker_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;numeric&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="defines_8h.html">defines.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="track_8h.html">track.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_short_path_calculator_8h.html">ShortPathCalculator.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// ----------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_tracker_settings.html">TrackerSettings</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a3856a809067135c1c3f2d3c61fc4d6b7">   22</a></span>&#160;    <a class="code" href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722a">tracking::KalmanType</a> <a class="code" href="struct_tracker_settings.html#a3856a809067135c1c3f2d3c61fc4d6b7">m_kalmanType</a> = <a class="code" href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722aa889eca583e371386c92e05814797a885">tracking::KalmanLinear</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#afd6c83aa8b0eaa4f131f45852a0b89e4">   23</a></span>&#160;    <a class="code" href="namespacetracking.html#a9b3e7d16c86cd8b781ab214e396b0ebf">tracking::FilterGoal</a> <a class="code" href="struct_tracker_settings.html#afd6c83aa8b0eaa4f131f45852a0b89e4">m_filterGoal</a> = <a class="code" href="namespacetracking.html#a9b3e7d16c86cd8b781ab214e396b0ebfafac394783c1196957768400bc53ba491">tracking::FilterCenter</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a61a59f1c5bcc2ee76cef1b174d4bb8a4">   24</a></span>&#160;    <a class="code" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a> <a class="code" href="struct_tracker_settings.html#a61a59f1c5bcc2ee76cef1b174d4bb8a4">m_lostTrackType</a> = <a class="code" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a9bba8e4377e562caa976576d47c5eb2e">tracking::TrackKCF</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a94a05cbda5eeeac7fa1b64baf9c703f5">   25</a></span>&#160;    <a class="code" href="namespacetracking.html#a491e50c9261ab820965d871a217d4f13">tracking::MatchType</a> <a class="code" href="struct_tracker_settings.html#a94a05cbda5eeeac7fa1b64baf9c703f5">m_matchType</a> = <a class="code" href="namespacetracking.html#a491e50c9261ab820965d871a217d4f13a8c97315e46df8c0716a9538655fc967d">tracking::MatchHungrian</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">   27</a></span>&#160;    std::array&lt;track_t, tracking::DistsCount&gt; <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#ae876ad4f3599a782cddb37e318430aaa">   33</a></span>&#160;    <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> <a class="code" href="struct_tracker_settings.html#ae876ad4f3599a782cddb37e318430aaa">m_dt</a> = 1.0f;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a9d4bcf1b68d5a13de8f9fea89f3b694f">   39</a></span>&#160;    <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> <a class="code" href="struct_tracker_settings.html#a9d4bcf1b68d5a13de8f9fea89f3b694f">m_accelNoiseMag</a> = 0.1f;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#aeb3d6871cca324005ece2964a09ad7cd">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_tracker_settings.html#aeb3d6871cca324005ece2964a09ad7cd">m_useAcceleration</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a10e76ae03bd840f6c9180ce67faaa83c">   51</a></span>&#160;    <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> <a class="code" href="struct_tracker_settings.html#a10e76ae03bd840f6c9180ce67faaa83c">m_distThres</a> = 0.8f;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#af6378fc73a53a7f68c1af6041ca36d6f">   57</a></span>&#160;    <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> <a class="code" href="struct_tracker_settings.html#af6378fc73a53a7f68c1af6041ca36d6f">m_minAreaRadiusPix</a> = 20.f;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a493048207098cee57208f32858b49ece">   63</a></span>&#160;    <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> <a class="code" href="struct_tracker_settings.html#a493048207098cee57208f32858b49ece">m_minAreaRadiusK</a> = 0.5f;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a7825c3e88ee979fba2844c238fc51139">   69</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="struct_tracker_settings.html#a7825c3e88ee979fba2844c238fc51139">m_maximumAllowedSkippedFrames</a> = 25;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#abc7ce62dfe8de5ae33506aac41fddcac">   75</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="struct_tracker_settings.html#abc7ce62dfe8de5ae33506aac41fddcac">m_maxTraceLength</a> = 50;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#ad38082863e30ac990ff8d5b49a02ee70">   81</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_tracker_settings.html#ad38082863e30ac990ff8d5b49a02ee70">m_useAbandonedDetection</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#aee7628ff95fa54ad4422e01d45690a6d">   87</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_tracker_settings.html#aee7628ff95fa54ad4422e01d45690a6d">m_minStaticTime</a> = 5;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a810f1687289a964756cd700a22d219d2">   92</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_tracker_settings.html#a810f1687289a964756cd700a22d219d2">m_maxStaticTime</a> = 25;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">   98</a></span>&#160;    std::map&lt;objtype_t, std::set&lt;objtype_t&gt;&gt; <a class="code" href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">m_nearTypes</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#ace98133d713af3a0a250d958082e80bc">  101</a></span>&#160;    <a class="code" href="struct_tracker_settings.html#ace98133d713af3a0a250d958082e80bc">TrackerSettings</a>()</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>[<a class="code" href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a30176bdc0b4f965c6812767a2fa52e1e">tracking::DistCenters</a>] = 0.0f;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>[<a class="code" href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a43af27628a9ee8e94a23c079eab5d448">tracking::DistRects</a>] = 0.0f;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>[<a class="code" href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a731b827afcbde6eb19624ad6130b1798">tracking::DistJaccard</a>] = 0.5f;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>[<a class="code" href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502afff03766300052463dcfeef33b8cd749">tracking::DistHist</a>] = 0.5f;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        assert(<a class="code" href="struct_tracker_settings.html#ae0fd499a3b5e16dc9c900060c0bb96c5">CheckDistance</a>());</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#ae0fd499a3b5e16dc9c900060c0bb96c5">  112</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_tracker_settings.html#ae0fd499a3b5e16dc9c900060c0bb96c5">CheckDistance</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> sum = std::accumulate(<a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>.begin(), <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>.end(), 0.0f);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> maxOne = std::max(1.0f, std::fabs(sum));</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> std::fabs(sum - 1.0f) &lt;= std::numeric_limits&lt;track_t&gt;::epsilon() * maxOne;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a929011e2a6e696d47434e7607ef1d633">  120</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_tracker_settings.html#a929011e2a6e696d47434e7607ef1d633">SetDistances</a>(std::array&lt;track_t, tracking::DistsCount&gt; distType)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">bool</span> res = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">auto</span> oldDists = <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a> = distType;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="struct_tracker_settings.html#ae0fd499a3b5e16dc9c900060c0bb96c5">CheckDistance</a>())</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a> = oldDists;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            res = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a55398bbe62fbb0efa36479e58aa11a9c">  134</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_tracker_settings.html#a55398bbe62fbb0efa36479e58aa11a9c">SetDistance</a>(<a class="code" href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502">tracking::DistType</a> distType)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        std::fill(<a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>.begin(), <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>.end(), 0.0f);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">m_distType</a>[distType] = 1.f;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#aef40cffbd958596135f466088207577c">  142</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_tracker_settings.html#aef40cffbd958596135f466088207577c">AddNearTypes</a>(<a class="code" href="object__types_8h.html#aeb594bb7008341c7b10ecf8e8ef84f94">ObjectTypes</a> type1, <a class="code" href="object__types_8h.html#aeb594bb7008341c7b10ecf8e8ef84f94">ObjectTypes</a> type2, <span class="keywordtype">bool</span> sym)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">auto</span> AddOne = [&amp;](<a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a> type1, <a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a> type2)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">auto</span> it = <a class="code" href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">m_nearTypes</a>.find(type1);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">if</span> (it == std::end(<a class="code" href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">m_nearTypes</a>))</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">m_nearTypes</a>[type1] = std::set&lt;objtype_t&gt;{ type2 };</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                it-&gt;second.insert(type2);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        };</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        AddOne((<a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a>)type1, (<a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a>)type2);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (sym)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            AddOne((<a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a>)type2, (<a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a>)type1);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="struct_tracker_settings.html#a4389652b836557938741e5effd132b0e">  158</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_tracker_settings.html#a4389652b836557938741e5effd132b0e">CheckType</a>(<a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a> type1, <a class="code" href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a> type2)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">bool</span> res = (type1 == <a class="code" href="object__types_8h.html#ac568810e98b5f032d6b916e7878ebe53">bad_type</a>) || (type2 == <a class="code" href="object__types_8h.html#ac568810e98b5f032d6b916e7878ebe53">bad_type</a>) || (type1 == type2);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (!res)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keyword">auto</span> it = <a class="code" href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">m_nearTypes</a>.find(type1);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (it != std::end(<a class="code" href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">m_nearTypes</a>))</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                res = it-&gt;second.find(type2) != std::end(it-&gt;second);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;};</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_c_tracker.html">  176</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_tracker.html">CTracker</a></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="class_c_tracker.html#a37a89d416c0a9f234b20849667a154c4">CTracker</a>(<span class="keyword">const</span> <a class="code" href="struct_tracker_settings.html">TrackerSettings</a>&amp; settings);</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a9be0222342824ff52185f4ccd3d4f392">  180</a></span>&#160;    <a class="code" href="class_c_tracker.html#a9be0222342824ff52185f4ccd3d4f392">CTracker</a>(<span class="keyword">const</span> <a class="code" href="class_c_tracker.html">CTracker</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a276d921b9fab4fb102f41ba589f353bf">  181</a></span>&#160;    <a class="code" href="class_c_tracker.html#a276d921b9fab4fb102f41ba589f353bf">CTracker</a>(<a class="code" href="class_c_tracker.html">CTracker</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="class_c_tracker.html#afa651664e7f17b4e821a5a60e71f9e6d">  182</a></span>&#160;    <a class="code" href="class_c_tracker.html">CTracker</a>&amp; <a class="code" href="class_c_tracker.html#afa651664e7f17b4e821a5a60e71f9e6d">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_c_tracker.html">CTracker</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_c_tracker.html#ae94e672f10d92b99351fca3ebe33dd4f">  183</a></span>&#160;    <a class="code" href="class_c_tracker.html">CTracker</a>&amp; <a class="code" href="class_c_tracker.html#ae94e672f10d92b99351fca3ebe33dd4f">operator=</a>(<a class="code" href="class_c_tracker.html">CTracker</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="class_c_tracker.html#ab74d4f1ce428c9d3fa9f9e9901a2070a">~CTracker</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_tracker.html#a4c0ba3374453202fa289cd3104b3d909">Update</a>(<span class="keyword">const</span> <a class="code" href="defines_8h.html#a01db0de56a20f4342820a093c5154536">regions_t</a>&amp; regions, cv::Mat currFrame, <span class="keywordtype">float</span> fps);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a3ef73d0d35dd29b48fed1f0b6afa8f39">  193</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_tracker.html#a3ef73d0d35dd29b48fed1f0b6afa8f39">CanGrayFrameToTrack</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">bool</span> needColor = (<a class="code" href="class_c_tracker.html#acb84aee0d550f4cdadbfac6735811050">m_settings</a>.<a class="code" href="struct_tracker_settings.html#a61a59f1c5bcc2ee76cef1b174d4bb8a4">m_lostTrackType</a> == <a class="code" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a674ec8effe560545c87b0c14bd40f7f3">tracking::LostTrackType::TrackGOTURN</a>) ||</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            (<a class="code" href="class_c_tracker.html#acb84aee0d550f4cdadbfac6735811050">m_settings</a>.<a class="code" href="struct_tracker_settings.html#a61a59f1c5bcc2ee76cef1b174d4bb8a4">m_lostTrackType</a> == <a class="code" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a99099b5754baf71c0dbe2814c1d1ea9c">tracking::LostTrackType::TrackDAT</a>) ||</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            (<a class="code" href="class_c_tracker.html#acb84aee0d550f4cdadbfac6735811050">m_settings</a>.<a class="code" href="struct_tracker_settings.html#a61a59f1c5bcc2ee76cef1b174d4bb8a4">m_lostTrackType</a> == <a class="code" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a085b9d83f2d86b316f11fc0e65ed5c4e">tracking::LostTrackType::TrackSTAPLE</a>) ||</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            (<a class="code" href="class_c_tracker.html#acb84aee0d550f4cdadbfac6735811050">m_settings</a>.<a class="code" href="struct_tracker_settings.html#a61a59f1c5bcc2ee76cef1b174d4bb8a4">m_lostTrackType</a> == <a class="code" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a74f6af365b6cf4ec1616d73cd9f31fb1">tracking::LostTrackType::TrackLDES</a>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">return</span> !needColor;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a07cea56fc83c1f8f1c7058ebb65ca64a">  206</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_tracker.html#a07cea56fc83c1f8f1c7058ebb65ca64a">CanColorFrameToTrack</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a5fc800325b1a069fae1b89751a264592">  215</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_c_tracker.html#a5fc800325b1a069fae1b89751a264592">GetTracksCount</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_tracker.html#a605c3661fe31e77abef0acf13f4f7cd0">m_tracks</a>.size();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a1960f875d72d1fca6ed5054b2b1ed48e">  223</a></span>&#160;    std::vector&lt;TrackingObject&gt; <a class="code" href="class_c_tracker.html#a1960f875d72d1fca6ed5054b2b1ed48e">GetTracks</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        std::vector&lt;TrackingObject&gt; tracks;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="class_c_tracker.html#a605c3661fe31e77abef0acf13f4f7cd0">m_tracks</a>.empty())</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            tracks.reserve(<a class="code" href="class_c_tracker.html#a605c3661fe31e77abef0acf13f4f7cd0">m_tracks</a>.size());</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; track : <a class="code" href="class_c_tracker.html#a605c3661fe31e77abef0acf13f4f7cd0">m_tracks</a>)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                tracks.push_back(track-&gt;ConstructObject());</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">return</span> tracks;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="class_c_tracker.html#acb84aee0d550f4cdadbfac6735811050">  238</a></span>&#160;    <a class="code" href="struct_tracker_settings.html">TrackerSettings</a> <a class="code" href="class_c_tracker.html#acb84aee0d550f4cdadbfac6735811050">m_settings</a>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a605c3661fe31e77abef0acf13f4f7cd0">  240</a></span>&#160;    <a class="code" href="track_8h.html#aaa9881295be74ce8bd6990b9aafaf788">tracks_t</a> <a class="code" href="class_c_tracker.html#a605c3661fe31e77abef0acf13f4f7cd0">m_tracks</a>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="class_c_tracker.html#acaa6995a64483d7666ff2117f1671fed">  242</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_c_tracker.html#acaa6995a64483d7666ff2117f1671fed">m_nextTrackID</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="class_c_tracker.html#a3adb975a70224f8f411113031988e936">  244</a></span>&#160;    cv::Mat <a class="code" href="class_c_tracker.html#a3adb975a70224f8f411113031988e936">m_prevFrame</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="class_c_tracker.html#af4bbb70964b808d5bf4dd6f7dd221392">  246</a></span>&#160;    std::unique_ptr&lt;ShortPathCalculator&gt; <a class="code" href="class_c_tracker.html#af4bbb70964b808d5bf4dd6f7dd221392">m_SPCalculator</a>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_tracker.html#a6e7f2a3e00ce62c1113f775ce863be0c">CreateDistaceMatrix</a>(<span class="keyword">const</span> <a class="code" href="defines_8h.html#a01db0de56a20f4342820a093c5154536">regions_t</a>&amp; regions, std::vector&lt;RegionEmbedding&gt;&amp; regionEmbeddings, <a class="code" href="defines_8h.html#af6ab0ee8259a51215f62e8f96416d5bb">distMatrix_t</a>&amp; costMatrix, <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> maxPossibleCost, <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&amp; maxCost, cv::Mat currFrame);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_tracker.html#aefd920f030085f4f83ee48de4bc00a39">UpdateTrackingState</a>(<span class="keyword">const</span> <a class="code" href="defines_8h.html#a01db0de56a20f4342820a093c5154536">regions_t</a>&amp; regions, cv::Mat currFrame, <span class="keywordtype">float</span> fps);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;};</div>
+<div class="ttc" id="a_short_path_calculator_8h_html"><div class="ttname"><a href="_short_path_calculator_8h.html">ShortPathCalculator.h</a></div></div>
+<div class="ttc" id="aclass_c_tracker_html"><div class="ttname"><a href="class_c_tracker.html">CTracker</a></div><div class="ttdoc">The CTracker class</div><div class="ttdef"><b>Definition:</b> Ctracker.h:177</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a07cea56fc83c1f8f1c7058ebb65ca64a"><div class="ttname"><a href="class_c_tracker.html#a07cea56fc83c1f8f1c7058ebb65ca64a">CTracker::CanColorFrameToTrack</a></div><div class="ttdeci">bool CanColorFrameToTrack() const</div><div class="ttdoc">CanColorFrameToTrack</div><div class="ttdef"><b>Definition:</b> Ctracker.h:206</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a1960f875d72d1fca6ed5054b2b1ed48e"><div class="ttname"><a href="class_c_tracker.html#a1960f875d72d1fca6ed5054b2b1ed48e">CTracker::GetTracks</a></div><div class="ttdeci">std::vector&lt; TrackingObject &gt; GetTracks() const</div><div class="ttdoc">GetTracks</div><div class="ttdef"><b>Definition:</b> Ctracker.h:223</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a276d921b9fab4fb102f41ba589f353bf"><div class="ttname"><a href="class_c_tracker.html#a276d921b9fab4fb102f41ba589f353bf">CTracker::CTracker</a></div><div class="ttdeci">CTracker(CTracker &amp;&amp;)=delete</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a37a89d416c0a9f234b20849667a154c4"><div class="ttname"><a href="class_c_tracker.html#a37a89d416c0a9f234b20849667a154c4">CTracker::CTracker</a></div><div class="ttdeci">CTracker(const TrackerSettings &amp;settings)</div><div class="ttdoc">CTracker::CTracker Tracker. Manage tracks. Create, remove, update.</div><div class="ttdef"><b>Definition:</b> Ctracker.cpp:8</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a3adb975a70224f8f411113031988e936"><div class="ttname"><a href="class_c_tracker.html#a3adb975a70224f8f411113031988e936">CTracker::m_prevFrame</a></div><div class="ttdeci">cv::Mat m_prevFrame</div><div class="ttdef"><b>Definition:</b> Ctracker.h:244</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a3ef73d0d35dd29b48fed1f0b6afa8f39"><div class="ttname"><a href="class_c_tracker.html#a3ef73d0d35dd29b48fed1f0b6afa8f39">CTracker::CanGrayFrameToTrack</a></div><div class="ttdeci">bool CanGrayFrameToTrack() const</div><div class="ttdoc">CanGrayFrameToTrack</div><div class="ttdef"><b>Definition:</b> Ctracker.h:193</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a4c0ba3374453202fa289cd3104b3d909"><div class="ttname"><a href="class_c_tracker.html#a4c0ba3374453202fa289cd3104b3d909">CTracker::Update</a></div><div class="ttdeci">void Update(const regions_t &amp;regions, cv::Mat currFrame, float fps)</div><div class="ttdoc">CTracker::Update</div><div class="ttdef"><b>Definition:</b> Ctracker.cpp:41</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a5fc800325b1a069fae1b89751a264592"><div class="ttname"><a href="class_c_tracker.html#a5fc800325b1a069fae1b89751a264592">CTracker::GetTracksCount</a></div><div class="ttdeci">size_t GetTracksCount() const</div><div class="ttdoc">GetTracksCount</div><div class="ttdef"><b>Definition:</b> Ctracker.h:215</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a605c3661fe31e77abef0acf13f4f7cd0"><div class="ttname"><a href="class_c_tracker.html#a605c3661fe31e77abef0acf13f4f7cd0">CTracker::m_tracks</a></div><div class="ttdeci">tracks_t m_tracks</div><div class="ttdef"><b>Definition:</b> Ctracker.h:240</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a6e7f2a3e00ce62c1113f775ce863be0c"><div class="ttname"><a href="class_c_tracker.html#a6e7f2a3e00ce62c1113f775ce863be0c">CTracker::CreateDistaceMatrix</a></div><div class="ttdeci">void CreateDistaceMatrix(const regions_t &amp;regions, std::vector&lt; RegionEmbedding &gt; &amp;regionEmbeddings, distMatrix_t &amp;costMatrix, track_t maxPossibleCost, track_t &amp;maxCost, cv::Mat currFrame)</div><div class="ttdoc">CTracker::CreateDistaceMatrix</div><div class="ttdef"><b>Definition:</b> Ctracker.cpp:204</div></div>
+<div class="ttc" id="aclass_c_tracker_html_a9be0222342824ff52185f4ccd3d4f392"><div class="ttname"><a href="class_c_tracker.html#a9be0222342824ff52185f4ccd3d4f392">CTracker::CTracker</a></div><div class="ttdeci">CTracker(const CTracker &amp;)=delete</div></div>
+<div class="ttc" id="aclass_c_tracker_html_ab74d4f1ce428c9d3fa9f9e9901a2070a"><div class="ttname"><a href="class_c_tracker.html#ab74d4f1ce428c9d3fa9f9e9901a2070a">CTracker::~CTracker</a></div><div class="ttdeci">~CTracker(void)</div><div class="ttdoc">CTracker::~CTracker</div><div class="ttdef"><b>Definition:</b> Ctracker.cpp:31</div></div>
+<div class="ttc" id="aclass_c_tracker_html_acaa6995a64483d7666ff2117f1671fed"><div class="ttname"><a href="class_c_tracker.html#acaa6995a64483d7666ff2117f1671fed">CTracker::m_nextTrackID</a></div><div class="ttdeci">size_t m_nextTrackID</div><div class="ttdef"><b>Definition:</b> Ctracker.h:242</div></div>
+<div class="ttc" id="aclass_c_tracker_html_acb84aee0d550f4cdadbfac6735811050"><div class="ttname"><a href="class_c_tracker.html#acb84aee0d550f4cdadbfac6735811050">CTracker::m_settings</a></div><div class="ttdeci">TrackerSettings m_settings</div><div class="ttdef"><b>Definition:</b> Ctracker.h:238</div></div>
+<div class="ttc" id="aclass_c_tracker_html_ae94e672f10d92b99351fca3ebe33dd4f"><div class="ttname"><a href="class_c_tracker.html#ae94e672f10d92b99351fca3ebe33dd4f">CTracker::operator=</a></div><div class="ttdeci">CTracker &amp; operator=(CTracker &amp;&amp;)=delete</div></div>
+<div class="ttc" id="aclass_c_tracker_html_aefd920f030085f4f83ee48de4bc00a39"><div class="ttname"><a href="class_c_tracker.html#aefd920f030085f4f83ee48de4bc00a39">CTracker::UpdateTrackingState</a></div><div class="ttdeci">void UpdateTrackingState(const regions_t &amp;regions, cv::Mat currFrame, float fps)</div><div class="ttdoc">CTracker::UpdateTrackingState</div><div class="ttdef"><b>Definition:</b> Ctracker.cpp:56</div></div>
+<div class="ttc" id="aclass_c_tracker_html_af4bbb70964b808d5bf4dd6f7dd221392"><div class="ttname"><a href="class_c_tracker.html#af4bbb70964b808d5bf4dd6f7dd221392">CTracker::m_SPCalculator</a></div><div class="ttdeci">std::unique_ptr&lt; ShortPathCalculator &gt; m_SPCalculator</div><div class="ttdef"><b>Definition:</b> Ctracker.h:246</div></div>
+<div class="ttc" id="aclass_c_tracker_html_afa651664e7f17b4e821a5a60e71f9e6d"><div class="ttname"><a href="class_c_tracker.html#afa651664e7f17b4e821a5a60e71f9e6d">CTracker::operator=</a></div><div class="ttdeci">CTracker &amp; operator=(const CTracker &amp;)=delete</div></div>
+<div class="ttc" id="adefines_8h_html"><div class="ttname"><a href="defines_8h.html">defines.h</a></div></div>
+<div class="ttc" id="adefines_8h_html_a01db0de56a20f4342820a093c5154536"><div class="ttname"><a href="defines_8h.html#a01db0de56a20f4342820a093c5154536">regions_t</a></div><div class="ttdeci">std::vector&lt; CRegion &gt; regions_t</div><div class="ttdef"><b>Definition:</b> defines.h:81</div></div>
+<div class="ttc" id="adefines_8h_html_a7ce9c8817b42ab418e61756f579549ab"><div class="ttname"><a href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a></div><div class="ttdeci">float track_t</div><div class="ttdef"><b>Definition:</b> defines.h:14</div></div>
+<div class="ttc" id="adefines_8h_html_af6ab0ee8259a51215f62e8f96416d5bb"><div class="ttname"><a href="defines_8h.html#af6ab0ee8259a51215f62e8f96416d5bb">distMatrix_t</a></div><div class="ttdeci">std::vector&lt; track_t &gt; distMatrix_t</div><div class="ttdef"><b>Definition:</b> defines.h:22</div></div>
+<div class="ttc" id="anamespacetracking_html_a491e50c9261ab820965d871a217d4f13"><div class="ttname"><a href="namespacetracking.html#a491e50c9261ab820965d871a217d4f13">tracking::MatchType</a></div><div class="ttdeci">MatchType</div><div class="ttdoc">The MatchType enum</div><div class="ttdef"><b>Definition:</b> defines.h:146</div></div>
+<div class="ttc" id="anamespacetracking_html_a491e50c9261ab820965d871a217d4f13a8c97315e46df8c0716a9538655fc967d"><div class="ttname"><a href="namespacetracking.html#a491e50c9261ab820965d871a217d4f13a8c97315e46df8c0716a9538655fc967d">tracking::MatchHungrian</a></div><div class="ttdeci">@ MatchHungrian</div><div class="ttdef"><b>Definition:</b> defines.h:147</div></div>
+<div class="ttc" id="anamespacetracking_html_a5377d69122ad915004ef68a518d22be3"><div class="ttname"><a href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a></div><div class="ttdeci">LostTrackType</div><div class="ttdoc">The LostTrackType enum</div><div class="ttdef"><b>Definition:</b> defines.h:156</div></div>
+<div class="ttc" id="anamespacetracking_html_a5377d69122ad915004ef68a518d22be3a085b9d83f2d86b316f11fc0e65ed5c4e"><div class="ttname"><a href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a085b9d83f2d86b316f11fc0e65ed5c4e">tracking::TrackSTAPLE</a></div><div class="ttdeci">@ TrackSTAPLE</div><div class="ttdef"><b>Definition:</b> defines.h:165</div></div>
+<div class="ttc" id="anamespacetracking_html_a5377d69122ad915004ef68a518d22be3a674ec8effe560545c87b0c14bd40f7f3"><div class="ttname"><a href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a674ec8effe560545c87b0c14bd40f7f3">tracking::TrackGOTURN</a></div><div class="ttdeci">@ TrackGOTURN</div><div class="ttdef"><b>Definition:</b> defines.h:161</div></div>
+<div class="ttc" id="anamespacetracking_html_a5377d69122ad915004ef68a518d22be3a74f6af365b6cf4ec1616d73cd9f31fb1"><div class="ttname"><a href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a74f6af365b6cf4ec1616d73cd9f31fb1">tracking::TrackLDES</a></div><div class="ttdeci">@ TrackLDES</div><div class="ttdef"><b>Definition:</b> defines.h:166</div></div>
+<div class="ttc" id="anamespacetracking_html_a5377d69122ad915004ef68a518d22be3a99099b5754baf71c0dbe2814c1d1ea9c"><div class="ttname"><a href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a99099b5754baf71c0dbe2814c1d1ea9c">tracking::TrackDAT</a></div><div class="ttdeci">@ TrackDAT</div><div class="ttdef"><b>Definition:</b> defines.h:164</div></div>
+<div class="ttc" id="anamespacetracking_html_a5377d69122ad915004ef68a518d22be3a9bba8e4377e562caa976576d47c5eb2e"><div class="ttname"><a href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3a9bba8e4377e562caa976576d47c5eb2e">tracking::TrackKCF</a></div><div class="ttdeci">@ TrackKCF</div><div class="ttdef"><b>Definition:</b> defines.h:158</div></div>
+<div class="ttc" id="anamespacetracking_html_a55743c5e18b9b228c4ba2587260b2502"><div class="ttname"><a href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502">tracking::DistType</a></div><div class="ttdeci">DistType</div><div class="ttdoc">The DistType enum</div><div class="ttdef"><b>Definition:</b> defines.h:113</div></div>
+<div class="ttc" id="anamespacetracking_html_a55743c5e18b9b228c4ba2587260b2502a30176bdc0b4f965c6812767a2fa52e1e"><div class="ttname"><a href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a30176bdc0b4f965c6812767a2fa52e1e">tracking::DistCenters</a></div><div class="ttdeci">@ DistCenters</div><div class="ttdef"><b>Definition:</b> defines.h:114</div></div>
+<div class="ttc" id="anamespacetracking_html_a55743c5e18b9b228c4ba2587260b2502a43af27628a9ee8e94a23c079eab5d448"><div class="ttname"><a href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a43af27628a9ee8e94a23c079eab5d448">tracking::DistRects</a></div><div class="ttdeci">@ DistRects</div><div class="ttdef"><b>Definition:</b> defines.h:115</div></div>
+<div class="ttc" id="anamespacetracking_html_a55743c5e18b9b228c4ba2587260b2502a731b827afcbde6eb19624ad6130b1798"><div class="ttname"><a href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502a731b827afcbde6eb19624ad6130b1798">tracking::DistJaccard</a></div><div class="ttdeci">@ DistJaccard</div><div class="ttdef"><b>Definition:</b> defines.h:116</div></div>
+<div class="ttc" id="anamespacetracking_html_a55743c5e18b9b228c4ba2587260b2502afff03766300052463dcfeef33b8cd749"><div class="ttname"><a href="namespacetracking.html#a55743c5e18b9b228c4ba2587260b2502afff03766300052463dcfeef33b8cd749">tracking::DistHist</a></div><div class="ttdeci">@ DistHist</div><div class="ttdef"><b>Definition:</b> defines.h:117</div></div>
+<div class="ttc" id="anamespacetracking_html_a83f2c4d58ea2737f7d6296dce3eb722a"><div class="ttname"><a href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722a">tracking::KalmanType</a></div><div class="ttdeci">KalmanType</div><div class="ttdoc">The KalmanType enum</div><div class="ttdef"><b>Definition:</b> defines.h:135</div></div>
+<div class="ttc" id="anamespacetracking_html_a83f2c4d58ea2737f7d6296dce3eb722aa889eca583e371386c92e05814797a885"><div class="ttname"><a href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722aa889eca583e371386c92e05814797a885">tracking::KalmanLinear</a></div><div class="ttdeci">@ KalmanLinear</div><div class="ttdef"><b>Definition:</b> defines.h:136</div></div>
+<div class="ttc" id="anamespacetracking_html_a9b3e7d16c86cd8b781ab214e396b0ebf"><div class="ttname"><a href="namespacetracking.html#a9b3e7d16c86cd8b781ab214e396b0ebf">tracking::FilterGoal</a></div><div class="ttdeci">FilterGoal</div><div class="ttdoc">The FilterGoal enum</div><div class="ttdef"><b>Definition:</b> defines.h:125</div></div>
+<div class="ttc" id="anamespacetracking_html_a9b3e7d16c86cd8b781ab214e396b0ebfafac394783c1196957768400bc53ba491"><div class="ttname"><a href="namespacetracking.html#a9b3e7d16c86cd8b781ab214e396b0ebfafac394783c1196957768400bc53ba491">tracking::FilterCenter</a></div><div class="ttdeci">@ FilterCenter</div><div class="ttdef"><b>Definition:</b> defines.h:126</div></div>
+<div class="ttc" id="aobject__types_8h_html_ac568810e98b5f032d6b916e7878ebe53"><div class="ttname"><a href="object__types_8h.html#ac568810e98b5f032d6b916e7878ebe53">bad_type</a></div><div class="ttdeci">constexpr objtype_t bad_type</div><div class="ttdef"><b>Definition:</b> object_types.h:176</div></div>
+<div class="ttc" id="aobject__types_8h_html_aeb594bb7008341c7b10ecf8e8ef84f94"><div class="ttname"><a href="object__types_8h.html#aeb594bb7008341c7b10ecf8e8ef84f94">ObjectTypes</a></div><div class="ttdeci">ObjectTypes</div><div class="ttdef"><b>Definition:</b> object_types.h:6</div></div>
+<div class="ttc" id="aobject__types_8h_html_aef073148585075f745f149202b5ccc90"><div class="ttname"><a href="object__types_8h.html#aef073148585075f745f149202b5ccc90">objtype_t</a></div><div class="ttdeci">int objtype_t</div><div class="ttdef"><b>Definition:</b> object_types.h:175</div></div>
+<div class="ttc" id="astruct_tracker_settings_html"><div class="ttname"><a href="struct_tracker_settings.html">TrackerSettings</a></div><div class="ttdoc">The TrackerSettings struct</div><div class="ttdef"><b>Definition:</b> Ctracker.h:21</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a10e76ae03bd840f6c9180ce67faaa83c"><div class="ttname"><a href="struct_tracker_settings.html#a10e76ae03bd840f6c9180ce67faaa83c">TrackerSettings::m_distThres</a></div><div class="ttdeci">track_t m_distThres</div><div class="ttdoc">m_distThres Distance threshold for Assignment problem: from 0 to 1</div><div class="ttdef"><b>Definition:</b> Ctracker.h:51</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a3856a809067135c1c3f2d3c61fc4d6b7"><div class="ttname"><a href="struct_tracker_settings.html#a3856a809067135c1c3f2d3c61fc4d6b7">TrackerSettings::m_kalmanType</a></div><div class="ttdeci">tracking::KalmanType m_kalmanType</div><div class="ttdef"><b>Definition:</b> Ctracker.h:22</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a4389652b836557938741e5effd132b0e"><div class="ttname"><a href="struct_tracker_settings.html#a4389652b836557938741e5effd132b0e">TrackerSettings::CheckType</a></div><div class="ttdeci">bool CheckType(objtype_t type1, objtype_t type2) const</div><div class="ttdef"><b>Definition:</b> Ctracker.h:158</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a493048207098cee57208f32858b49ece"><div class="ttname"><a href="struct_tracker_settings.html#a493048207098cee57208f32858b49ece">TrackerSettings::m_minAreaRadiusK</a></div><div class="ttdeci">track_t m_minAreaRadiusK</div><div class="ttdoc">m_minAreaRadius Minimal area radius in ration for object size. Used if m_minAreaRadiusPix &lt; 0</div><div class="ttdef"><b>Definition:</b> Ctracker.h:63</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a55398bbe62fbb0efa36479e58aa11a9c"><div class="ttname"><a href="struct_tracker_settings.html#a55398bbe62fbb0efa36479e58aa11a9c">TrackerSettings::SetDistance</a></div><div class="ttdeci">bool SetDistance(tracking::DistType distType)</div><div class="ttdef"><b>Definition:</b> Ctracker.h:134</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a61a59f1c5bcc2ee76cef1b174d4bb8a4"><div class="ttname"><a href="struct_tracker_settings.html#a61a59f1c5bcc2ee76cef1b174d4bb8a4">TrackerSettings::m_lostTrackType</a></div><div class="ttdeci">tracking::LostTrackType m_lostTrackType</div><div class="ttdef"><b>Definition:</b> Ctracker.h:24</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a7825c3e88ee979fba2844c238fc51139"><div class="ttname"><a href="struct_tracker_settings.html#a7825c3e88ee979fba2844c238fc51139">TrackerSettings::m_maximumAllowedSkippedFrames</a></div><div class="ttdeci">size_t m_maximumAllowedSkippedFrames</div><div class="ttdoc">m_maximumAllowedSkippedFrames If the object don't assignment more than this frames then it will be re...</div><div class="ttdef"><b>Definition:</b> Ctracker.h:69</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a810f1687289a964756cd700a22d219d2"><div class="ttname"><a href="struct_tracker_settings.html#a810f1687289a964756cd700a22d219d2">TrackerSettings::m_maxStaticTime</a></div><div class="ttdeci">int m_maxStaticTime</div><div class="ttdoc">m_maxStaticTime After this time (in seconds) the abandoned object will be removed</div><div class="ttdef"><b>Definition:</b> Ctracker.h:92</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a929011e2a6e696d47434e7607ef1d633"><div class="ttname"><a href="struct_tracker_settings.html#a929011e2a6e696d47434e7607ef1d633">TrackerSettings::SetDistances</a></div><div class="ttdeci">bool SetDistances(std::array&lt; track_t, tracking::DistsCount &gt; distType)</div><div class="ttdef"><b>Definition:</b> Ctracker.h:120</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a94a05cbda5eeeac7fa1b64baf9c703f5"><div class="ttname"><a href="struct_tracker_settings.html#a94a05cbda5eeeac7fa1b64baf9c703f5">TrackerSettings::m_matchType</a></div><div class="ttdeci">tracking::MatchType m_matchType</div><div class="ttdef"><b>Definition:</b> Ctracker.h:25</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_a9d4bcf1b68d5a13de8f9fea89f3b694f"><div class="ttname"><a href="struct_tracker_settings.html#a9d4bcf1b68d5a13de8f9fea89f3b694f">TrackerSettings::m_accelNoiseMag</a></div><div class="ttdeci">track_t m_accelNoiseMag</div><div class="ttdoc">m_accelNoiseMag Noise magnitude for Kalman</div><div class="ttdef"><b>Definition:</b> Ctracker.h:39</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_abb2b4e2fa09dec92619134b2fe25cdc6"><div class="ttname"><a href="struct_tracker_settings.html#abb2b4e2fa09dec92619134b2fe25cdc6">TrackerSettings::m_nearTypes</a></div><div class="ttdeci">std::map&lt; objtype_t, std::set&lt; objtype_t &gt; &gt; m_nearTypes</div><div class="ttdoc">m_nearTypes Object types that can be matched while tracking</div><div class="ttdef"><b>Definition:</b> Ctracker.h:98</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_abc7ce62dfe8de5ae33506aac41fddcac"><div class="ttname"><a href="struct_tracker_settings.html#abc7ce62dfe8de5ae33506aac41fddcac">TrackerSettings::m_maxTraceLength</a></div><div class="ttdeci">size_t m_maxTraceLength</div><div class="ttdoc">m_maxTraceLength The maximum trajectory length</div><div class="ttdef"><b>Definition:</b> Ctracker.h:75</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_ace98133d713af3a0a250d958082e80bc"><div class="ttname"><a href="struct_tracker_settings.html#ace98133d713af3a0a250d958082e80bc">TrackerSettings::TrackerSettings</a></div><div class="ttdeci">TrackerSettings()</div><div class="ttdef"><b>Definition:</b> Ctracker.h:101</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_ad0d9640b4f495c61ce8a6bd4f78377eb"><div class="ttname"><a href="struct_tracker_settings.html#ad0d9640b4f495c61ce8a6bd4f78377eb">TrackerSettings::m_distType</a></div><div class="ttdeci">std::array&lt; track_t, tracking::DistsCount &gt; m_distType</div><div class="ttdef"><b>Definition:</b> Ctracker.h:27</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_ad38082863e30ac990ff8d5b49a02ee70"><div class="ttname"><a href="struct_tracker_settings.html#ad38082863e30ac990ff8d5b49a02ee70">TrackerSettings::m_useAbandonedDetection</a></div><div class="ttdeci">bool m_useAbandonedDetection</div><div class="ttdoc">m_useAbandonedDetection Detection abandoned objects</div><div class="ttdef"><b>Definition:</b> Ctracker.h:81</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_ae0fd499a3b5e16dc9c900060c0bb96c5"><div class="ttname"><a href="struct_tracker_settings.html#ae0fd499a3b5e16dc9c900060c0bb96c5">TrackerSettings::CheckDistance</a></div><div class="ttdeci">bool CheckDistance() const</div><div class="ttdef"><b>Definition:</b> Ctracker.h:112</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_ae876ad4f3599a782cddb37e318430aaa"><div class="ttname"><a href="struct_tracker_settings.html#ae876ad4f3599a782cddb37e318430aaa">TrackerSettings::m_dt</a></div><div class="ttdeci">track_t m_dt</div><div class="ttdoc">m_dt Time step for Kalman</div><div class="ttdef"><b>Definition:</b> Ctracker.h:33</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_aeb3d6871cca324005ece2964a09ad7cd"><div class="ttname"><a href="struct_tracker_settings.html#aeb3d6871cca324005ece2964a09ad7cd">TrackerSettings::m_useAcceleration</a></div><div class="ttdeci">bool m_useAcceleration</div><div class="ttdoc">m_useAcceleration Constant velocity or constant acceleration motion model</div><div class="ttdef"><b>Definition:</b> Ctracker.h:45</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_aee7628ff95fa54ad4422e01d45690a6d"><div class="ttname"><a href="struct_tracker_settings.html#aee7628ff95fa54ad4422e01d45690a6d">TrackerSettings::m_minStaticTime</a></div><div class="ttdeci">int m_minStaticTime</div><div class="ttdoc">m_minStaticTime After this time (in seconds) the object is considered abandoned</div><div class="ttdef"><b>Definition:</b> Ctracker.h:87</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_aef40cffbd958596135f466088207577c"><div class="ttname"><a href="struct_tracker_settings.html#aef40cffbd958596135f466088207577c">TrackerSettings::AddNearTypes</a></div><div class="ttdeci">void AddNearTypes(ObjectTypes type1, ObjectTypes type2, bool sym)</div><div class="ttdef"><b>Definition:</b> Ctracker.h:142</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_af6378fc73a53a7f68c1af6041ca36d6f"><div class="ttname"><a href="struct_tracker_settings.html#af6378fc73a53a7f68c1af6041ca36d6f">TrackerSettings::m_minAreaRadiusPix</a></div><div class="ttdeci">track_t m_minAreaRadiusPix</div><div class="ttdoc">m_minAreaRadius Minimal area radius in pixels for objects centers</div><div class="ttdef"><b>Definition:</b> Ctracker.h:57</div></div>
+<div class="ttc" id="astruct_tracker_settings_html_afd6c83aa8b0eaa4f131f45852a0b89e4"><div class="ttname"><a href="struct_tracker_settings.html#afd6c83aa8b0eaa4f131f45852a0b89e4">TrackerSettings::m_filterGoal</a></div><div class="ttdeci">tracking::FilterGoal m_filterGoal</div><div class="ttdef"><b>Definition:</b> Ctracker.h:23</div></div>
+<div class="ttc" id="atrack_8h_html"><div class="ttname"><a href="track_8h.html">track.h</a></div></div>
+<div class="ttc" id="atrack_8h_html_aaa9881295be74ce8bd6990b9aafaf788"><div class="ttname"><a href="track_8h.html#aaa9881295be74ce8bd6990b9aafaf788">tracks_t</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; CTrack &gt; &gt; tracks_t</div><div class="ttdef"><b>Definition:</b> track.h:367</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,141 @@
+\hypertarget{main_8cpp}{}\doxysection{G\+:/python\+\_\+based\+\_\+algo/\+MOT\+\_\+tracking\+\_\+haron/\+MOT\+\_\+\+Origin/main.cpp 文件参考}
+\label{main_8cpp}\index{G:/python\_based\_algo/MOT\_tracking\_haron/MOT\_Origin/main.cpp@{G:/python\_based\_algo/MOT\_tracking\_haron/MOT\_Origin/main.cpp}}
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}vibe-\/background-\/sequential.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ctracker.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}defines.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+main.\+cpp 的引用(Include)关系图\+:
+% FIG 0
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a2f312825464956f11d07430bb92c56e3}{detection}} ()
+\item 
+bool \mbox{\hyperlink{main_8cpp_a78374e81f3aed892898bb249236fea4f}{Init\+Tracker}} (cv\+::\+Mat frame)
+\item 
+void \mbox{\hyperlink{main_8cpp_a41e1efbec666555c9c0a71150356c210}{Detect\+Contour}} (cv\+::\+Mat segmentation\+Map, \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&m\+\_\+regions)
+\item 
+void \mbox{\hyperlink{main_8cpp_aa9e2cd93f6c59ae802b1325ab361e927}{Tracking}} (cv\+::\+Mat frame, const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&regions)
+\item 
+void \mbox{\hyperlink{main_8cpp_a8bf4700624d20565c5067623d76497dd}{Draw\+Data}} (cv\+::\+Mat frame, int frames\+Counter, int curr\+Time, cv\+::\+Mat fg)
+\item 
+void \mbox{\hyperlink{main_8cpp_a8e5ae220104e25a97ec4daca5ddd0997}{Draw\+Track}} (cv\+::\+Mat frame, int resize\+Coeff, const \mbox{\hyperlink{struct_tracking_object}{Tracking\+Object}} \&track, bool draw\+Trajectory, int frames\+Counter)
+\item 
+void \mbox{\hyperlink{main_8cpp_accca05b42ef44c98d56e76957bd53a94}{Draw\+Filled\+Rect}} (cv\+::\+Mat \&frame, const cv\+::\+Rect \&rect, cv\+::\+Scalar cl, int alpha)
+\item 
+void \mbox{\hyperlink{main_8cpp_a4cae699bb004c424b3c2bbc8cc48e244}{Calc\+Motion\+Map}} (cv\+::\+Mat \&frame, cv\+::\+Mat m\+\_\+fg)
+\item 
+void \mbox{\hyperlink{main_8cpp_aeb4c6b2620a3028876842539f79afec6}{Draw\+Detect}} (cv\+::\+Mat \&segmentation\+Map, \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} m\+\_\+regions)
+\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_tracker_settings}{Tracker\+Settings}} \mbox{\hyperlink{main_8cpp_a0f8b1333cfed2224f73afdd9d8679b6c}{m\+\_\+tracker\+Settings}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_c_tracker}{CTracker}} $>$ \mbox{\hyperlink{main_8cpp_a2c703e3387983b59e31dbd6652b318f8}{m\+\_\+tracker}}
+\item 
+float \mbox{\hyperlink{main_8cpp_ab911c3bfab7c08f80308ea9085879f08}{m\+\_\+fps}} = 1
+\item 
+std\+::vector$<$ cv\+::\+Scalar $>$ \mbox{\hyperlink{main_8cpp_a7ac4d94a5203e87bf6d6388230ec9a5f}{m\+\_\+colors}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{main_8cpp_a4cae699bb004c424b3c2bbc8cc48e244}\label{main_8cpp_a4cae699bb004c424b3c2bbc8cc48e244}} 
+\index{main.cpp@{main.cpp}!CalcMotionMap@{CalcMotionMap}}
+\index{CalcMotionMap@{CalcMotionMap}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{CalcMotionMap()}{CalcMotionMap()}}
+{\footnotesize\ttfamily void Calc\+Motion\+Map (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{frame,  }\item[{cv\+::\+Mat}]{m\+\_\+fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a41e1efbec666555c9c0a71150356c210}\label{main_8cpp_a41e1efbec666555c9c0a71150356c210}} 
+\index{main.cpp@{main.cpp}!DetectContour@{DetectContour}}
+\index{DetectContour@{DetectContour}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DetectContour()}{DetectContour()}}
+{\footnotesize\ttfamily void Detect\+Contour (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{segmentation\+Map,  }\item[{\mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&}]{m\+\_\+regions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a2f312825464956f11d07430bb92c56e3}\label{main_8cpp_a2f312825464956f11d07430bb92c56e3}} 
+\index{main.cpp@{main.cpp}!detection@{detection}}
+\index{detection@{detection}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{detection()}{detection()}}
+{\footnotesize\ttfamily void detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a8bf4700624d20565c5067623d76497dd}\label{main_8cpp_a8bf4700624d20565c5067623d76497dd}} 
+\index{main.cpp@{main.cpp}!DrawData@{DrawData}}
+\index{DrawData@{DrawData}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DrawData()}{DrawData()}}
+{\footnotesize\ttfamily void Draw\+Data (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame,  }\item[{int}]{frames\+Counter,  }\item[{int}]{curr\+Time,  }\item[{cv\+::\+Mat}]{fg }\end{DoxyParamCaption})}
+
+函数调用图\+:
+% FIG 1
+\mbox{\Hypertarget{main_8cpp_aeb4c6b2620a3028876842539f79afec6}\label{main_8cpp_aeb4c6b2620a3028876842539f79afec6}} 
+\index{main.cpp@{main.cpp}!DrawDetect@{DrawDetect}}
+\index{DrawDetect@{DrawDetect}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DrawDetect()}{DrawDetect()}}
+{\footnotesize\ttfamily void Draw\+Detect (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{segmentation\+Map,  }\item[{\mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}}}]{m\+\_\+regions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_accca05b42ef44c98d56e76957bd53a94}\label{main_8cpp_accca05b42ef44c98d56e76957bd53a94}} 
+\index{main.cpp@{main.cpp}!DrawFilledRect@{DrawFilledRect}}
+\index{DrawFilledRect@{DrawFilledRect}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DrawFilledRect()}{DrawFilledRect()}}
+{\footnotesize\ttfamily void Draw\+Filled\+Rect (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{frame,  }\item[{const cv\+::\+Rect \&}]{rect,  }\item[{cv\+::\+Scalar}]{cl,  }\item[{int}]{alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a8e5ae220104e25a97ec4daca5ddd0997}\label{main_8cpp_a8e5ae220104e25a97ec4daca5ddd0997}} 
+\index{main.cpp@{main.cpp}!DrawTrack@{DrawTrack}}
+\index{DrawTrack@{DrawTrack}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DrawTrack()}{DrawTrack()}}
+{\footnotesize\ttfamily void Draw\+Track (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame,  }\item[{int}]{resize\+Coeff,  }\item[{const \mbox{\hyperlink{struct_tracking_object}{Tracking\+Object}} \&}]{track,  }\item[{bool}]{draw\+Trajectory,  }\item[{int}]{frames\+Counter }\end{DoxyParamCaption})}
+
+函数调用图\+:
+% FIG 2
+\mbox{\Hypertarget{main_8cpp_a78374e81f3aed892898bb249236fea4f}\label{main_8cpp_a78374e81f3aed892898bb249236fea4f}} 
+\index{main.cpp@{main.cpp}!InitTracker@{InitTracker}}
+\index{InitTracker@{InitTracker}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{InitTracker()}{InitTracker()}}
+{\footnotesize\ttfamily bool Init\+Tracker (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame }\end{DoxyParamCaption})}
+
+函数调用图\+:
+% FIG 3
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+函数调用图\+:
+% FIG 4
+\mbox{\Hypertarget{main_8cpp_aa9e2cd93f6c59ae802b1325ab361e927}\label{main_8cpp_aa9e2cd93f6c59ae802b1325ab361e927}} 
+\index{main.cpp@{main.cpp}!Tracking@{Tracking}}
+\index{Tracking@{Tracking}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Tracking()}{Tracking()}}
+{\footnotesize\ttfamily void Tracking (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame,  }\item[{const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&}]{regions }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{变量说明}
+\mbox{\Hypertarget{main_8cpp_a7ac4d94a5203e87bf6d6388230ec9a5f}\label{main_8cpp_a7ac4d94a5203e87bf6d6388230ec9a5f}} 
+\index{main.cpp@{main.cpp}!m\_colors@{m\_colors}}
+\index{m\_colors@{m\_colors}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_colors}{m\_colors}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Scalar$>$ m\+\_\+colors}
+
+\mbox{\Hypertarget{main_8cpp_ab911c3bfab7c08f80308ea9085879f08}\label{main_8cpp_ab911c3bfab7c08f80308ea9085879f08}} 
+\index{main.cpp@{main.cpp}!m\_fps@{m\_fps}}
+\index{m\_fps@{m\_fps}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_fps}{m\_fps}}
+{\footnotesize\ttfamily float m\+\_\+fps = 1}
+
+\mbox{\Hypertarget{main_8cpp_a2c703e3387983b59e31dbd6652b318f8}\label{main_8cpp_a2c703e3387983b59e31dbd6652b318f8}} 
+\index{main.cpp@{main.cpp}!m\_tracker@{m\_tracker}}
+\index{m\_tracker@{m\_tracker}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_tracker}{m\_tracker}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_c_tracker}{CTracker}}$>$ m\+\_\+tracker}
+
+\mbox{\Hypertarget{main_8cpp_a0f8b1333cfed2224f73afdd9d8679b6c}\label{main_8cpp_a0f8b1333cfed2224f73afdd9d8679b6c}} 
+\index{main.cpp@{main.cpp}!m\_trackerSettings@{m\_trackerSettings}}
+\index{m\_trackerSettings@{m\_trackerSettings}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_trackerSettings}{m\_trackerSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tracker_settings}{Tracker\+Settings}} m\+\_\+tracker\+Settings}
+

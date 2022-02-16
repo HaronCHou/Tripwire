@@ -1,0 +1,4 @@
+<map id="CTrack::CalcDistRect" name="CTrack::CalcDistRect">
+<area shape="rect" id="node1" title="CalcDist Euclidean distance in pixels between object contours on two N and N+1 frames" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="200,5,240,32"/>
+</map>

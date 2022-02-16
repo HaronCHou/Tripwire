@@ -1,0 +1,1709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: CTrack类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_c_track-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CTrack类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_c_track.html" title="The CTrack class">CTrack</a> class  
+ <a href="class_c_track.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="track_8h_source.html">track.h</a>&gt;</code></p>
+<div class="dynheader">
+CTrack 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track__coll__graph.png" border="0" usemap="#a_c_track_coll__map" alt="Collaboration graph"/></div>
+<map name="a_c_track_coll__map" id="a_c_track_coll__map">
+<area shape="rect" title="The CTrack class" alt="" coords="236,95,299,121"/>
+<area shape="rect" href="struct_region_embedding.html" title="The RegionEmbedding struct" alt="" coords="5,5,132,32"/>
+<area shape="rect" href="class_trace.html" title="The Trace class" alt="" coords="184,5,239,32"/>
+<area shape="rect" href="class_t_kalman_filter.html" title="The TKalmanFilter class http://www.morethantechnical.com/2011/06/17/simple&#45;kalman&#45;filter&#45;for&#45;tracking..." alt="" coords="263,5,365,32"/>
+<area shape="rect" href="class_c_region.html" title="The CRegion class" alt="" coords="389,5,460,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a03fb35dc59f252ffb1a67c3270ee226c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a03fb35dc59f252ffb1a67c3270ee226c">CTrack</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;region, <a class="el" href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722a">tracking::KalmanType</a> kalmanType, <a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> deltaTime, <a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> accelNoiseMag, bool useAcceleration, size_t trackID, bool filterObjectSize, <a class="el" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a> externalTrackerForLost)</td></tr>
+<tr class="memdesc:a03fb35dc59f252ffb1a67c3270ee226c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html" title="The CTrack class">CTrack</a>  <a href="class_c_track.html#a03fb35dc59f252ffb1a67c3270ee226c">更多...</a><br /></td></tr>
+<tr class="separator:a03fb35dc59f252ffb1a67c3270ee226c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d863404d9d83735bd092a5a33ee447"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a39d863404d9d83735bd092a5a33ee447">CTrack</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;region, const <a class="el" href="struct_region_embedding.html">RegionEmbedding</a> &amp;regionEmbedding, <a class="el" href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722a">tracking::KalmanType</a> kalmanType, <a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> deltaTime, <a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> accelNoiseMag, bool useAcceleration, size_t trackID, bool filterObjectSize, <a class="el" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a> externalTrackerForLost)</td></tr>
+<tr class="memdesc:a39d863404d9d83735bd092a5a33ee447"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a03fb35dc59f252ffb1a67c3270ee226c" title="CTrack">CTrack::CTrack</a>  <a href="class_c_track.html#a39d863404d9d83735bd092a5a33ee447">更多...</a><br /></td></tr>
+<tr class="separator:a39d863404d9d83735bd092a5a33ee447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c87450ea74a8bfccb53ee3ce0d8cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a22c87450ea74a8bfccb53ee3ce0d8cd6">CalcDistCenter</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;reg) const</td></tr>
+<tr class="memdesc:a22c87450ea74a8bfccb53ee3ce0d8cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">CalcDist Euclidean distance in pixels between objects centres on two N and N+1 frames  <a href="class_c_track.html#a22c87450ea74a8bfccb53ee3ce0d8cd6">更多...</a><br /></td></tr>
+<tr class="separator:a22c87450ea74a8bfccb53ee3ce0d8cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89aec30ac60f352222fe20645606f1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#ae89aec30ac60f352222fe20645606f1f">CalcDistRect</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;reg) const</td></tr>
+<tr class="memdesc:ae89aec30ac60f352222fe20645606f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CalcDist Euclidean distance in pixels between object contours on two N and N+1 frames  <a href="class_c_track.html#ae89aec30ac60f352222fe20645606f1f">更多...</a><br /></td></tr>
+<tr class="separator:ae89aec30ac60f352222fe20645606f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d8b005c65f317d70a8368996994e86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a37d8b005c65f317d70a8368996994e86">CalcDistJaccard</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;reg) const</td></tr>
+<tr class="memdesc:a37d8b005c65f317d70a8368996994e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">CalcDistJaccard Jaccard distance from 0 to 1 between object bounding rectangles on two N and N+1 frames  <a href="class_c_track.html#a37d8b005c65f317d70a8368996994e86">更多...</a><br /></td></tr>
+<tr class="separator:a37d8b005c65f317d70a8368996994e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b03a38b339fa7dbd8f65c1d9929ea1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a2b03a38b339fa7dbd8f65c1d9929ea1e">CalcDistHist</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;reg, cv::Mat &amp;hist, cv::Mat currFrame) const</td></tr>
+<tr class="memdesc:a2b03a38b339fa7dbd8f65c1d9929ea1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CalcDistJaccard Distance from 0 to 1 between objects histogramms on two N and N+1 frames  <a href="class_c_track.html#a2b03a38b339fa7dbd8f65c1d9929ea1e">更多...</a><br /></td></tr>
+<tr class="separator:a2b03a38b339fa7dbd8f65c1d9929ea1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98cd3fd065d59f3a821a92176b5a8f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#aa98cd3fd065d59f3a821a92176b5a8f8">CalcMahalanobisDist</a> (const cv::RotatedRect &amp;rrect) const</td></tr>
+<tr class="separator:aa98cd3fd065d59f3a821a92176b5a8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233abd3a7f9d71a136300160250c6361"><td class="memItemLeft" align="right" valign="top">cv::RotatedRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a233abd3a7f9d71a136300160250c6361">CalcPredictionEllipse</a> (cv::Size_&lt; <a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> &gt; minRadius) const</td></tr>
+<tr class="separator:a233abd3a7f9d71a136300160250c6361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804209059c71c75751842659e486e3b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a804209059c71c75751842659e486e3b4">IsInsideArea</a> (const <a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a> &amp;pt, const cv::RotatedRect &amp;rrect) const</td></tr>
+<tr class="memdesc:a804209059c71c75751842659e486e3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">IsInsideArea Test point inside in prediction area: prediction area + object velocity  <a href="class_c_track.html#a804209059c71c75751842659e486e3b4">更多...</a><br /></td></tr>
+<tr class="separator:a804209059c71c75751842659e486e3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf460150ad8a9d248c560d46eba42f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a6cf460150ad8a9d248c560d46eba42f7">WidthDist</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;reg) const</td></tr>
+<tr class="memdesc:a6cf460150ad8a9d248c560d46eba42f7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a6cf460150ad8a9d248c560d46eba42f7" title="CTrack::WidthDist">CTrack::WidthDist</a>  <a href="class_c_track.html#a6cf460150ad8a9d248c560d46eba42f7">更多...</a><br /></td></tr>
+<tr class="separator:a6cf460150ad8a9d248c560d46eba42f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5148bc1610e1fd13c00b97dcce310d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a5b5148bc1610e1fd13c00b97dcce310d">HeightDist</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;reg) const</td></tr>
+<tr class="memdesc:a5b5148bc1610e1fd13c00b97dcce310d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a5b5148bc1610e1fd13c00b97dcce310d" title="CTrack::HeightDist">CTrack::HeightDist</a>  <a href="class_c_track.html#a5b5148bc1610e1fd13c00b97dcce310d">更多...</a><br /></td></tr>
+<tr class="separator:a5b5148bc1610e1fd13c00b97dcce310d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2301cc3da951c0580bd4d8334b52d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a7e2301cc3da951c0580bd4d8334b52d8">Update</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;region, bool dataCorrect, size_t max_trace_length, cv::Mat prevFrame, cv::Mat currFrame, int trajLen)</td></tr>
+<tr class="memdesc:a7e2301cc3da951c0580bd4d8334b52d8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a7e2301cc3da951c0580bd4d8334b52d8" title="CTrack::Update">CTrack::Update</a>  <a href="class_c_track.html#a7e2301cc3da951c0580bd4d8334b52d8">更多...</a><br /></td></tr>
+<tr class="separator:a7e2301cc3da951c0580bd4d8334b52d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72863798ece21541deb8aaa722e0ef66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a72863798ece21541deb8aaa722e0ef66">Update</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;region, const <a class="el" href="struct_region_embedding.html">RegionEmbedding</a> &amp;regionEmbedding, bool dataCorrect, size_t max_trace_length, cv::Mat prevFrame, cv::Mat currFrame, int trajLen)</td></tr>
+<tr class="memdesc:a72863798ece21541deb8aaa722e0ef66"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a7e2301cc3da951c0580bd4d8334b52d8" title="CTrack::Update">CTrack::Update</a>  <a href="class_c_track.html#a72863798ece21541deb8aaa722e0ef66">更多...</a><br /></td></tr>
+<tr class="separator:a72863798ece21541deb8aaa722e0ef66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3265c10e4ad24b8b7b10668edfa309"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a4f3265c10e4ad24b8b7b10668edfa309">IsStatic</a> () const</td></tr>
+<tr class="memdesc:a4f3265c10e4ad24b8b7b10668edfa309"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a4f3265c10e4ad24b8b7b10668edfa309" title="CTrack::IsStatic">CTrack::IsStatic</a>  <a href="class_c_track.html#a4f3265c10e4ad24b8b7b10668edfa309">更多...</a><br /></td></tr>
+<tr class="separator:a4f3265c10e4ad24b8b7b10668edfa309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815097c7b43655fcd5954d817493198c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a815097c7b43655fcd5954d817493198c">IsStaticTimeout</a> (int framesTime) const</td></tr>
+<tr class="memdesc:a815097c7b43655fcd5954d817493198c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a815097c7b43655fcd5954d817493198c" title="CTrack::IsStaticTimeout">CTrack::IsStaticTimeout</a>  <a href="class_c_track.html#a815097c7b43655fcd5954d817493198c">更多...</a><br /></td></tr>
+<tr class="separator:a815097c7b43655fcd5954d817493198c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93709a6b9f3d807dde857492dbb77d14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a93709a6b9f3d807dde857492dbb77d14">IsOutOfTheFrame</a> () const</td></tr>
+<tr class="memdesc:a93709a6b9f3d807dde857492dbb77d14"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a93709a6b9f3d807dde857492dbb77d14" title="CTrack::IsOutOfTheFrame">CTrack::IsOutOfTheFrame</a>  <a href="class_c_track.html#a93709a6b9f3d807dde857492dbb77d14">更多...</a><br /></td></tr>
+<tr class="separator:a93709a6b9f3d807dde857492dbb77d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13102cdcea040804732269b17cf4bd92"><td class="memItemLeft" align="right" valign="top">cv::RotatedRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a13102cdcea040804732269b17cf4bd92">GetLastRect</a> () const</td></tr>
+<tr class="memdesc:a13102cdcea040804732269b17cf4bd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLastRect  <a href="class_c_track.html#a13102cdcea040804732269b17cf4bd92">更多...</a><br /></td></tr>
+<tr class="separator:a13102cdcea040804732269b17cf4bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac512dd3d22f88f542b29324196207da3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#ac512dd3d22f88f542b29324196207da3">AveragePoint</a> () const</td></tr>
+<tr class="separator:ac512dd3d22f88f542b29324196207da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb32b9543353540fa3fa29577e861898"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#afb32b9543353540fa3fa29577e861898">AveragePoint</a> ()</td></tr>
+<tr class="separator:afb32b9543353540fa3fa29577e861898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517648bad954f0c4347f3e9573ecdabf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a517648bad954f0c4347f3e9573ecdabf">LastRegion</a> () const</td></tr>
+<tr class="memdesc:a517648bad954f0c4347f3e9573ecdabf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a517648bad954f0c4347f3e9573ecdabf" title="CTrack::LastRegion">CTrack::LastRegion</a>  <a href="class_c_track.html#a517648bad954f0c4347f3e9573ecdabf">更多...</a><br /></td></tr>
+<tr class="separator:a517648bad954f0c4347f3e9573ecdabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec4a9274447423cc10d5c632944dbb3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#abec4a9274447423cc10d5c632944dbb3">SkippedFrames</a> () const</td></tr>
+<tr class="memdesc:abec4a9274447423cc10d5c632944dbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#abec4a9274447423cc10d5c632944dbb3" title="CTrack::SkippedFrames">CTrack::SkippedFrames</a>  <a href="class_c_track.html#abec4a9274447423cc10d5c632944dbb3">更多...</a><br /></td></tr>
+<tr class="separator:abec4a9274447423cc10d5c632944dbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad327fd7662430344a650a2abcaf623de"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#ad327fd7662430344a650a2abcaf623de">SkippedFrames</a> ()</td></tr>
+<tr class="memdesc:ad327fd7662430344a650a2abcaf623de"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#abec4a9274447423cc10d5c632944dbb3" title="CTrack::SkippedFrames">CTrack::SkippedFrames</a>  <a href="class_c_track.html#ad327fd7662430344a650a2abcaf623de">更多...</a><br /></td></tr>
+<tr class="separator:ad327fd7662430344a650a2abcaf623de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25844b86df3cb8242741b26a202fc63c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_tracking_object.html">TrackingObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a25844b86df3cb8242741b26a202fc63c">ConstructObject</a> () const</td></tr>
+<tr class="memdesc:a25844b86df3cb8242741b26a202fc63c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a25844b86df3cb8242741b26a202fc63c" title="CTrack::ConstructObject">CTrack::ConstructObject</a>  <a href="class_c_track.html#a25844b86df3cb8242741b26a202fc63c">更多...</a><br /></td></tr>
+<tr class="separator:a25844b86df3cb8242741b26a202fc63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a8d5296e8fedd10ff4d9142dd5cd0ac6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a8d5296e8fedd10ff4d9142dd5cd0ac6e">RectUpdate</a> (const <a class="el" href="class_c_region.html">CRegion</a> &amp;region, bool dataCorrect, cv::Mat prevFrame, cv::Mat currFrame)</td></tr>
+<tr class="memdesc:a8d5296e8fedd10ff4d9142dd5cd0ac6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">RectUpdate  <a href="class_c_track.html#a8d5296e8fedd10ff4d9142dd5cd0ac6e">更多...</a><br /></td></tr>
+<tr class="separator:a8d5296e8fedd10ff4d9142dd5cd0ac6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57513aeb2cb8577b75c31ee7b1a6e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#ac57513aeb2cb8577b75c31ee7b1a6e1b">CreateExternalTracker</a> (int channels)</td></tr>
+<tr class="memdesc:ac57513aeb2cb8577b75c31ee7b1a6e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateExternalTracker  <a href="class_c_track.html#ac57513aeb2cb8577b75c31ee7b1a6e1b">更多...</a><br /></td></tr>
+<tr class="separator:ac57513aeb2cb8577b75c31ee7b1a6e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6759699cc954928c935533830024fead"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a6759699cc954928c935533830024fead">PointUpdate</a> (const <a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a> &amp;pt, const cv::Size &amp;newObjSize, bool dataCorrect, const cv::Size &amp;frameSize)</td></tr>
+<tr class="memdesc:a6759699cc954928c935533830024fead"><td class="mdescLeft">&#160;</td><td class="mdescRight">PointUpdate  <a href="class_c_track.html#a6759699cc954928c935533830024fead">更多...</a><br /></td></tr>
+<tr class="separator:a6759699cc954928c935533830024fead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8996d3f7168df237abdbb89717d4e628"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a8996d3f7168df237abdbb89717d4e628">CheckStatic</a> (int trajLen, cv::Mat currFrame, const <a class="el" href="class_c_region.html">CRegion</a> &amp;region)</td></tr>
+<tr class="memdesc:a8996d3f7168df237abdbb89717d4e628"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_track.html#a8996d3f7168df237abdbb89717d4e628" title="CTrack::CheckStatic">CTrack::CheckStatic</a>  <a href="class_c_track.html#a8996d3f7168df237abdbb89717d4e628">更多...</a><br /></td></tr>
+<tr class="separator:a8996d3f7168df237abdbb89717d4e628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a85c7771b70f05a4f64ac53e2dd0afca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_kalman_filter.html">TKalmanFilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a85c7771b70f05a4f64ac53e2dd0afca3">m_kalman</a></td></tr>
+<tr class="separator:a85c7771b70f05a4f64ac53e2dd0afca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af91fbfad7ebf07bd0f681f915e440c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_region.html">CRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a5af91fbfad7ebf07bd0f681f915e440c">m_lastRegion</a></td></tr>
+<tr class="separator:a5af91fbfad7ebf07bd0f681f915e440c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf88ff8678ec928ac3ca764f7308b96f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_trace.html">Trace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#adf88ff8678ec928ac3ca764f7308b96f">m_trace</a></td></tr>
+<tr class="separator:adf88ff8678ec928ac3ca764f7308b96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae9d26232876d478181ccbecd58322d"><td class="memItemLeft" align="right" valign="top">cv::RotatedRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#abae9d26232876d478181ccbecd58322d">m_predictionRect</a></td></tr>
+<tr class="separator:abae9d26232876d478181ccbecd58322d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee3f8baaf290aeb113f34c26a446a76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a8ee3f8baaf290aeb113f34c26a446a76">m_predictionPoint</a></td></tr>
+<tr class="separator:a8ee3f8baaf290aeb113f34c26a446a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aae01d68f5a1a6c0292476ea19c89f9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a8aae01d68f5a1a6c0292476ea19c89f9">m_trackID</a> = 0</td></tr>
+<tr class="separator:a8aae01d68f5a1a6c0292476ea19c89f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3308a34b70a90692b0fb863eb621bd37"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a3308a34b70a90692b0fb863eb621bd37">m_skippedFrames</a> = 0</td></tr>
+<tr class="separator:a3308a34b70a90692b0fb863eb621bd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1f6c9d8d56790a28a7139e85896dc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a7d1f6c9d8d56790a28a7139e85896dc8">m_externalTrackerForLost</a></td></tr>
+<tr class="separator:a7d1f6c9d8d56790a28a7139e85896dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7741468d9b920aca0c51056ce93afda"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_v_o_t_tracker.html">VOTTracker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#ae7741468d9b920aca0c51056ce93afda">m_VOTTracker</a></td></tr>
+<tr class="separator:ae7741468d9b920aca0c51056ce93afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4216df27820b99c96d5a3370df4584d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_region_embedding.html">RegionEmbedding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a4216df27820b99c96d5a3370df4584d0">m_regionEmbedding</a></td></tr>
+<tr class="separator:a4216df27820b99c96d5a3370df4584d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4e196b5dfd301639e6c1e3be14ea8a"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a2f4e196b5dfd301639e6c1e3be14ea8a">m_staticFrame</a></td></tr>
+<tr class="separator:a2f4e196b5dfd301639e6c1e3be14ea8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbec66a84ee65ce5d6390565698e5156"><td class="memItemLeft" align="right" valign="top">cv::Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#abbec66a84ee65ce5d6390565698e5156">m_staticRect</a></td></tr>
+<tr class="separator:abbec66a84ee65ce5d6390565698e5156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafeef3579e8b8ee12dd6e8c788c368e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#abafeef3579e8b8ee12dd6e8c788c368e">m_staticFrames</a> = 0</td></tr>
+<tr class="separator:abafeef3579e8b8ee12dd6e8c788c368e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f858466a4c5de19eea18ab829e4745"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a37f858466a4c5de19eea18ab829e4745">m_isStatic</a> = false</td></tr>
+<tr class="separator:a37f858466a4c5de19eea18ab829e4745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5573dab5b9fe2e5143204355b8146c87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#a5573dab5b9fe2e5143204355b8146c87">m_filterObjectSize</a> = false</td></tr>
+<tr class="separator:a5573dab5b9fe2e5143204355b8146c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97c3e53969dbb60e7690c4f2d038172"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_track.html#ad97c3e53969dbb60e7690c4f2d038172">m_outOfTheFrame</a> = false</td></tr>
+<tr class="separator:ad97c3e53969dbb60e7690c4f2d038172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="class_c_track.html" title="The CTrack class">CTrack</a> class </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a03fb35dc59f252ffb1a67c3270ee226c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03fb35dc59f252ffb1a67c3270ee226c">&#9670;&nbsp;</a></span>CTrack() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTrack::CTrack </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722a">tracking::KalmanType</a>&#160;</td>
+          <td class="paramname"><em>kalmanType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td>
+          <td class="paramname"><em>deltaTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td>
+          <td class="paramname"><em>accelNoiseMag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useAcceleration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>trackID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>filterObjectSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a>&#160;</td>
+          <td class="paramname"><em>externalTrackerForLost</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html" title="The CTrack class">CTrack</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt</td><td></td></tr>
+    <tr><td class="paramname">region</td><td></td></tr>
+    <tr><td class="paramname">deltaTime</td><td></td></tr>
+    <tr><td class="paramname">accelNoiseMag</td><td></td></tr>
+    <tr><td class="paramname">trackID</td><td></td></tr>
+    <tr><td class="paramname">filterObjectSize</td><td></td></tr>
+    <tr><td class="paramname">externalTrackerForLost</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a03fb35dc59f252ffb1a67c3270ee226c_cgraph.png" border="0" usemap="#aclass_c_track_a03fb35dc59f252ffb1a67c3270ee226c_cgraph" alt=""/></div>
+<map name="aclass_c_track_a03fb35dc59f252ffb1a67c3270ee226c_cgraph" id="aclass_c_track_a03fb35dc59f252ffb1a67c3270ee226c_cgraph">
+<area shape="rect" title="CTrack" alt="" coords="5,39,117,65"/>
+<area shape="rect" href="class_trace.html#a5bca62bb3439cd12991f848a875d4085" title="push_back" alt="" coords="178,13,303,40"/>
+<area shape="rect" href="class_t_kalman_filter.html#a0c25b9a1a9676956aed0db44ad56696a" title=" " alt="" coords="165,64,316,91"/>
+<area shape="rect" href="class_t_kalman_filter.html#a6b1bb8fb881f82ce0a766e6ea41f159c" title=" " alt="" coords="364,5,547,32"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4b7541e185a33de1af54f945b6514412" title=" " alt="" coords="364,57,547,98"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="435,123,475,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39d863404d9d83735bd092a5a33ee447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d863404d9d83735bd092a5a33ee447">&#9670;&nbsp;</a></span>CTrack() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTrack::CTrack </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_region_embedding.html">RegionEmbedding</a> &amp;&#160;</td>
+          <td class="paramname"><em>regionEmbedding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacetracking.html#a83f2c4d58ea2737f7d6296dce3eb722a">tracking::KalmanType</a>&#160;</td>
+          <td class="paramname"><em>kalmanType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td>
+          <td class="paramname"><em>deltaTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a>&#160;</td>
+          <td class="paramname"><em>accelNoiseMag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useAcceleration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>trackID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>filterObjectSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a>&#160;</td>
+          <td class="paramname"><em>externalTrackerForLost</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a03fb35dc59f252ffb1a67c3270ee226c" title="CTrack">CTrack::CTrack</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td></td></tr>
+    <tr><td class="paramname">regionEmbedding</td><td></td></tr>
+    <tr><td class="paramname">kalmanType</td><td></td></tr>
+    <tr><td class="paramname">deltaTime</td><td></td></tr>
+    <tr><td class="paramname">accelNoiseMag</td><td></td></tr>
+    <tr><td class="paramname">useAcceleration</td><td></td></tr>
+    <tr><td class="paramname">trackID</td><td></td></tr>
+    <tr><td class="paramname">filterObjectSize</td><td></td></tr>
+    <tr><td class="paramname">externalTrackerForLost</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a39d863404d9d83735bd092a5a33ee447_cgraph.png" border="0" usemap="#aclass_c_track_a39d863404d9d83735bd092a5a33ee447_cgraph" alt=""/></div>
+<map name="aclass_c_track_a39d863404d9d83735bd092a5a33ee447_cgraph" id="aclass_c_track_a39d863404d9d83735bd092a5a33ee447_cgraph">
+<area shape="rect" title="CTrack::CTrack" alt="" coords="5,39,117,65"/>
+<area shape="rect" href="class_trace.html#a5bca62bb3439cd12991f848a875d4085" title="push_back" alt="" coords="178,13,303,40"/>
+<area shape="rect" href="class_t_kalman_filter.html#a0c25b9a1a9676956aed0db44ad56696a" title=" " alt="" coords="165,64,316,91"/>
+<area shape="rect" href="class_t_kalman_filter.html#a6b1bb8fb881f82ce0a766e6ea41f159c" title=" " alt="" coords="364,5,547,32"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4b7541e185a33de1af54f945b6514412" title=" " alt="" coords="364,57,547,98"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="435,123,475,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="afb32b9543353540fa3fa29577e861898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb32b9543353540fa3fa29577e861898">&#9670;&nbsp;</a></span>AveragePoint() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a>&amp; CTrack::AveragePoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac512dd3d22f88f542b29324196207da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac512dd3d22f88f542b29324196207da3">&#9670;&nbsp;</a></span>AveragePoint() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a>&amp; CTrack::AveragePoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22c87450ea74a8bfccb53ee3ce0d8cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c87450ea74a8bfccb53ee3ce0d8cd6">&#9670;&nbsp;</a></span>CalcDistCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::CalcDistCenter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CalcDist Euclidean distance in pixels between objects centres on two N and N+1 frames </p>
+<p><a class="el" href="class_c_track.html#a22c87450ea74a8bfccb53ee3ce0d8cd6" title="CalcDist Euclidean distance in pixels between objects centres on two N and N+1 frames">CTrack::CalcDistCenter</a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6_cgraph.png" border="0" usemap="#aclass_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6_cgraph" alt=""/></div>
+<map name="aclass_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6_cgraph" id="aclass_c_track_a22c87450ea74a8bfccb53ee3ce0d8cd6_cgraph">
+<area shape="rect" title="CalcDist Euclidean distance in pixels between objects centres on two N and N+1 frames" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="212,5,252,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2b03a38b339fa7dbd8f65c1d9929ea1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b03a38b339fa7dbd8f65c1d9929ea1e">&#9670;&nbsp;</a></span>CalcDistHist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::CalcDistHist </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>hist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>currFrame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CalcDistJaccard Distance from 0 to 1 between objects histogramms on two N and N+1 frames </p>
+<p><a class="el" href="class_c_track.html#a2b03a38b339fa7dbd8f65c1d9929ea1e" title="CalcDistJaccard Distance from 0 to 1 between objects histogramms on two N and N+1 frames">CTrack::CalcDistHist</a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+    <tr><td class="paramname">currFrame</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a37d8b005c65f317d70a8368996994e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d8b005c65f317d70a8368996994e86">&#9670;&nbsp;</a></span>CalcDistJaccard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::CalcDistJaccard </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CalcDistJaccard Jaccard distance from 0 to 1 between object bounding rectangles on two N and N+1 frames </p>
+<p><a class="el" href="class_c_track.html#a37d8b005c65f317d70a8368996994e86" title="CalcDistJaccard Jaccard distance from 0 to 1 between object bounding rectangles on two N and N+1 fram...">CTrack::CalcDistJaccard</a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae89aec30ac60f352222fe20645606f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89aec30ac60f352222fe20645606f1f">&#9670;&nbsp;</a></span>CalcDistRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::CalcDistRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CalcDist Euclidean distance in pixels between object contours on two N and N+1 frames </p>
+<p><a class="el" href="class_c_track.html#ae89aec30ac60f352222fe20645606f1f" title="CalcDist Euclidean distance in pixels between object contours on two N and N+1 frames">CTrack::CalcDistRect</a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_ae89aec30ac60f352222fe20645606f1f_cgraph.png" border="0" usemap="#aclass_c_track_ae89aec30ac60f352222fe20645606f1f_cgraph" alt=""/></div>
+<map name="aclass_c_track_ae89aec30ac60f352222fe20645606f1f_cgraph" id="aclass_c_track_ae89aec30ac60f352222fe20645606f1f_cgraph">
+<area shape="rect" title="CalcDist Euclidean distance in pixels between object contours on two N and N+1 frames" alt="" coords="5,5,152,32"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="200,5,240,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa98cd3fd065d59f3a821a92176b5a8f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98cd3fd065d59f3a821a92176b5a8f8">&#9670;&nbsp;</a></span>CalcMahalanobisDist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::CalcMahalanobisDist </td>
+          <td>(</td>
+          <td class="paramtype">const cv::RotatedRect &amp;&#160;</td>
+          <td class="paramname"><em>rrect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_aa98cd3fd065d59f3a821a92176b5a8f8_cgraph.png" border="0" usemap="#aclass_c_track_aa98cd3fd065d59f3a821a92176b5a8f8_cgraph" alt=""/></div>
+<map name="aclass_c_track_aa98cd3fd065d59f3a821a92176b5a8f8_cgraph" id="aclass_c_track_aa98cd3fd065d59f3a821a92176b5a8f8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,199,39"/>
+<area shape="rect" href="class_t_kalman_filter.html#a2169da7e03a87291482b51125505b0c2" title=" " alt="" coords="247,5,421,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a233abd3a7f9d71a136300160250c6361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233abd3a7f9d71a136300160250c6361">&#9670;&nbsp;</a></span>CalcPredictionEllipse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::RotatedRect CTrack::CalcPredictionEllipse </td>
+          <td>(</td>
+          <td class="paramtype">cv::Size_&lt; <a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> &gt;&#160;</td>
+          <td class="paramname"><em>minRadius</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a233abd3a7f9d71a136300160250c6361_cgraph.png" border="0" usemap="#aclass_c_track_a233abd3a7f9d71a136300160250c6361_cgraph" alt=""/></div>
+<map name="aclass_c_track_a233abd3a7f9d71a136300160250c6361_cgraph" id="aclass_c_track_a233abd3a7f9d71a136300160250c6361_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,200,57"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4162b8f75c9250f78080a426a0bfe972" title=" " alt="" coords="248,5,427,32"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="317,56,357,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8996d3f7168df237abdbb89717d4e628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8996d3f7168df237abdbb89717d4e628">&#9670;&nbsp;</a></span>CheckStatic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTrack::CheckStatic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trajLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>currFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a8996d3f7168df237abdbb89717d4e628" title="CTrack::CheckStatic">CTrack::CheckStatic</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trajLen</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a8996d3f7168df237abdbb89717d4e628_cgraph.png" border="0" usemap="#aclass_c_track_a8996d3f7168df237abdbb89717d4e628_cgraph" alt=""/></div>
+<map name="aclass_c_track_a8996d3f7168df237abdbb89717d4e628_cgraph" id="aclass_c_track_a8996d3f7168df237abdbb89717d4e628_cgraph">
+<area shape="rect" title="CTrack::CheckStatic" alt="" coords="5,56,148,83"/>
+<area shape="rect" href="_kalman_8h.html#a956aedf9af504c89aa2ca585a168dc47" title="get_lin_regress_params" alt="" coords="196,5,356,32"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="404,31,444,57"/>
+<area shape="rect" href="class_trace.html#a1bc7111ffb39ba415c2553677fc2f3ba" title="size" alt="" coords="233,107,319,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25844b86df3cb8242741b26a202fc63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25844b86df3cb8242741b26a202fc63c">&#9670;&nbsp;</a></span>ConstructObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tracking_object.html">TrackingObject</a> CTrack::ConstructObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a25844b86df3cb8242741b26a202fc63c" title="CTrack::ConstructObject">CTrack::ConstructObject</a> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a25844b86df3cb8242741b26a202fc63c_cgraph.png" border="0" usemap="#aclass_c_track_a25844b86df3cb8242741b26a202fc63c_cgraph" alt=""/></div>
+<map name="aclass_c_track_a25844b86df3cb8242741b26a202fc63c_cgraph" id="aclass_c_track_a25844b86df3cb8242741b26a202fc63c_cgraph">
+<area shape="rect" title="CTrack::ConstructObject" alt="" coords="5,81,171,108"/>
+<area shape="rect" href="class_c_track.html#a13102cdcea040804732269b17cf4bd92" title="GetLastRect" alt="" coords="236,5,380,32"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4162b8f75c9250f78080a426a0bfe972" title=" " alt="" coords="219,56,397,83"/>
+<area shape="rect" href="class_c_track.html#a93709a6b9f3d807dde857492dbb77d14" title="CTrack::IsOutOfTheFrame" alt="" coords="221,107,395,133"/>
+<area shape="rect" href="class_c_track.html#a4f3265c10e4ad24b8b7b10668edfa309" title="CTrack::IsStatic" alt="" coords="251,157,365,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac57513aeb2cb8577b75c31ee7b1a6e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57513aeb2cb8577b75c31ee7b1a6e1b">&#9670;&nbsp;</a></span>CreateExternalTracker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTrack::CreateExternalTracker </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CreateExternalTracker </p>
+
+</div>
+</div>
+<a id="a13102cdcea040804732269b17cf4bd92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13102cdcea040804732269b17cf4bd92">&#9670;&nbsp;</a></span>GetLastRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::RotatedRect CTrack::GetLastRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GetLastRect </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a5b5148bc1610e1fd13c00b97dcce310d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5148bc1610e1fd13c00b97dcce310d">&#9670;&nbsp;</a></span>HeightDist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::HeightDist </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a5b5148bc1610e1fd13c00b97dcce310d" title="CTrack::HeightDist">CTrack::HeightDist</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a804209059c71c75751842659e486e3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804209059c71c75751842659e486e3b4">&#9670;&nbsp;</a></span>IsInsideArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::IsInsideArea </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::RotatedRect &amp;&#160;</td>
+          <td class="paramname"><em>rrect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IsInsideArea Test point inside in prediction area: prediction area + object velocity </p>
+<p><a class="el" href="class_c_track.html#a804209059c71c75751842659e486e3b4" title="IsInsideArea Test point inside in prediction area: prediction area + object velocity">CTrack::IsInsideArea</a> If result &lt;= 1 then center of the object is inside ellipse with prediction and velocity</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt</td><td></td></tr>
+    <tr><td class="paramname">minVal</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a804209059c71c75751842659e486e3b4_cgraph.png" border="0" usemap="#aclass_c_track_a804209059c71c75751842659e486e3b4_cgraph" alt=""/></div>
+<map name="aclass_c_track_a804209059c71c75751842659e486e3b4_cgraph" id="aclass_c_track_a804209059c71c75751842659e486e3b4_cgraph">
+<area shape="rect" title="IsInsideArea Test point inside in prediction area: prediction area + object velocity" alt="" coords="5,5,148,32"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="196,5,236,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a93709a6b9f3d807dde857492dbb77d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93709a6b9f3d807dde857492dbb77d14">&#9670;&nbsp;</a></span>IsOutOfTheFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTrack::IsOutOfTheFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a93709a6b9f3d807dde857492dbb77d14" title="CTrack::IsOutOfTheFrame">CTrack::IsOutOfTheFrame</a> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4f3265c10e4ad24b8b7b10668edfa309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3265c10e4ad24b8b7b10668edfa309">&#9670;&nbsp;</a></span>IsStatic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTrack::IsStatic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a4f3265c10e4ad24b8b7b10668edfa309" title="CTrack::IsStatic">CTrack::IsStatic</a> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a815097c7b43655fcd5954d817493198c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815097c7b43655fcd5954d817493198c">&#9670;&nbsp;</a></span>IsStaticTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTrack::IsStaticTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>framesTime</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a815097c7b43655fcd5954d817493198c" title="CTrack::IsStaticTimeout">CTrack::IsStaticTimeout</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">framesTime</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a517648bad954f0c4347f3e9573ecdabf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517648bad954f0c4347f3e9573ecdabf">&#9670;&nbsp;</a></span>LastRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_c_region.html">CRegion</a> &amp; CTrack::LastRegion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a517648bad954f0c4347f3e9573ecdabf" title="CTrack::LastRegion">CTrack::LastRegion</a> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a6759699cc954928c935533830024fead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6759699cc954928c935533830024fead">&#9670;&nbsp;</a></span>PointUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTrack::PointUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::Size &amp;&#160;</td>
+          <td class="paramname"><em>newObjSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dataCorrect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::Size &amp;&#160;</td>
+          <td class="paramname"><em>frameSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PointUpdate </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt</td><td></td></tr>
+    <tr><td class="paramname">dataCorrect</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a6759699cc954928c935533830024fead_cgraph.png" border="0" usemap="#aclass_c_track_a6759699cc954928c935533830024fead_cgraph" alt=""/></div>
+<map name="aclass_c_track_a6759699cc954928c935533830024fead_cgraph" id="aclass_c_track_a6759699cc954928c935533830024fead_cgraph">
+<area shape="rect" title="PointUpdate" alt="" coords="5,39,148,65"/>
+<area shape="rect" href="class_t_kalman_filter.html#a103fb495ee14ff2be7a29053695ce7d1" title=" " alt="" coords="196,13,415,40"/>
+<area shape="rect" href="class_t_kalman_filter.html#a0c25b9a1a9676956aed0db44ad56696a" title=" " alt="" coords="230,64,381,91"/>
+<area shape="rect" href="class_t_kalman_filter.html#a6b1bb8fb881f82ce0a766e6ea41f159c" title=" " alt="" coords="463,5,645,32"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4b7541e185a33de1af54f945b6514412" title=" " alt="" coords="463,57,645,98"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="534,123,574,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8d5296e8fedd10ff4d9142dd5cd0ac6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d5296e8fedd10ff4d9142dd5cd0ac6e">&#9670;&nbsp;</a></span>RectUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTrack::RectUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dataCorrect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>prevFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>currFrame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RectUpdate </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td></td></tr>
+    <tr><td class="paramname">dataCorrect</td><td></td></tr>
+    <tr><td class="paramname">prevFrame</td><td></td></tr>
+    <tr><td class="paramname">currFrame</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a8d5296e8fedd10ff4d9142dd5cd0ac6e_cgraph.png" border="0" usemap="#aclass_c_track_a8d5296e8fedd10ff4d9142dd5cd0ac6e_cgraph" alt=""/></div>
+<map name="aclass_c_track_a8d5296e8fedd10ff4d9142dd5cd0ac6e_cgraph" id="aclass_c_track_a8d5296e8fedd10ff4d9142dd5cd0ac6e_cgraph">
+<area shape="rect" title="RectUpdate" alt="" coords="5,56,144,83"/>
+<area shape="rect" href="class_c_track.html#ac57513aeb2cb8577b75c31ee7b1a6e1b" title="CreateExternalTracker" alt="" coords="200,5,400,32"/>
+<area shape="rect" href="class_t_kalman_filter.html#af112feed15a064055987a1faedf9673d" title=" " alt="" coords="192,56,408,83"/>
+<area shape="rect" href="class_t_kalman_filter.html#a0c25b9a1a9676956aed0db44ad56696a" title=" " alt="" coords="225,107,375,133"/>
+<area shape="rect" href="class_t_kalman_filter.html#a6b1bb8fb881f82ce0a766e6ea41f159c" title=" " alt="" coords="456,48,639,75"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4b7541e185a33de1af54f945b6514412" title=" " alt="" coords="456,99,639,141"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="527,165,567,192"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad327fd7662430344a650a2abcaf623de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad327fd7662430344a650a2abcaf623de">&#9670;&nbsp;</a></span>SkippedFrames() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t &amp; CTrack::SkippedFrames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#abec4a9274447423cc10d5c632944dbb3" title="CTrack::SkippedFrames">CTrack::SkippedFrames</a> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="abec4a9274447423cc10d5c632944dbb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec4a9274447423cc10d5c632944dbb3">&#9670;&nbsp;</a></span>SkippedFrames() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CTrack::SkippedFrames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#abec4a9274447423cc10d5c632944dbb3" title="CTrack::SkippedFrames">CTrack::SkippedFrames</a> </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a7e2301cc3da951c0580bd4d8334b52d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2301cc3da951c0580bd4d8334b52d8">&#9670;&nbsp;</a></span>Update() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTrack::Update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dataCorrect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_trace_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>prevFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>currFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trajLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a7e2301cc3da951c0580bd4d8334b52d8" title="CTrack::Update">CTrack::Update</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td></td></tr>
+    <tr><td class="paramname">dataCorrect</td><td></td></tr>
+    <tr><td class="paramname">max_trace_length</td><td></td></tr>
+    <tr><td class="paramname">prevFrame</td><td></td></tr>
+    <tr><td class="paramname">currFrame</td><td></td></tr>
+    <tr><td class="paramname">trajLen</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a7e2301cc3da951c0580bd4d8334b52d8_cgraph.png" border="0" usemap="#aclass_c_track_a7e2301cc3da951c0580bd4d8334b52d8_cgraph" alt=""/></div>
+<map name="aclass_c_track_a7e2301cc3da951c0580bd4d8334b52d8_cgraph" id="aclass_c_track_a7e2301cc3da951c0580bd4d8334b52d8_cgraph">
+<area shape="rect" title="CTrack::Update" alt="" coords="5,107,117,133"/>
+<area shape="rect" href="class_c_track.html#a6759699cc954928c935533830024fead" title="PointUpdate" alt="" coords="165,107,308,133"/>
+<area shape="rect" href="class_trace.html#a407c1b44333105aff314ae6f7f0ab7eb" title="pop_front" alt="" coords="179,5,294,32"/>
+<area shape="rect" href="class_trace.html#a1bc7111ffb39ba415c2553677fc2f3ba" title="size" alt="" coords="422,31,509,57"/>
+<area shape="rect" href="class_trace.html#a5bca62bb3439cd12991f848a875d4085" title="push_back" alt="" coords="174,157,299,184"/>
+<area shape="rect" href="class_c_track.html#a8d5296e8fedd10ff4d9142dd5cd0ac6e" title="RectUpdate" alt="" coords="167,208,306,235"/>
+<area shape="rect" href="class_t_kalman_filter.html#a103fb495ee14ff2be7a29053695ce7d1" title=" " alt="" coords="356,107,575,133"/>
+<area shape="rect" href="class_t_kalman_filter.html#a0c25b9a1a9676956aed0db44ad56696a" title=" " alt="" coords="390,157,541,184"/>
+<area shape="rect" href="class_t_kalman_filter.html#a6b1bb8fb881f82ce0a766e6ea41f159c" title=" " alt="" coords="623,99,805,125"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4b7541e185a33de1af54f945b6514412" title=" " alt="" coords="623,150,805,191"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="694,216,734,243"/>
+<area shape="rect" href="class_c_track.html#ac57513aeb2cb8577b75c31ee7b1a6e1b" title="CreateExternalTracker" alt="" coords="365,259,565,285"/>
+<area shape="rect" href="class_t_kalman_filter.html#af112feed15a064055987a1faedf9673d" title=" " alt="" coords="357,208,573,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a72863798ece21541deb8aaa722e0ef66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72863798ece21541deb8aaa722e0ef66">&#9670;&nbsp;</a></span>Update() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTrack::Update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_region_embedding.html">RegionEmbedding</a> &amp;&#160;</td>
+          <td class="paramname"><em>regionEmbedding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dataCorrect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_trace_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>prevFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>currFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trajLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a7e2301cc3da951c0580bd4d8334b52d8" title="CTrack::Update">CTrack::Update</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td></td></tr>
+    <tr><td class="paramname">regionEmbedding</td><td></td></tr>
+    <tr><td class="paramname">dataCorrect</td><td></td></tr>
+    <tr><td class="paramname">max_trace_length</td><td></td></tr>
+    <tr><td class="paramname">prevFrame</td><td></td></tr>
+    <tr><td class="paramname">currFrame</td><td></td></tr>
+    <tr><td class="paramname">trajLen</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_track_a72863798ece21541deb8aaa722e0ef66_cgraph.png" border="0" usemap="#aclass_c_track_a72863798ece21541deb8aaa722e0ef66_cgraph" alt=""/></div>
+<map name="aclass_c_track_a72863798ece21541deb8aaa722e0ef66_cgraph" id="aclass_c_track_a72863798ece21541deb8aaa722e0ef66_cgraph">
+<area shape="rect" title="CTrack::Update" alt="" coords="5,171,117,197"/>
+<area shape="rect" href="class_c_track.html#a8996d3f7168df237abdbb89717d4e628" title="CTrack::CheckStatic" alt="" coords="165,44,308,71"/>
+<area shape="rect" href="class_trace.html#a1bc7111ffb39ba415c2553677fc2f3ba" title="size" alt="" coords="422,107,509,133"/>
+<area shape="rect" href="class_c_track.html#a6759699cc954928c935533830024fead" title="PointUpdate" alt="" coords="165,196,308,223"/>
+<area shape="rect" href="class_trace.html#a407c1b44333105aff314ae6f7f0ab7eb" title="pop_front" alt="" coords="179,145,294,172"/>
+<area shape="rect" href="class_trace.html#a5bca62bb3439cd12991f848a875d4085" title="push_back" alt="" coords="174,247,299,273"/>
+<area shape="rect" href="class_c_track.html#a8d5296e8fedd10ff4d9142dd5cd0ac6e" title="RectUpdate" alt="" coords="167,297,306,324"/>
+<area shape="rect" href="_kalman_8h.html#a956aedf9af504c89aa2ca585a168dc47" title="get_lin_regress_params" alt="" coords="385,5,545,32"/>
+<area shape="rect" href="_kalman_8h.html#a73c53554444754d40def3c6da833b646" title="sqr" alt="" coords="694,56,734,83"/>
+<area shape="rect" href="class_t_kalman_filter.html#a103fb495ee14ff2be7a29053695ce7d1" title=" " alt="" coords="356,157,575,184"/>
+<area shape="rect" href="class_t_kalman_filter.html#a0c25b9a1a9676956aed0db44ad56696a" title=" " alt="" coords="390,208,541,235"/>
+<area shape="rect" href="class_t_kalman_filter.html#a6b1bb8fb881f82ce0a766e6ea41f159c" title=" " alt="" coords="623,179,805,205"/>
+<area shape="rect" href="class_t_kalman_filter.html#a4b7541e185a33de1af54f945b6514412" title=" " alt="" coords="623,230,805,271"/>
+<area shape="rect" href="class_c_track.html#ac57513aeb2cb8577b75c31ee7b1a6e1b" title="CreateExternalTracker" alt="" coords="365,284,565,311"/>
+<area shape="rect" href="class_t_kalman_filter.html#af112feed15a064055987a1faedf9673d" title=" " alt="" coords="357,335,573,361"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6cf460150ad8a9d248c560d46eba42f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf460150ad8a9d248c560d46eba42f7">&#9670;&nbsp;</a></span>WidthDist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> CTrack::WidthDist </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_region.html">CRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_track.html#a6cf460150ad8a9d248c560d46eba42f7" title="CTrack::WidthDist">CTrack::WidthDist</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a7d1f6c9d8d56790a28a7139e85896dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1f6c9d8d56790a28a7139e85896dc8">&#9670;&nbsp;</a></span>m_externalTrackerForLost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacetracking.html#a5377d69122ad915004ef68a518d22be3">tracking::LostTrackType</a> CTrack::m_externalTrackerForLost</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5573dab5b9fe2e5143204355b8146c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5573dab5b9fe2e5143204355b8146c87">&#9670;&nbsp;</a></span>m_filterObjectSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTrack::m_filterObjectSize = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37f858466a4c5de19eea18ab829e4745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f858466a4c5de19eea18ab829e4745">&#9670;&nbsp;</a></span>m_isStatic</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTrack::m_isStatic = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85c7771b70f05a4f64ac53e2dd0afca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c7771b70f05a4f64ac53e2dd0afca3">&#9670;&nbsp;</a></span>m_kalman</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_kalman_filter.html">TKalmanFilter</a> CTrack::m_kalman</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5af91fbfad7ebf07bd0f681f915e440c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af91fbfad7ebf07bd0f681f915e440c">&#9670;&nbsp;</a></span>m_lastRegion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_region.html">CRegion</a> CTrack::m_lastRegion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad97c3e53969dbb60e7690c4f2d038172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97c3e53969dbb60e7690c4f2d038172">&#9670;&nbsp;</a></span>m_outOfTheFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTrack::m_outOfTheFrame = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ee3f8baaf290aeb113f34c26a446a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee3f8baaf290aeb113f34c26a446a76">&#9670;&nbsp;</a></span>m_predictionPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a8c42696da8f098b91374a8e8bb84b430">Point_t</a> CTrack::m_predictionPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abae9d26232876d478181ccbecd58322d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae9d26232876d478181ccbecd58322d">&#9670;&nbsp;</a></span>m_predictionRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::RotatedRect CTrack::m_predictionRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4216df27820b99c96d5a3370df4584d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4216df27820b99c96d5a3370df4584d0">&#9670;&nbsp;</a></span>m_regionEmbedding</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_region_embedding.html">RegionEmbedding</a> CTrack::m_regionEmbedding</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3308a34b70a90692b0fb863eb621bd37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3308a34b70a90692b0fb863eb621bd37">&#9670;&nbsp;</a></span>m_skippedFrames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CTrack::m_skippedFrames = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f4e196b5dfd301639e6c1e3be14ea8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4e196b5dfd301639e6c1e3be14ea8a">&#9670;&nbsp;</a></span>m_staticFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat CTrack::m_staticFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abafeef3579e8b8ee12dd6e8c788c368e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafeef3579e8b8ee12dd6e8c788c368e">&#9670;&nbsp;</a></span>m_staticFrames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTrack::m_staticFrames = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbec66a84ee65ce5d6390565698e5156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbec66a84ee65ce5d6390565698e5156">&#9670;&nbsp;</a></span>m_staticRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Rect CTrack::m_staticRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf88ff8678ec928ac3ca764f7308b96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf88ff8678ec928ac3ca764f7308b96f">&#9670;&nbsp;</a></span>m_trace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_trace.html">Trace</a> CTrack::m_trace</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aae01d68f5a1a6c0292476ea19c89f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aae01d68f5a1a6c0292476ea19c89f9">&#9670;&nbsp;</a></span>m_trackID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CTrack::m_trackID = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7741468d9b920aca0c51056ce93afda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7741468d9b920aca0c51056ce93afda">&#9670;&nbsp;</a></span>m_VOTTracker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_v_o_t_tracker.html">VOTTracker</a>&gt; CTrack::m_VOTTracker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>G:/python_based_algo/MOT_tracking_haron/MOT_Origin/<a class="el" href="track_8h_source.html">track.h</a></li>
+<li>G:/python_based_algo/MOT_tracking_haron/MOT_Origin/<a class="el" href="track_8cpp.html">track.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

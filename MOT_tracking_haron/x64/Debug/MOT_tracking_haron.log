@@ -1,0 +1,23 @@
+﻿  track.cpp
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\track.cpp(339): warning C4244: “=”: 从“double”转换到“track_t”，可能丢失数据
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\track.cpp(340): warning C4244: “+=”: 从“double”转换到“track_t”，可能丢失数据
+  ShortPathCalculator.cpp
+  object_types.cpp
+  main.cpp
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\main.cpp(250): warning C4305: “参数”: 从“double”到“float”截断
+  Kalman.cpp
+  HungarianAlg.cpp
+  Ctracker.cpp
+  正在生成代码...
+  vibe-background-sequential.c
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(281): warning C4018: “<”: 有符号/无符号不匹配
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(340): warning C4018: “>”: 有符号/无符号不匹配
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(349): warning C4018: “<=”: 有符号/无符号不匹配
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(370): warning C4018: “<=”: 有符号/无符号不匹配
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(451): warning C4018: “<”: 有符号/无符号不匹配
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(619): warning C4018: “<”: 有符号/无符号不匹配
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(624): warning C4018: “<”: 有符号/无符号不匹配
+g:\python_based_algo\mot_tracking_haron\mot_tracking_haron\vibe-background-sequential.c(805): warning C4018: “<”: 有符号/无符号不匹配
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/PROFILE”规范)
+Ctracker.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+  MOT_tracking_haron.vcxproj -> G:\python_based_algo\MOT_tracking_haron\x64\Debug\MOT_tracking_haron.exe

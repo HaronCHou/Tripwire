@@ -1,0 +1,435 @@
+\hypertarget{vibe-background-sequential_8h}{}\doxysection{G\+:/python\+\_\+based\+\_\+algo/\+MOT\+\_\+tracking\+\_\+haron/\+MOT\+\_\+\+Origin/vibe-\/background-\/sequential.h 文件参考}
+\label{vibe-background-sequential_8h}\index{G:/python\_based\_algo/MOT\_tracking\_haron/MOT\_Origin/vibe-\/background-\/sequential.h@{G:/python\_based\_algo/MOT\_tracking\_haron/MOT\_Origin/vibe-\/background-\/sequential.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+vibe-\/background-\/sequential.h 的引用(Include)关系图\+:
+% FIG 0
+此图展示该文件直接或间接的被哪些文件引用了\+:
+% FIG 1
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vibe-background-sequential_8h_af27cfac70191e90ee59f2fbfc0142df5}{COLOR\+\_\+\+BACKGROUND}}~0
+\item 
+\#define \mbox{\hyperlink{vibe-background-sequential_8h_aa948e5bccf1e1a22a5a44096dd2a65f5}{COLOR\+\_\+\+FOREGROUND}}~255
+\end{DoxyCompactItemize}
+\doxysubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structvibe_model___sequential}{vibe\+Model\+\_\+\+Sequential}} \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Data structure for the background subtraction model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$ \mbox{\hyperlink{vibe-background-sequential_8h_a8448d01d9b655a6eae95f85345f4618f}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+New}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a8f802a8b63b52b1f4c66a1e4e5facbee}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Print\+Parameters}} (const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a08abbf6ccc8f821313f0db84376bbca0}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Number\+Of\+Samples}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint32\+\_\+t number\+Of\+Samples)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a46d1c6c1c63814cb45dfa4a988b150a5}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Number\+Of\+Samples}} (const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_acfa14d172453c64bc9b12672fd8c2d2f}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Matching\+Threshold}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint32\+\_\+t matching\+Threshold)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_aad983de0f08a3c3acb7e4138754de4d6}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Matching\+Threshold}} (const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a10e2890c016ae226febfd9b914d3277e}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Matching\+Number}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint32\+\_\+t matching\+Number)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a829161a63a4c50661450f3c36d7aeee4}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Update\+Factor}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint32\+\_\+t update\+Factor)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a9ab0ccf3f4a76348e153943592f3cc7a}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Matching\+Number}} (const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a8cc6eef012e8d79dd1f5df88f6f5bde5}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Update\+Factor}} (const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model)
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{vibe-background-sequential_8h_a6007425a8fceab044a2dfd9d41223cb9}{Get\+Fg\+Count}} (const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a472980fbda807d923c83cfbe03c4026b}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Free}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model)
+\begin{DoxyCompactList}\small\item\em Frees all the memory used by the {\ttfamily model} and deallocates the structure. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a52e0169506ba0dc69d7abae2ebd15d0d}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Alloc\+Init\+\_\+8u\+\_\+\+C1R}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint8\+\_\+t $\ast$image\+\_\+data, const uint32\+\_\+t width, const uint32\+\_\+t height)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a2e3c2d8a07349614e218a58064d42269}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Segmentation\+\_\+8u\+\_\+\+C1R}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint8\+\_\+t $\ast$image\+\_\+data, uint8\+\_\+t $\ast$segmentation\+\_\+map)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a97f305588766558e5628e601f93ef888}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Update\+\_\+8u\+\_\+\+C1R}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint8\+\_\+t $\ast$image\+\_\+data, uint8\+\_\+t $\ast$updating\+\_\+mask, uint8\+\_\+t $\ast$hist, uint8\+\_\+t $\ast$bgmodel)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a6ddab8089f1035eee0c1465365f844c7}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Alloc\+Init\+\_\+8u\+\_\+\+C3R}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint8\+\_\+t $\ast$image\+\_\+data, const uint32\+\_\+t width, const uint32\+\_\+t height)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a2fa30269c83bec37562abf5d386948f6}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Segmentation\+\_\+8u\+\_\+\+C3R}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint8\+\_\+t $\ast$image\+\_\+data, uint8\+\_\+t $\ast$segmentation\+\_\+map)
+\item 
+int32\+\_\+t \mbox{\hyperlink{vibe-background-sequential_8h_a123f2632660de1e2e59420df62dd30e5}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Update\+\_\+8u\+\_\+\+C3R}} (\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$model, const uint8\+\_\+t $\ast$image\+\_\+data, uint8\+\_\+t $\ast$updating\+\_\+mask)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{vibe-background-sequential_8h_af27cfac70191e90ee59f2fbfc0142df5}\label{vibe-background-sequential_8h_af27cfac70191e90ee59f2fbfc0142df5}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!COLOR\_BACKGROUND@{COLOR\_BACKGROUND}}
+\index{COLOR\_BACKGROUND@{COLOR\_BACKGROUND}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_BACKGROUND}{COLOR\_BACKGROUND}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+BACKGROUND~0}
+
+\begin{DoxyVerb}@file vibe-background-sequential.h
+@brief Interface for the ViBe library
+
+@author Marc Van Droogenbroeck 
+
+@date July 2014
+
+@details
+\end{DoxyVerb}
+ Full documentation is available online at\+: \href{http://www.ulg.ac.be/telecom/research/vibe/doc}{\texttt{ http\+://www.\+ulg.\+ac.\+be/telecom/research/vibe/doc}}
+
+All technical details are available in the following paper\+: {\itshape O. Barnich and M. Van Droogenbroeck. Vi\+Be\+: A universal background subtraction algorithm for video sequences. IEEE Transactions on Image Processing, 20(6)\+:1709-\/1724, June 2011.}
+
+\begin{DoxyVerb}BiBTeX information
+
+  @article{Barnich2011ViBe,
+  title = {{ViBe}: A universal background subtraction algorithm for video sequences},
+  author = {O. Barnich and M. {Van Droogenbroeck}},
+  journal = {IEEE Transactions on Image Processing},
+  volume = {20},
+  number = {6},
+  pages = {1709-1724},
+  month = {June},
+  year = {2011},
+  keywords = {ViBe, Background, Background subtraction, Segmentation, Motion, Motion detection},
+  pdf = {http://orbi.ulg.ac.be/bitstream/2268/145853/1/Barnich2011ViBe.pdf},
+  doi = {10.1109/TIP.2010.2101613},
+  url = {http://hdl.handle.net/2268/145853}
+  }
+\end{DoxyVerb}
+
+
+See {\bfseries [Barnich2011\+Vi\+Be]} Default label for background pixels \mbox{\Hypertarget{vibe-background-sequential_8h_aa948e5bccf1e1a22a5a44096dd2a65f5}\label{vibe-background-sequential_8h_aa948e5bccf1e1a22a5a44096dd2a65f5}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!COLOR\_FOREGROUND@{COLOR\_FOREGROUND}}
+\index{COLOR\_FOREGROUND@{COLOR\_FOREGROUND}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_FOREGROUND}{COLOR\_FOREGROUND}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+FOREGROUND~255}
+
+Default label for foreground pixels. Note that some authors chose any value different from 0 instead 
+
+\doxysubsection{类型定义说明}
+\mbox{\Hypertarget{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}\label{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!vibeModel\_Sequential\_t@{vibeModel\_Sequential\_t}}
+\index{vibeModel\_Sequential\_t@{vibeModel\_Sequential\_t}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{vibeModel\_Sequential\_t}{vibeModel\_Sequential\_t}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}}}
+
+
+
+Data structure for the background subtraction model. 
+
+This data structure contains the background model as well as some paramaters value. The code is designed to hide all the implementation details to the user to ease its use. 
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a6007425a8fceab044a2dfd9d41223cb9}\label{vibe-background-sequential_8h_a6007425a8fceab044a2dfd9d41223cb9}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!GetFgCount@{GetFgCount}}
+\index{GetFgCount@{GetFgCount}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{GetFgCount()}{GetFgCount()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ Get\+Fg\+Count (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{vibe-background-sequential_8h_a52e0169506ba0dc69d7abae2ebd15d0d}\label{vibe-background-sequential_8h_a52e0169506ba0dc69d7abae2ebd15d0d}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_AllocInit\_8u\_C1R@{libvibeModel\_Sequential\_AllocInit\_8u\_C1R}}
+\index{libvibeModel\_Sequential\_AllocInit\_8u\_C1R@{libvibeModel\_Sequential\_AllocInit\_8u\_C1R}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_AllocInit\_8u\_C1R()}{libvibeModel\_Sequential\_AllocInit\_8u\_C1R()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Alloc\+Init\+\_\+8u\+\_\+\+C1R (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint8\+\_\+t $\ast$}]{image\+\_\+data,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+The two following functions allocate the required memory according to the model parameters and the dimensions of the input images. You must use the \char`\"{}\+C1\+R\char`\"{} function for grayscale images and the \char`\"{}\+C3\+R\char`\"{} for color images. These 2 functions also initialize the background model using the content of $\ast$image\+\_\+data which is the pixel buffer of the first image of your stream. 
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em image\+\_\+data} & \\
+\hline
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a6ddab8089f1035eee0c1465365f844c7}\label{vibe-background-sequential_8h_a6ddab8089f1035eee0c1465365f844c7}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_AllocInit\_8u\_C3R@{libvibeModel\_Sequential\_AllocInit\_8u\_C3R}}
+\index{libvibeModel\_Sequential\_AllocInit\_8u\_C3R@{libvibeModel\_Sequential\_AllocInit\_8u\_C3R}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_AllocInit\_8u\_C3R()}{libvibeModel\_Sequential\_AllocInit\_8u\_C3R()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Alloc\+Init\+\_\+8u\+\_\+\+C3R (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint8\+\_\+t $\ast$}]{image\+\_\+data,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+The pixel values of color images are arranged in the following order RGBRGBRGB... (or HSVHSVHSVHSVHSVHSV...)
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em image\+\_\+data} & \\
+\hline
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a472980fbda807d923c83cfbe03c4026b}\label{vibe-background-sequential_8h_a472980fbda807d923c83cfbe03c4026b}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_Free@{libvibeModel\_Sequential\_Free}}
+\index{libvibeModel\_Sequential\_Free@{libvibeModel\_Sequential\_Free}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_Free()}{libvibeModel\_Sequential\_Free()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Frees all the memory used by the {\ttfamily model} and deallocates the structure. 
+
+This function frees all the memory allocated by libvibe\+Model\+\_\+\+Sequential\+New and \mbox{\hyperlink{vibe-background-sequential_8h_a52e0169506ba0dc69d7abae2ebd15d0d}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Alloc\+Init\+\_\+8u\+\_\+\+C1R}} or \mbox{\hyperlink{vibe-background-sequential_8h_a6ddab8089f1035eee0c1465365f844c7}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Alloc\+Init\+\_\+8u\+\_\+\+C3R}}. 
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a9ab0ccf3f4a76348e153943592f3cc7a}\label{vibe-background-sequential_8h_a9ab0ccf3f4a76348e153943592f3cc7a}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_GetMatchingNumber@{libvibeModel\_Sequential\_GetMatchingNumber}}
+\index{libvibeModel\_Sequential\_GetMatchingNumber@{libvibeModel\_Sequential\_GetMatchingNumber}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_GetMatchingNumber()}{libvibeModel\_Sequential\_GetMatchingNumber()}}
+{\footnotesize\ttfamily uint32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Matching\+Number (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+Getter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_aad983de0f08a3c3acb7e4138754de4d6}\label{vibe-background-sequential_8h_aad983de0f08a3c3acb7e4138754de4d6}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_GetMatchingThreshold@{libvibeModel\_Sequential\_GetMatchingThreshold}}
+\index{libvibeModel\_Sequential\_GetMatchingThreshold@{libvibeModel\_Sequential\_GetMatchingThreshold}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_GetMatchingThreshold()}{libvibeModel\_Sequential\_GetMatchingThreshold()}}
+{\footnotesize\ttfamily uint32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Matching\+Threshold (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+Setter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a46d1c6c1c63814cb45dfa4a988b150a5}\label{vibe-background-sequential_8h_a46d1c6c1c63814cb45dfa4a988b150a5}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_GetNumberOfSamples@{libvibeModel\_Sequential\_GetNumberOfSamples}}
+\index{libvibeModel\_Sequential\_GetNumberOfSamples@{libvibeModel\_Sequential\_GetNumberOfSamples}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_GetNumberOfSamples()}{libvibeModel\_Sequential\_GetNumberOfSamples()}}
+{\footnotesize\ttfamily uint32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Number\+Of\+Samples (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+Setter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a8cc6eef012e8d79dd1f5df88f6f5bde5}\label{vibe-background-sequential_8h_a8cc6eef012e8d79dd1f5df88f6f5bde5}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_GetUpdateFactor@{libvibeModel\_Sequential\_GetUpdateFactor}}
+\index{libvibeModel\_Sequential\_GetUpdateFactor@{libvibeModel\_Sequential\_GetUpdateFactor}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_GetUpdateFactor()}{libvibeModel\_Sequential\_GetUpdateFactor()}}
+{\footnotesize\ttfamily uint32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Get\+Update\+Factor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+Getter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a8448d01d9b655a6eae95f85345f4618f}\label{vibe-background-sequential_8h_a8448d01d9b655a6eae95f85345f4618f}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_New@{libvibeModel\_Sequential\_New}}
+\index{libvibeModel\_Sequential\_New@{libvibeModel\_Sequential\_New}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_New()}{libvibeModel\_Sequential\_New()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}}$\ast$ libvibe\+Model\+\_\+\+Sequential\+\_\+\+New (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allocation of a new data structure where the background model will be stored. Please note that this function only creates the structure to host the data. This data structures will only be filled with a call to \mbox{\hyperlink{vibe-background-sequential_8h_a52e0169506ba0dc69d7abae2ebd15d0d}{libvibe\+Model\+\_\+\+Sequential\+\_\+\+Alloc\+Init\+\_\+8u\+\_\+\+C1R}}.
+
+\begin{DoxyReturn}{返回}
+A pointer to a newly allocated \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} structure, or {\ttfamily NULL} in the case of an error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a8f802a8b63b52b1f4c66a1e4e5facbee}\label{vibe-background-sequential_8h_a8f802a8b63b52b1f4c66a1e4e5facbee}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_PrintParameters@{libvibeModel\_Sequential\_PrintParameters}}
+\index{libvibeModel\_Sequential\_PrintParameters@{libvibeModel\_Sequential\_PrintParameters}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_PrintParameters()}{libvibeModel\_Sequential\_PrintParameters()}}
+{\footnotesize\ttfamily uint32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Print\+Parameters (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+Vi\+Be uses several parameters. You can print and change some of them if you want. However, default value should meet your needs for most videos.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 2
+\mbox{\Hypertarget{vibe-background-sequential_8h_a2e3c2d8a07349614e218a58064d42269}\label{vibe-background-sequential_8h_a2e3c2d8a07349614e218a58064d42269}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_Segmentation\_8u\_C1R@{libvibeModel\_Sequential\_Segmentation\_8u\_C1R}}
+\index{libvibeModel\_Sequential\_Segmentation\_8u\_C1R@{libvibeModel\_Sequential\_Segmentation\_8u\_C1R}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_Segmentation\_8u\_C1R()}{libvibeModel\_Sequential\_Segmentation\_8u\_C1R()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Segmentation\+\_\+8u\+\_\+\+C1R (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint8\+\_\+t $\ast$}]{image\+\_\+data,  }\item[{uint8\+\_\+t $\ast$}]{segmentation\+\_\+map }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em image\+\_\+data} & \\
+\hline
+{\em segmentation\+\_\+map} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 3
+\mbox{\Hypertarget{vibe-background-sequential_8h_a2fa30269c83bec37562abf5d386948f6}\label{vibe-background-sequential_8h_a2fa30269c83bec37562abf5d386948f6}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_Segmentation\_8u\_C3R@{libvibeModel\_Sequential\_Segmentation\_8u\_C3R}}
+\index{libvibeModel\_Sequential\_Segmentation\_8u\_C3R@{libvibeModel\_Sequential\_Segmentation\_8u\_C3R}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_Segmentation\_8u\_C3R()}{libvibeModel\_Sequential\_Segmentation\_8u\_C3R()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Segmentation\+\_\+8u\+\_\+\+C3R (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint8\+\_\+t $\ast$}]{image\+\_\+data,  }\item[{uint8\+\_\+t $\ast$}]{segmentation\+\_\+map }\end{DoxyParamCaption})}
+
+The pixel values of color images are arranged in the following order RGBRGBRGB... (or HSVHSVHSVHSVHSVHSV...)
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em image\+\_\+data} & \\
+\hline
+{\em segmentation\+\_\+map} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 4
+\mbox{\Hypertarget{vibe-background-sequential_8h_a10e2890c016ae226febfd9b914d3277e}\label{vibe-background-sequential_8h_a10e2890c016ae226febfd9b914d3277e}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_SetMatchingNumber@{libvibeModel\_Sequential\_SetMatchingNumber}}
+\index{libvibeModel\_Sequential\_SetMatchingNumber@{libvibeModel\_Sequential\_SetMatchingNumber}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_SetMatchingNumber()}{libvibeModel\_Sequential\_SetMatchingNumber()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Matching\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint32\+\_\+t}]{matching\+Number }\end{DoxyParamCaption})}
+
+Setter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em matching\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_acfa14d172453c64bc9b12672fd8c2d2f}\label{vibe-background-sequential_8h_acfa14d172453c64bc9b12672fd8c2d2f}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_SetMatchingThreshold@{libvibeModel\_Sequential\_SetMatchingThreshold}}
+\index{libvibeModel\_Sequential\_SetMatchingThreshold@{libvibeModel\_Sequential\_SetMatchingThreshold}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_SetMatchingThreshold()}{libvibeModel\_Sequential\_SetMatchingThreshold()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Matching\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint32\+\_\+t}]{matching\+Threshold }\end{DoxyParamCaption})}
+
+Setter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em matching\+Threshold} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a08abbf6ccc8f821313f0db84376bbca0}\label{vibe-background-sequential_8h_a08abbf6ccc8f821313f0db84376bbca0}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_SetNumberOfSamples@{libvibeModel\_Sequential\_SetNumberOfSamples}}
+\index{libvibeModel\_Sequential\_SetNumberOfSamples@{libvibeModel\_Sequential\_SetNumberOfSamples}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_SetNumberOfSamples()}{libvibeModel\_Sequential\_SetNumberOfSamples()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Number\+Of\+Samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint32\+\_\+t}]{number\+Of\+Samples }\end{DoxyParamCaption})}
+
+Setter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em number\+Of\+Samples} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a829161a63a4c50661450f3c36d7aeee4}\label{vibe-background-sequential_8h_a829161a63a4c50661450f3c36d7aeee4}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_SetUpdateFactor@{libvibeModel\_Sequential\_SetUpdateFactor}}
+\index{libvibeModel\_Sequential\_SetUpdateFactor@{libvibeModel\_Sequential\_SetUpdateFactor}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_SetUpdateFactor()}{libvibeModel\_Sequential\_SetUpdateFactor()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Set\+Update\+Factor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint32\+\_\+t}]{update\+Factor }\end{DoxyParamCaption})}
+
+Setter.
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em update\+Factor} & New value for the update factor. Please note that the update factor is to be understood as a probability of updating. More specifically, an update factor of 16 means that 1 out of every 16 background pixels is updated. Likewise, an update factor of 1 means that every background pixel is updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a97f305588766558e5628e601f93ef888}\label{vibe-background-sequential_8h_a97f305588766558e5628e601f93ef888}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_Update\_8u\_C1R@{libvibeModel\_Sequential\_Update\_8u\_C1R}}
+\index{libvibeModel\_Sequential\_Update\_8u\_C1R@{libvibeModel\_Sequential\_Update\_8u\_C1R}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_Update\_8u\_C1R()}{libvibeModel\_Sequential\_Update\_8u\_C1R()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Update\+\_\+8u\+\_\+\+C1R (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint8\+\_\+t $\ast$}]{image\+\_\+data,  }\item[{uint8\+\_\+t $\ast$}]{updating\+\_\+mask,  }\item[{uint8\+\_\+t $\ast$}]{hist,  }\item[{uint8\+\_\+t $\ast$}]{bgmodel }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em image\+\_\+data} & \\
+\hline
+{\em updating\+\_\+mask} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{vibe-background-sequential_8h_a123f2632660de1e2e59420df62dd30e5}\label{vibe-background-sequential_8h_a123f2632660de1e2e59420df62dd30e5}} 
+\index{vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}!libvibeModel\_Sequential\_Update\_8u\_C3R@{libvibeModel\_Sequential\_Update\_8u\_C3R}}
+\index{libvibeModel\_Sequential\_Update\_8u\_C3R@{libvibeModel\_Sequential\_Update\_8u\_C3R}!vibe-\/background-\/sequential.h@{vibe-\/background-\/sequential.h}}
+\doxysubsubsection{\texorpdfstring{libvibeModel\_Sequential\_Update\_8u\_C3R()}{libvibeModel\_Sequential\_Update\_8u\_C3R()}}
+{\footnotesize\ttfamily int32\+\_\+t libvibe\+Model\+\_\+\+Sequential\+\_\+\+Update\+\_\+8u\+\_\+\+C3R (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vibe-background-sequential_8h_afff61a395cbf49ea34176b385def6392}{vibe\+Model\+\_\+\+Sequential\+\_\+t}} $\ast$}]{model,  }\item[{const uint8\+\_\+t $\ast$}]{image\+\_\+data,  }\item[{uint8\+\_\+t $\ast$}]{updating\+\_\+mask }\end{DoxyParamCaption})}
+
+The pixel values of color images are arranged in the following order RGBRGBRGB... (or HSVHSVHSVHSVHSVHSV...)
+
+
+\begin{DoxyParams}{参数}
+{\em model} & The data structure with Vi\+Be\textquotesingle{}s background subtraction model and parameters. \\
+\hline
+{\em image\+\_\+data} & \\
+\hline
+{\em updating\+\_\+mask} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}

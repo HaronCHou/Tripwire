@@ -1,0 +1,274 @@
+\hypertarget{class_c_tracker}{}\doxysection{CTracker类 参考}
+\label{class_c_tracker}\index{CTracker@{CTracker}}
+
+
+The \mbox{\hyperlink{class_c_tracker}{CTracker}} class  
+
+
+
+
+{\ttfamily \#include $<$Ctracker.\+h$>$}
+
+
+
+CTracker 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_tracker_a37a89d416c0a9f234b20849667a154c4}{CTracker}} (const \mbox{\hyperlink{struct_tracker_settings}{Tracker\+Settings}} \&settings)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_tracker_a37a89d416c0a9f234b20849667a154c4}{CTracker\+::\+CTracker}} Tracker. Manage tracks. Create, remove, update. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_tracker_a9be0222342824ff52185f4ccd3d4f392}{CTracker}} (const \mbox{\hyperlink{class_c_tracker}{CTracker}} \&)=delete
+\item 
+\mbox{\hyperlink{class_c_tracker_a276d921b9fab4fb102f41ba589f353bf}{CTracker}} (\mbox{\hyperlink{class_c_tracker}{CTracker}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_c_tracker}{CTracker}} \& \mbox{\hyperlink{class_c_tracker_afa651664e7f17b4e821a5a60e71f9e6d}{operator=}} (const \mbox{\hyperlink{class_c_tracker}{CTracker}} \&)=delete
+\item 
+\mbox{\hyperlink{class_c_tracker}{CTracker}} \& \mbox{\hyperlink{class_c_tracker_ae94e672f10d92b99351fca3ebe33dd4f}{operator=}} (\mbox{\hyperlink{class_c_tracker}{CTracker}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_c_tracker_ab74d4f1ce428c9d3fa9f9e9901a2070a}{$\sim$\+CTracker}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_tracker_ab74d4f1ce428c9d3fa9f9e9901a2070a}{CTracker\+::$\sim$\+CTracker}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_tracker_a4c0ba3374453202fa289cd3104b3d909}{Update}} (const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&regions, cv\+::\+Mat curr\+Frame, float fps)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_tracker_a4c0ba3374453202fa289cd3104b3d909}{CTracker\+::\+Update}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_tracker_a3ef73d0d35dd29b48fed1f0b6afa8f39}{Can\+Gray\+Frame\+To\+Track}} () const
+\begin{DoxyCompactList}\small\item\em Can\+Gray\+Frame\+To\+Track \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_tracker_a07cea56fc83c1f8f1c7058ebb65ca64a}{Can\+Color\+Frame\+To\+Track}} () const
+\begin{DoxyCompactList}\small\item\em Can\+Color\+Frame\+To\+Track \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_tracker_a5fc800325b1a069fae1b89751a264592}{Get\+Tracks\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Tracks\+Count \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_tracking_object}{Tracking\+Object}} $>$ \mbox{\hyperlink{class_c_tracker_a1960f875d72d1fca6ed5054b2b1ed48e}{Get\+Tracks}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Tracks \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_tracker_a6e7f2a3e00ce62c1113f775ce863be0c}{Create\+Distace\+Matrix}} (const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&regions, std\+::vector$<$ \mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} $>$ \&region\+Embeddings, \mbox{\hyperlink{defines_8h_af6ab0ee8259a51215f62e8f96416d5bb}{dist\+Matrix\+\_\+t}} \&cost\+Matrix, \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} max\+Possible\+Cost, \mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \&max\+Cost, cv\+::\+Mat curr\+Frame)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_tracker_a6e7f2a3e00ce62c1113f775ce863be0c}{CTracker\+::\+Create\+Distace\+Matrix}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_tracker_aefd920f030085f4f83ee48de4bc00a39}{Update\+Tracking\+State}} (const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&regions, cv\+::\+Mat curr\+Frame, float fps)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_tracker_aefd920f030085f4f83ee48de4bc00a39}{CTracker\+::\+Update\+Tracking\+State}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_tracker_settings}{Tracker\+Settings}} \mbox{\hyperlink{class_c_tracker_acb84aee0d550f4cdadbfac6735811050}{m\+\_\+settings}}
+\item 
+\mbox{\hyperlink{track_8h_aaa9881295be74ce8bd6990b9aafaf788}{tracks\+\_\+t}} \mbox{\hyperlink{class_c_tracker_a605c3661fe31e77abef0acf13f4f7cd0}{m\+\_\+tracks}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_tracker_acaa6995a64483d7666ff2117f1671fed}{m\+\_\+next\+Track\+ID}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_c_tracker_a3adb975a70224f8f411113031988e936}{m\+\_\+prev\+Frame}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_short_path_calculator}{Short\+Path\+Calculator}} $>$ \mbox{\hyperlink{class_c_tracker_af4bbb70964b808d5bf4dd6f7dd221392}{m\+\_\+\+SPCalculator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+The \mbox{\hyperlink{class_c_tracker}{CTracker}} class 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_c_tracker_a37a89d416c0a9f234b20849667a154c4}\label{class_c_tracker_a37a89d416c0a9f234b20849667a154c4}} 
+\index{CTracker@{CTracker}!CTracker@{CTracker}}
+\index{CTracker@{CTracker}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{CTracker()}{CTracker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily CTracker\+::\+CTracker (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_tracker_settings}{Tracker\+Settings}} \&}]{settings }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_tracker_a37a89d416c0a9f234b20849667a154c4}{CTracker\+::\+CTracker}} Tracker. Manage tracks. Create, remove, update. 
+
+
+\begin{DoxyParams}{参数}
+{\em settings} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_tracker_a9be0222342824ff52185f4ccd3d4f392}\label{class_c_tracker_a9be0222342824ff52185f4ccd3d4f392}} 
+\index{CTracker@{CTracker}!CTracker@{CTracker}}
+\index{CTracker@{CTracker}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{CTracker()}{CTracker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily CTracker\+::\+CTracker (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_tracker}{CTracker}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_c_tracker_a276d921b9fab4fb102f41ba589f353bf}\label{class_c_tracker_a276d921b9fab4fb102f41ba589f353bf}} 
+\index{CTracker@{CTracker}!CTracker@{CTracker}}
+\index{CTracker@{CTracker}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{CTracker()}{CTracker()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily CTracker\+::\+CTracker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_tracker}{CTracker}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_c_tracker_ab74d4f1ce428c9d3fa9f9e9901a2070a}\label{class_c_tracker_ab74d4f1ce428c9d3fa9f9e9901a2070a}} 
+\index{CTracker@{CTracker}!````~CTracker@{$\sim$CTracker}}
+\index{````~CTracker@{$\sim$CTracker}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{$\sim$CTracker()}{~CTracker()}}
+{\footnotesize\ttfamily CTracker\+::$\sim$\+CTracker (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_tracker_ab74d4f1ce428c9d3fa9f9e9901a2070a}{CTracker\+::$\sim$\+CTracker}} 
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_c_tracker_a07cea56fc83c1f8f1c7058ebb65ca64a}\label{class_c_tracker_a07cea56fc83c1f8f1c7058ebb65ca64a}} 
+\index{CTracker@{CTracker}!CanColorFrameToTrack@{CanColorFrameToTrack}}
+\index{CanColorFrameToTrack@{CanColorFrameToTrack}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{CanColorFrameToTrack()}{CanColorFrameToTrack()}}
+{\footnotesize\ttfamily bool CTracker\+::\+Can\+Color\+Frame\+To\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Can\+Color\+Frame\+To\+Track 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_tracker_a3ef73d0d35dd29b48fed1f0b6afa8f39}\label{class_c_tracker_a3ef73d0d35dd29b48fed1f0b6afa8f39}} 
+\index{CTracker@{CTracker}!CanGrayFrameToTrack@{CanGrayFrameToTrack}}
+\index{CanGrayFrameToTrack@{CanGrayFrameToTrack}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{CanGrayFrameToTrack()}{CanGrayFrameToTrack()}}
+{\footnotesize\ttfamily bool CTracker\+::\+Can\+Gray\+Frame\+To\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Can\+Gray\+Frame\+To\+Track 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_tracker_a6e7f2a3e00ce62c1113f775ce863be0c}\label{class_c_tracker_a6e7f2a3e00ce62c1113f775ce863be0c}} 
+\index{CTracker@{CTracker}!CreateDistaceMatrix@{CreateDistaceMatrix}}
+\index{CreateDistaceMatrix@{CreateDistaceMatrix}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{CreateDistaceMatrix()}{CreateDistaceMatrix()}}
+{\footnotesize\ttfamily void CTracker\+::\+Create\+Distace\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&}]{regions,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_region_embedding}{Region\+Embedding}} $>$ \&}]{region\+Embeddings,  }\item[{\mbox{\hyperlink{defines_8h_af6ab0ee8259a51215f62e8f96416d5bb}{dist\+Matrix\+\_\+t}} \&}]{cost\+Matrix,  }\item[{\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}}}]{max\+Possible\+Cost,  }\item[{\mbox{\hyperlink{defines_8h_a7ce9c8817b42ab418e61756f579549ab}{track\+\_\+t}} \&}]{max\+Cost,  }\item[{cv\+::\+Mat}]{curr\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_c_tracker_a6e7f2a3e00ce62c1113f775ce863be0c}{CTracker\+::\+Create\+Distace\+Matrix}} 
+
+
+\begin{DoxyParams}{参数}
+{\em regions} & \\
+\hline
+{\em cost\+Matrix} & \\
+\hline
+{\em max\+Possible\+Cost} & \\
+\hline
+{\em max\+Cost} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 1
+\mbox{\Hypertarget{class_c_tracker_a1960f875d72d1fca6ed5054b2b1ed48e}\label{class_c_tracker_a1960f875d72d1fca6ed5054b2b1ed48e}} 
+\index{CTracker@{CTracker}!GetTracks@{GetTracks}}
+\index{GetTracks@{GetTracks}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{GetTracks()}{GetTracks()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_tracking_object}{Tracking\+Object}}$>$ CTracker\+::\+Get\+Tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get\+Tracks 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_tracker_a5fc800325b1a069fae1b89751a264592}\label{class_c_tracker_a5fc800325b1a069fae1b89751a264592}} 
+\index{CTracker@{CTracker}!GetTracksCount@{GetTracksCount}}
+\index{GetTracksCount@{GetTracksCount}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{GetTracksCount()}{GetTracksCount()}}
+{\footnotesize\ttfamily size\+\_\+t CTracker\+::\+Get\+Tracks\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get\+Tracks\+Count 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_tracker_afa651664e7f17b4e821a5a60e71f9e6d}\label{class_c_tracker_afa651664e7f17b4e821a5a60e71f9e6d}} 
+\index{CTracker@{CTracker}!operator=@{operator=}}
+\index{operator=@{operator=}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_tracker}{CTracker}}\& CTracker\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_tracker}{CTracker}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_c_tracker_ae94e672f10d92b99351fca3ebe33dd4f}\label{class_c_tracker_ae94e672f10d92b99351fca3ebe33dd4f}} 
+\index{CTracker@{CTracker}!operator=@{operator=}}
+\index{operator=@{operator=}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_tracker}{CTracker}}\& CTracker\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_tracker}{CTracker}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_c_tracker_a4c0ba3374453202fa289cd3104b3d909}\label{class_c_tracker_a4c0ba3374453202fa289cd3104b3d909}} 
+\index{CTracker@{CTracker}!Update@{Update}}
+\index{Update@{Update}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CTracker\+::\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&}]{regions,  }\item[{cv\+::\+Mat}]{curr\+Frame,  }\item[{float}]{fps }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_tracker_a4c0ba3374453202fa289cd3104b3d909}{CTracker\+::\+Update}} 
+
+
+\begin{DoxyParams}{参数}
+{\em regions} & \\
+\hline
+{\em curr\+Frame} & \\
+\hline
+{\em fps} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 2
+\mbox{\Hypertarget{class_c_tracker_aefd920f030085f4f83ee48de4bc00a39}\label{class_c_tracker_aefd920f030085f4f83ee48de4bc00a39}} 
+\index{CTracker@{CTracker}!UpdateTrackingState@{UpdateTrackingState}}
+\index{UpdateTrackingState@{UpdateTrackingState}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{UpdateTrackingState()}{UpdateTrackingState()}}
+{\footnotesize\ttfamily void CTracker\+::\+Update\+Tracking\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{defines_8h_a01db0de56a20f4342820a093c5154536}{regions\+\_\+t}} \&}]{regions,  }\item[{cv\+::\+Mat}]{curr\+Frame,  }\item[{float}]{fps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_c_tracker_aefd920f030085f4f83ee48de4bc00a39}{CTracker\+::\+Update\+Tracking\+State}} 
+
+
+\begin{DoxyParams}{参数}
+{\em regions} & \\
+\hline
+{\em curr\+Frame} & \\
+\hline
+{\em fps} & \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 3
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_c_tracker_acaa6995a64483d7666ff2117f1671fed}\label{class_c_tracker_acaa6995a64483d7666ff2117f1671fed}} 
+\index{CTracker@{CTracker}!m\_nextTrackID@{m\_nextTrackID}}
+\index{m\_nextTrackID@{m\_nextTrackID}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{m\_nextTrackID}{m\_nextTrackID}}
+{\footnotesize\ttfamily size\+\_\+t CTracker\+::m\+\_\+next\+Track\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_tracker_a3adb975a70224f8f411113031988e936}\label{class_c_tracker_a3adb975a70224f8f411113031988e936}} 
+\index{CTracker@{CTracker}!m\_prevFrame@{m\_prevFrame}}
+\index{m\_prevFrame@{m\_prevFrame}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{m\_prevFrame}{m\_prevFrame}}
+{\footnotesize\ttfamily cv\+::\+Mat CTracker\+::m\+\_\+prev\+Frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_tracker_acb84aee0d550f4cdadbfac6735811050}\label{class_c_tracker_acb84aee0d550f4cdadbfac6735811050}} 
+\index{CTracker@{CTracker}!m\_settings@{m\_settings}}
+\index{m\_settings@{m\_settings}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{m\_settings}{m\_settings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tracker_settings}{Tracker\+Settings}} CTracker\+::m\+\_\+settings\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_tracker_af4bbb70964b808d5bf4dd6f7dd221392}\label{class_c_tracker_af4bbb70964b808d5bf4dd6f7dd221392}} 
+\index{CTracker@{CTracker}!m\_SPCalculator@{m\_SPCalculator}}
+\index{m\_SPCalculator@{m\_SPCalculator}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{m\_SPCalculator}{m\_SPCalculator}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_short_path_calculator}{Short\+Path\+Calculator}}$>$ CTracker\+::m\+\_\+\+SPCalculator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_c_tracker_a605c3661fe31e77abef0acf13f4f7cd0}\label{class_c_tracker_a605c3661fe31e77abef0acf13f4f7cd0}} 
+\index{CTracker@{CTracker}!m\_tracks@{m\_tracks}}
+\index{m\_tracks@{m\_tracks}!CTracker@{CTracker}}
+\doxysubsubsection{\texorpdfstring{m\_tracks}{m\_tracks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{track_8h_aaa9881295be74ce8bd6990b9aafaf788}{tracks\+\_\+t}} CTracker\+::m\+\_\+tracks\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/python\+\_\+based\+\_\+algo/\+MOT\+\_\+tracking\+\_\+haron/\+MOT\+\_\+\+Origin/\mbox{\hyperlink{_ctracker_8h}{Ctracker.\+h}}\item 
+G\+:/python\+\_\+based\+\_\+algo/\+MOT\+\_\+tracking\+\_\+haron/\+MOT\+\_\+\+Origin/\mbox{\hyperlink{_ctracker_8cpp}{Ctracker.\+cpp}}\end{DoxyCompactItemize}

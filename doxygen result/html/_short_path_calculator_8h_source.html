@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: G:/python_based_algo/MOT_tracking_haron/MOT_Origin/ShortPathCalculator.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9a6d6e2fd7164b8ab4fd13705b6eb0c.html">python_based_algo</a></li><li class="navelem"><a class="el" href="dir_70ba9663e0006689810b8ca36f51056c.html">MOT_tracking_haron</a></li><li class="navelem"><a class="el" href="dir_fb56db6ca622663f2ae11cd7b1c5e212.html">MOT_Origin</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ShortPathCalculator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_short_path_calculator_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="defines_8h.html">defines.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_hungarian_alg_8h.html">HungarianAlg.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="struct_s_p_settings.html">    8</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_s_p_settings.html">SPSettings</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_s_p_settings.html#ad573c443178ef0a557336523d8c97c9e">   10</a></span>&#160;    <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> <a class="code" href="struct_s_p_settings.html#ad573c443178ef0a557336523d8c97c9e">m_distThres</a> = 0.8f;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_s_p_settings.html#a982b07a4a63dac30affb8d0ed863956f">   11</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="struct_s_p_settings.html#a982b07a4a63dac30affb8d0ed863956f">m_maxHistory</a> = 10;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_short_path_calculator.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_short_path_calculator.html">ShortPathCalculator</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_short_path_calculator.html#ad4cc17f00025648dce2126375c837a39">   20</a></span>&#160;    <a class="code" href="class_short_path_calculator.html#ad4cc17f00025648dce2126375c837a39">ShortPathCalculator</a>(<span class="keyword">const</span> <a class="code" href="struct_s_p_settings.html">SPSettings</a>&amp; settings)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        : <a class="code" href="class_short_path_calculator.html#a191b6769d0b7b8ad4bce9db0a4392ad6">m_settings</a>(settings)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_short_path_calculator.html#a252a19c127b4124359b1d3aebccbc373">   24</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_short_path_calculator.html#a252a19c127b4124359b1d3aebccbc373">~ShortPathCalculator</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_short_path_calculator.html#a16bee018bafa5ba99142f501c6982eda">   26</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_short_path_calculator.html#a16bee018bafa5ba99142f501c6982eda">Solve</a>(<span class="keyword">const</span> <a class="code" href="defines_8h.html#af6ab0ee8259a51215f62e8f96416d5bb">distMatrix_t</a>&amp; costMatrix, <span class="keywordtype">size_t</span> N, <span class="keywordtype">size_t</span> M, <a class="code" href="defines_8h.html#ad7b9f569a9adbd958c668a36b6884ffd">assignments_t</a>&amp; assignment, <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> maxCost) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_short_path_calculator.html#a191b6769d0b7b8ad4bce9db0a4392ad6">   29</a></span>&#160;    <a class="code" href="struct_s_p_settings.html">SPSettings</a> <a class="code" href="class_short_path_calculator.html#a191b6769d0b7b8ad4bce9db0a4392ad6">m_settings</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_s_p_hungrian.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_p_hungrian.html">SPHungrian</a> : <span class="keyword">public</span> <a class="code" href="class_short_path_calculator.html">ShortPathCalculator</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_s_p_hungrian.html#a6bb1b5335b7be0d6f12cd56dd181d898">   38</a></span>&#160;    <a class="code" href="class_s_p_hungrian.html#a6bb1b5335b7be0d6f12cd56dd181d898">SPHungrian</a>(<span class="keyword">const</span> <a class="code" href="struct_s_p_settings.html">SPSettings</a>&amp; settings)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        : <a class="code" href="class_short_path_calculator.html">ShortPathCalculator</a>(settings)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_s_p_hungrian.html#aba79782523f1c73b18159813178976dd">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_hungrian.html#aba79782523f1c73b18159813178976dd">Solve</a>(<span class="keyword">const</span> <a class="code" href="defines_8h.html#af6ab0ee8259a51215f62e8f96416d5bb">distMatrix_t</a>&amp; costMatrix, <span class="keywordtype">size_t</span> N, <span class="keywordtype">size_t</span> M, <a class="code" href="defines_8h.html#ad7b9f569a9adbd958c668a36b6884ffd">assignments_t</a>&amp; assignment, <a class="code" href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a> <span class="comment">/*maxCost*/</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_s_p_hungrian.html#a4f7f94236b7728a35d27dea7ecfe46e1">m_solver</a>.<a class="code" href="class_assignment_problem_solver.html#a38198467ca647403c40be2c2bb47e177">Solve</a>(costMatrix, N, M, assignment, <a class="code" href="class_assignment_problem_solver.html#aec407eb73fed9d3ddb9467fde90a85e8a84f2334f61866dba64befa6910848d75">AssignmentProblemSolver::optimal</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_s_p_hungrian.html#a4f7f94236b7728a35d27dea7ecfe46e1">   49</a></span>&#160;    <a class="code" href="class_assignment_problem_solver.html">AssignmentProblemSolver</a> <a class="code" href="class_s_p_hungrian.html#a4f7f94236b7728a35d27dea7ecfe46e1">m_solver</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_s_p_bipart.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_p_bipart.html">SPBipart</a> : <span class="keyword">public</span> <a class="code" href="class_short_path_calculator.html">ShortPathCalculator</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_s_p_bipart.html#a26bff02420770899795cfcafd1efb9a5">   59</a></span>&#160;    <a class="code" href="class_s_p_bipart.html#a26bff02420770899795cfcafd1efb9a5">SPBipart</a>(<span class="keyword">const</span> <a class="code" href="struct_s_p_settings.html">SPSettings</a>&amp; settings)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        : <a class="code" href="class_short_path_calculator.html">ShortPathCalculator</a>(settings)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//void Solve(const distMatrix_t&amp; costMatrix, size_t N, size_t M, assignments_t&amp; assignment, track_t maxCost);</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="ttc" id="a_hungarian_alg_8h_html"><div class="ttname"><a href="_hungarian_alg_8h.html">HungarianAlg.h</a></div></div>
+<div class="ttc" id="aclass_assignment_problem_solver_html"><div class="ttname"><a href="class_assignment_problem_solver.html">AssignmentProblemSolver</a></div><div class="ttdoc">The AssignmentProblemSolver class</div><div class="ttdef"><b>Definition:</b> HungarianAlg.h:12</div></div>
+<div class="ttc" id="aclass_assignment_problem_solver_html_a38198467ca647403c40be2c2bb47e177"><div class="ttname"><a href="class_assignment_problem_solver.html#a38198467ca647403c40be2c2bb47e177">AssignmentProblemSolver::Solve</a></div><div class="ttdeci">track_t Solve(const distMatrix_t &amp;distMatrixIn, size_t nOfRows, size_t nOfColumns, assignments_t &amp;assignment, TMethod Method=optimal)</div><div class="ttdef"><b>Definition:</b> HungarianAlg.cpp:7</div></div>
+<div class="ttc" id="aclass_assignment_problem_solver_html_aec407eb73fed9d3ddb9467fde90a85e8a84f2334f61866dba64befa6910848d75"><div class="ttname"><a href="class_assignment_problem_solver.html#aec407eb73fed9d3ddb9467fde90a85e8a84f2334f61866dba64befa6910848d75">AssignmentProblemSolver::optimal</a></div><div class="ttdeci">@ optimal</div><div class="ttdef"><b>Definition:</b> HungarianAlg.h:16</div></div>
+<div class="ttc" id="aclass_s_p_bipart_html"><div class="ttname"><a href="class_s_p_bipart.html">SPBipart</a></div><div class="ttdoc">The SPBipart class</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:57</div></div>
+<div class="ttc" id="aclass_s_p_bipart_html_a26bff02420770899795cfcafd1efb9a5"><div class="ttname"><a href="class_s_p_bipart.html#a26bff02420770899795cfcafd1efb9a5">SPBipart::SPBipart</a></div><div class="ttdeci">SPBipart(const SPSettings &amp;settings)</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:59</div></div>
+<div class="ttc" id="aclass_s_p_hungrian_html"><div class="ttname"><a href="class_s_p_hungrian.html">SPHungrian</a></div><div class="ttdoc">The SPHungrian class</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:36</div></div>
+<div class="ttc" id="aclass_s_p_hungrian_html_a4f7f94236b7728a35d27dea7ecfe46e1"><div class="ttname"><a href="class_s_p_hungrian.html#a4f7f94236b7728a35d27dea7ecfe46e1">SPHungrian::m_solver</a></div><div class="ttdeci">AssignmentProblemSolver m_solver</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:49</div></div>
+<div class="ttc" id="aclass_s_p_hungrian_html_a6bb1b5335b7be0d6f12cd56dd181d898"><div class="ttname"><a href="class_s_p_hungrian.html#a6bb1b5335b7be0d6f12cd56dd181d898">SPHungrian::SPHungrian</a></div><div class="ttdeci">SPHungrian(const SPSettings &amp;settings)</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:38</div></div>
+<div class="ttc" id="aclass_s_p_hungrian_html_aba79782523f1c73b18159813178976dd"><div class="ttname"><a href="class_s_p_hungrian.html#aba79782523f1c73b18159813178976dd">SPHungrian::Solve</a></div><div class="ttdeci">void Solve(const distMatrix_t &amp;costMatrix, size_t N, size_t M, assignments_t &amp;assignment, track_t)</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:43</div></div>
+<div class="ttc" id="aclass_short_path_calculator_html"><div class="ttname"><a href="class_short_path_calculator.html">ShortPathCalculator</a></div><div class="ttdoc">The ShortPathCalculator class</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:18</div></div>
+<div class="ttc" id="aclass_short_path_calculator_html_a16bee018bafa5ba99142f501c6982eda"><div class="ttname"><a href="class_short_path_calculator.html#a16bee018bafa5ba99142f501c6982eda">ShortPathCalculator::Solve</a></div><div class="ttdeci">virtual void Solve(const distMatrix_t &amp;costMatrix, size_t N, size_t M, assignments_t &amp;assignment, track_t maxCost)=0</div></div>
+<div class="ttc" id="aclass_short_path_calculator_html_a191b6769d0b7b8ad4bce9db0a4392ad6"><div class="ttname"><a href="class_short_path_calculator.html#a191b6769d0b7b8ad4bce9db0a4392ad6">ShortPathCalculator::m_settings</a></div><div class="ttdeci">SPSettings m_settings</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:29</div></div>
+<div class="ttc" id="aclass_short_path_calculator_html_a252a19c127b4124359b1d3aebccbc373"><div class="ttname"><a href="class_short_path_calculator.html#a252a19c127b4124359b1d3aebccbc373">ShortPathCalculator::~ShortPathCalculator</a></div><div class="ttdeci">virtual ~ShortPathCalculator()=default</div></div>
+<div class="ttc" id="aclass_short_path_calculator_html_ad4cc17f00025648dce2126375c837a39"><div class="ttname"><a href="class_short_path_calculator.html#ad4cc17f00025648dce2126375c837a39">ShortPathCalculator::ShortPathCalculator</a></div><div class="ttdeci">ShortPathCalculator(const SPSettings &amp;settings)</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:20</div></div>
+<div class="ttc" id="adefines_8h_html"><div class="ttname"><a href="defines_8h.html">defines.h</a></div></div>
+<div class="ttc" id="adefines_8h_html_a7ce9c8817b42ab418e61756f579549ab"><div class="ttname"><a href="defines_8h.html#a7ce9c8817b42ab418e61756f579549ab">track_t</a></div><div class="ttdeci">float track_t</div><div class="ttdef"><b>Definition:</b> defines.h:14</div></div>
+<div class="ttc" id="adefines_8h_html_ad7b9f569a9adbd958c668a36b6884ffd"><div class="ttname"><a href="defines_8h.html#ad7b9f569a9adbd958c668a36b6884ffd">assignments_t</a></div><div class="ttdeci">std::vector&lt; int &gt; assignments_t</div><div class="ttdef"><b>Definition:</b> defines.h:21</div></div>
+<div class="ttc" id="adefines_8h_html_af6ab0ee8259a51215f62e8f96416d5bb"><div class="ttname"><a href="defines_8h.html#af6ab0ee8259a51215f62e8f96416d5bb">distMatrix_t</a></div><div class="ttdeci">std::vector&lt; track_t &gt; distMatrix_t</div><div class="ttdef"><b>Definition:</b> defines.h:22</div></div>
+<div class="ttc" id="astruct_s_p_settings_html"><div class="ttname"><a href="struct_s_p_settings.html">SPSettings</a></div><div class="ttdoc">The SPSettings struct</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:9</div></div>
+<div class="ttc" id="astruct_s_p_settings_html_a982b07a4a63dac30affb8d0ed863956f"><div class="ttname"><a href="struct_s_p_settings.html#a982b07a4a63dac30affb8d0ed863956f">SPSettings::m_maxHistory</a></div><div class="ttdeci">size_t m_maxHistory</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:11</div></div>
+<div class="ttc" id="astruct_s_p_settings_html_ad573c443178ef0a557336523d8c97c9e"><div class="ttname"><a href="struct_s_p_settings.html#ad573c443178ef0a557336523d8c97c9e">SPSettings::m_distThres</a></div><div class="ttdeci">track_t m_distThres</div><div class="ttdef"><b>Definition:</b> ShortPathCalculator.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

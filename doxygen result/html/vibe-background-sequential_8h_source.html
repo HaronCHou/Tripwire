@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: G:/python_based_algo/MOT_tracking_haron/MOT_Origin/vibe-background-sequential.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9a6d6e2fd7164b8ab4fd13705b6eb0c.html">python_based_algo</a></li><li class="navelem"><a class="el" href="dir_70ba9663e0006689810b8ca36f51056c.html">MOT_tracking_haron</a></li><li class="navelem"><a class="el" href="dir_fb56db6ca622663f2ae11cd7b1c5e212.html">MOT_Origin</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">vibe-background-sequential.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="vibe-background-sequential_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">    1</a></span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef _VIBE_SEQUENTIAL_H_</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define _VIBE_SEQUENTIAL_H_</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="vibe-background-sequential_8h.html#af27cfac70191e90ee59f2fbfc0142df5">   53</a></span>&#160;<span class="preprocessor">#define COLOR_BACKGROUND   0 </span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="vibe-background-sequential_8h.html#aa948e5bccf1e1a22a5a44096dd2a65f5">   54</a></span>&#160;<span class="preprocessor">#define COLOR_FOREGROUND 255 </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential</a> <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *<a class="code" href="vibe-background-sequential_8h.html#a8448d01d9b655a6eae95f85345f4618f">libvibeModel_Sequential_New</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;uint32_t <a class="code" href="vibe-background-sequential_8h.html#a8f802a8b63b52b1f4c66a1e4e5facbee">libvibeModel_Sequential_PrintParameters</a>(<span class="keyword">const</span> <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="vibe-background-sequential_8h.html#a08abbf6ccc8f821313f0db84376bbca0">   92</a></span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a08abbf6ccc8f821313f0db84376bbca0">libvibeModel_Sequential_SetNumberOfSamples</a>(</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#a5ecf504ab446f2a3c0ab341c01b3de40">numberOfSamples</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;uint32_t <a class="code" href="vibe-background-sequential_8h.html#a46d1c6c1c63814cb45dfa4a988b150a5">libvibeModel_Sequential_GetNumberOfSamples</a>(<span class="keyword">const</span> <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#acfa14d172453c64bc9b12672fd8c2d2f">libvibeModel_Sequential_SetMatchingThreshold</a>(</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#a8e9ba9a4b10c2e8b2c567135a77b7dcc">matchingThreshold</a></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;uint32_t <a class="code" href="vibe-background-sequential_8h.html#aad983de0f08a3c3acb7e4138754de4d6">libvibeModel_Sequential_GetMatchingThreshold</a>(<span class="keyword">const</span> <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a10e2890c016ae226febfd9b914d3277e">libvibeModel_Sequential_SetMatchingNumber</a>(</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#ab12ba139fca676ab01ef5546baa22ab2">matchingNumber</a></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a829161a63a4c50661450f3c36d7aeee4">libvibeModel_Sequential_SetUpdateFactor</a>(</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#a32e99b817e55371f37e6c5a607ba1b7a">updateFactor</a></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;uint32_t <a class="code" href="vibe-background-sequential_8h.html#a9ab0ccf3f4a76348e153943592f3cc7a">libvibeModel_Sequential_GetMatchingNumber</a>(<span class="keyword">const</span> <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;uint32_t <a class="code" href="vibe-background-sequential_8h.html#a8cc6eef012e8d79dd1f5df88f6f5bde5">libvibeModel_Sequential_GetUpdateFactor</a>(<span class="keyword">const</span> <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;uint8_t *<a class="code" href="vibe-background-sequential_8h.html#a6007425a8fceab044a2dfd9d41223cb9">GetFgCount</a>(<span class="keyword">const</span> <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a472980fbda807d923c83cfbe03c4026b">libvibeModel_Sequential_Free</a>(<a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">// -------------------------  Single channel images ----------------------------</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"></span>int32_t <a class="code" href="vibe-background-sequential_8h.html#a52e0169506ba0dc69d7abae2ebd15d0d">libvibeModel_Sequential_AllocInit_8u_C1R</a>(</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keyword">const</span> uint8_t *image_data,</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#ac8133a7a3408b3950f7d718927a57d66">width</a>,</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#a2757b4eb5c9c58f64434249b861cfc83">height</a></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">/* These 2 functions perform 2 operations:</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> *   - they classify the pixels *image_data using the provided model and store</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> *     the results in *segmentation_map.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> *   - they update *model according to these results and the content of</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> *     *image_data.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> * You must use the &quot;C1R&quot; function for grayscale images and the &quot;C3R&quot; for color</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> * images.</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a2e3c2d8a07349614e218a58064d42269">libvibeModel_Sequential_Segmentation_8u_C1R</a>(</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">const</span> uint8_t *image_data,</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  uint8_t *segmentation_map</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a97f305588766558e5628e601f93ef888">libvibeModel_Sequential_Update_8u_C1R</a>(</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keyword">const</span> uint8_t *image_data,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  uint8_t *updating_mask,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  uint8_t *hist,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  uint8_t *bgmodel</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">// -------------------------  Three channel images -----------------------------</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"></span>int32_t <a class="code" href="vibe-background-sequential_8h.html#a6ddab8089f1035eee0c1465365f844c7">libvibeModel_Sequential_AllocInit_8u_C3R</a>(</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keyword">const</span> uint8_t *image_data,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#ac8133a7a3408b3950f7d718927a57d66">width</a>,</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keyword">const</span> uint32_t <a class="code" href="structvibe_model___sequential.html#a2757b4eb5c9c58f64434249b861cfc83">height</a></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">/* These 2 functions perform 2 operations:</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"> *   - they classify the pixels *image_data using the provided model and store</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"> *     the results in *segmentation_map.</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"> *   - they update *model according to these results and the content of</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment"> *     *image_data.</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"> * You must use the &quot;C1R&quot; function for grayscale images and the &quot;C3R&quot; for color</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment"> * images.</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a2fa30269c83bec37562abf5d386948f6">libvibeModel_Sequential_Segmentation_8u_C3R</a>(</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keyword">const</span> uint8_t *image_data,</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  uint8_t *segmentation_map</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;int32_t <a class="code" href="vibe-background-sequential_8h.html#a123f2632660de1e2e59420df62dd30e5">libvibeModel_Sequential_Update_8u_C3R</a>(</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <a class="code" href="structvibe_model___sequential.html">vibeModel_Sequential_t</a> *model,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keyword">const</span> uint8_t *image_data,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  uint8_t *updating_mask</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="ttc" id="astructvibe_model___sequential_html"><div class="ttname"><a href="structvibe_model___sequential.html">vibeModel_Sequential</a></div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:66</div></div>
+<div class="ttc" id="astructvibe_model___sequential_html_a2757b4eb5c9c58f64434249b861cfc83"><div class="ttname"><a href="structvibe_model___sequential.html#a2757b4eb5c9c58f64434249b861cfc83">vibeModel_Sequential::height</a></div><div class="ttdeci">uint32_t height</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:69</div></div>
+<div class="ttc" id="astructvibe_model___sequential_html_a32e99b817e55371f37e6c5a607ba1b7a"><div class="ttname"><a href="structvibe_model___sequential.html#a32e99b817e55371f37e6c5a607ba1b7a">vibeModel_Sequential::updateFactor</a></div><div class="ttdeci">uint32_t updateFactor</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:73</div></div>
+<div class="ttc" id="astructvibe_model___sequential_html_a5ecf504ab446f2a3c0ab341c01b3de40"><div class="ttname"><a href="structvibe_model___sequential.html#a5ecf504ab446f2a3c0ab341c01b3de40">vibeModel_Sequential::numberOfSamples</a></div><div class="ttdeci">uint32_t numberOfSamples</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:70</div></div>
+<div class="ttc" id="astructvibe_model___sequential_html_a8e9ba9a4b10c2e8b2c567135a77b7dcc"><div class="ttname"><a href="structvibe_model___sequential.html#a8e9ba9a4b10c2e8b2c567135a77b7dcc">vibeModel_Sequential::matchingThreshold</a></div><div class="ttdeci">uint32_t matchingThreshold</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:71</div></div>
+<div class="ttc" id="astructvibe_model___sequential_html_ab12ba139fca676ab01ef5546baa22ab2"><div class="ttname"><a href="structvibe_model___sequential.html#ab12ba139fca676ab01ef5546baa22ab2">vibeModel_Sequential::matchingNumber</a></div><div class="ttdeci">uint32_t matchingNumber</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:72</div></div>
+<div class="ttc" id="astructvibe_model___sequential_html_ac8133a7a3408b3950f7d718927a57d66"><div class="ttname"><a href="structvibe_model___sequential.html#ac8133a7a3408b3950f7d718927a57d66">vibeModel_Sequential::width</a></div><div class="ttdeci">uint32_t width</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:68</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a08abbf6ccc8f821313f0db84376bbca0"><div class="ttname"><a href="vibe-background-sequential_8h.html#a08abbf6ccc8f821313f0db84376bbca0">libvibeModel_Sequential_SetNumberOfSamples</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_SetNumberOfSamples(vibeModel_Sequential_t *model, const uint32_t numberOfSamples)</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a10e2890c016ae226febfd9b914d3277e"><div class="ttname"><a href="vibe-background-sequential_8h.html#a10e2890c016ae226febfd9b914d3277e">libvibeModel_Sequential_SetMatchingNumber</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_SetMatchingNumber(vibeModel_Sequential_t *model, const uint32_t matchingNumber)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:183</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a123f2632660de1e2e59420df62dd30e5"><div class="ttname"><a href="vibe-background-sequential_8h.html#a123f2632660de1e2e59420df62dd30e5">libvibeModel_Sequential_Update_8u_C3R</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_Update_8u_C3R(vibeModel_Sequential_t *model, const uint8_t *image_data, uint8_t *updating_mask)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:775</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a2e3c2d8a07349614e218a58064d42269"><div class="ttname"><a href="vibe-background-sequential_8h.html#a2e3c2d8a07349614e218a58064d42269">libvibeModel_Sequential_Segmentation_8u_C1R</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_Segmentation_8u_C1R(vibeModel_Sequential_t *model, const uint8_t *image_data, uint8_t *segmentation_map)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:315</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a2fa30269c83bec37562abf5d386948f6"><div class="ttname"><a href="vibe-background-sequential_8h.html#a2fa30269c83bec37562abf5d386948f6">libvibeModel_Sequential_Segmentation_8u_C3R</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_Segmentation_8u_C3R(vibeModel_Sequential_t *model, const uint8_t *image_data, uint8_t *segmentation_map)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:668</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a46d1c6c1c63814cb45dfa4a988b150a5"><div class="ttname"><a href="vibe-background-sequential_8h.html#a46d1c6c1c63814cb45dfa4a988b150a5">libvibeModel_Sequential_GetNumberOfSamples</a></div><div class="ttdeci">uint32_t libvibeModel_Sequential_GetNumberOfSamples(const vibeModel_Sequential_t *model)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:144</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a472980fbda807d923c83cfbe03c4026b"><div class="ttname"><a href="vibe-background-sequential_8h.html#a472980fbda807d923c83cfbe03c4026b">libvibeModel_Sequential_Free</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_Free(vibeModel_Sequential_t *model)</div><div class="ttdoc">Frees all the memory used by the model and deallocates the structure.</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:220</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a52e0169506ba0dc69d7abae2ebd15d0d"><div class="ttname"><a href="vibe-background-sequential_8h.html#a52e0169506ba0dc69d7abae2ebd15d0d">libvibeModel_Sequential_AllocInit_8u_C1R</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_AllocInit_8u_C1R(vibeModel_Sequential_t *model, const uint8_t *image_data, const uint32_t width, const uint32_t height)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:243</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a6007425a8fceab044a2dfd9d41223cb9"><div class="ttname"><a href="vibe-background-sequential_8h.html#a6007425a8fceab044a2dfd9d41223cb9">GetFgCount</a></div><div class="ttdeci">uint8_t * GetFgCount(const vibeModel_Sequential_t *model)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:163</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a6ddab8089f1035eee0c1465365f844c7"><div class="ttname"><a href="vibe-background-sequential_8h.html#a6ddab8089f1035eee0c1465365f844c7">libvibeModel_Sequential_AllocInit_8u_C3R</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_AllocInit_8u_C3R(vibeModel_Sequential_t *model, const uint8_t *image_data, const uint32_t width, const uint32_t height)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:588</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a829161a63a4c50661450f3c36d7aeee4"><div class="ttname"><a href="vibe-background-sequential_8h.html#a829161a63a4c50661450f3c36d7aeee4">libvibeModel_Sequential_SetUpdateFactor</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_SetUpdateFactor(vibeModel_Sequential_t *model, const uint32_t updateFactor)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:196</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a8448d01d9b655a6eae95f85345f4618f"><div class="ttname"><a href="vibe-background-sequential_8h.html#a8448d01d9b655a6eae95f85345f4618f">libvibeModel_Sequential_New</a></div><div class="ttdeci">vibeModel_Sequential_t * libvibeModel_Sequential_New()</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:112</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a8cc6eef012e8d79dd1f5df88f6f5bde5"><div class="ttname"><a href="vibe-background-sequential_8h.html#a8cc6eef012e8d79dd1f5df88f6f5bde5">libvibeModel_Sequential_GetUpdateFactor</a></div><div class="ttdeci">uint32_t libvibeModel_Sequential_GetUpdateFactor(const vibeModel_Sequential_t *model)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:159</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a8f802a8b63b52b1f4c66a1e4e5facbee"><div class="ttname"><a href="vibe-background-sequential_8h.html#a8f802a8b63b52b1f4c66a1e4e5facbee">libvibeModel_Sequential_PrintParameters</a></div><div class="ttdeci">uint32_t libvibeModel_Sequential_PrintParameters(const vibeModel_Sequential_t *model)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:92</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a97f305588766558e5628e601f93ef888"><div class="ttname"><a href="vibe-background-sequential_8h.html#a97f305588766558e5628e601f93ef888">libvibeModel_Sequential_Update_8u_C1R</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_Update_8u_C1R(vibeModel_Sequential_t *model, const uint8_t *image_data, uint8_t *updating_mask, uint8_t *hist, uint8_t *bgmodel)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:419</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_a9ab0ccf3f4a76348e153943592f3cc7a"><div class="ttname"><a href="vibe-background-sequential_8h.html#a9ab0ccf3f4a76348e153943592f3cc7a">libvibeModel_Sequential_GetMatchingNumber</a></div><div class="ttdeci">uint32_t libvibeModel_Sequential_GetMatchingNumber(const vibeModel_Sequential_t *model)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:149</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_aad983de0f08a3c3acb7e4138754de4d6"><div class="ttname"><a href="vibe-background-sequential_8h.html#aad983de0f08a3c3acb7e4138754de4d6">libvibeModel_Sequential_GetMatchingThreshold</a></div><div class="ttdeci">uint32_t libvibeModel_Sequential_GetMatchingThreshold(const vibeModel_Sequential_t *model)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:154</div></div>
+<div class="ttc" id="avibe-background-sequential_8h_html_acfa14d172453c64bc9b12672fd8c2d2f"><div class="ttname"><a href="vibe-background-sequential_8h.html#acfa14d172453c64bc9b12672fd8c2d2f">libvibeModel_Sequential_SetMatchingThreshold</a></div><div class="ttdeci">int32_t libvibeModel_Sequential_SetMatchingThreshold(vibeModel_Sequential_t *model, const uint32_t matchingThreshold)</div><div class="ttdef"><b>Definition:</b> vibe-background-sequential.c:170</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

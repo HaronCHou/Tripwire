@@ -1,0 +1,8 @@
+﻿  main.cpp
+g:\python_based_algo\mot_tracking_haron\mot_hwkalman\main.cpp(68): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\python_based_algo\mot_tracking_haron\mot_hwkalman\main.cpp(69): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\python_based_algo\mot_tracking_haron\mot_hwkalman\main.cpp(387): warning C4305: “参数”: 从“double”到“float”截断
+g:\python_based_algo\mot_tracking_haron\mot_hwkalman\main.cpp(514): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+g:\python_based_algo\mot_tracking_haron\mot_hwkalman\main.cpp(620): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\python_based_algo\mot_tracking_haron\mot_hwkalman\main.cpp(621): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  MOT_hwKalman.vcxproj -> G:\python_based_algo\MOT_tracking_haron\x64\Debug\MOT_hwKalman.exe

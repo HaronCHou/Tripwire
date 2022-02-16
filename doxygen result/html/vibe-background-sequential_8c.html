@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: G:/python_based_algo/MOT_tracking_haron/MOT_Origin/vibe-background-sequential.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9a6d6e2fd7164b8ab4fd13705b6eb0c.html">python_based_algo</a></li><li class="navelem"><a class="el" href="dir_70ba9663e0006689810b8ca36f51056c.html">MOT_tracking_haron</a></li><li class="navelem"><a class="el" href="dir_fb56db6ca622663f2ae11cd7b1c5e212.html">MOT_Origin</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">vibe-background-sequential.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementation of <a class="el" href="vibe-background-sequential_8h.html">vibe-background-sequential.h</a>  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="vibe-background-sequential_8h_source.html">vibe-background-sequential.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+vibe-background-sequential.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="vibe-background-sequential_8c__incl.png" border="0" usemap="#a_g_1_2python__based__algo_2_m_o_t__tracking__haron_2_m_o_t___origin_2vibe-background-sequential_8c" alt=""/></div>
+<map name="a_g_1_2python__based__algo_2_m_o_t__tracking__haron_2_m_o_t___origin_2vibe-background-sequential_8c" id="a_g_1_2python__based__algo_2_m_o_t__tracking__haron_2_m_o_t___origin_2vibe-background-sequential_8c">
+<area shape="rect" title="Implementation of vibe&#45;background&#45;sequential.h" alt="" coords="39,5,217,76"/>
+<area shape="rect" title=" " alt="" coords="5,124,75,151"/>
+<area shape="rect" title=" " alt="" coords="99,124,157,151"/>
+<area shape="rect" href="vibe-background-sequential_8h.html" title=" " alt="" coords="181,124,371,151"/>
+<area shape="rect" title=" " alt="" coords="111,199,175,225"/>
+<area shape="rect" title=" " alt="" coords="199,199,265,225"/>
+<area shape="rect" title=" " alt="" coords="289,199,351,225"/>
+<area shape="rect" title=" " alt="" coords="375,199,441,225"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvibe_model___sequential.html">vibeModel_Sequential</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a00d24c7231be28dbaf71f5408f30e44c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a00d24c7231be28dbaf71f5408f30e44c">inline</a>&#160;&#160;&#160;_inline</td></tr>
+<tr class="separator:a00d24c7231be28dbaf71f5408f30e44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f18ed762cbe7b8a8391745b4f749ac6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a7f18ed762cbe7b8a8391745b4f749ac6">NUMBER_OF_HISTORY_IMAGES</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a7f18ed762cbe7b8a8391745b4f749ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a172efc4d0959a70a8aafcba5f97c8de8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a172efc4d0959a70a8aafcba5f97c8de8">abs_uint</a> (const int i)</td></tr>
+<tr class="separator:a172efc4d0959a70a8aafcba5f97c8de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a48ce50e5a937709ae0337bc4223be2"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a7a48ce50e5a937709ae0337bc4223be2">distance_is_close_8u_C3R</a> (uint8_t r1, uint8_t g1, uint8_t b1, uint8_t r2, uint8_t g2, uint8_t b2, uint32_t threshold)</td></tr>
+<tr class="separator:a7a48ce50e5a937709ae0337bc4223be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f802a8b63b52b1f4c66a1e4e5facbee"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a8f802a8b63b52b1f4c66a1e4e5facbee">libvibeModel_Sequential_PrintParameters</a> (const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model)</td></tr>
+<tr class="separator:a8f802a8b63b52b1f4c66a1e4e5facbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8448d01d9b655a6eae95f85345f4618f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a8448d01d9b655a6eae95f85345f4618f">libvibeModel_Sequential_New</a> ()</td></tr>
+<tr class="separator:a8448d01d9b655a6eae95f85345f4618f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d1c6c1c63814cb45dfa4a988b150a5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a46d1c6c1c63814cb45dfa4a988b150a5">libvibeModel_Sequential_GetNumberOfSamples</a> (const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model)</td></tr>
+<tr class="separator:a46d1c6c1c63814cb45dfa4a988b150a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab0ccf3f4a76348e153943592f3cc7a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a9ab0ccf3f4a76348e153943592f3cc7a">libvibeModel_Sequential_GetMatchingNumber</a> (const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model)</td></tr>
+<tr class="separator:a9ab0ccf3f4a76348e153943592f3cc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad983de0f08a3c3acb7e4138754de4d6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#aad983de0f08a3c3acb7e4138754de4d6">libvibeModel_Sequential_GetMatchingThreshold</a> (const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model)</td></tr>
+<tr class="separator:aad983de0f08a3c3acb7e4138754de4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc6eef012e8d79dd1f5df88f6f5bde5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a8cc6eef012e8d79dd1f5df88f6f5bde5">libvibeModel_Sequential_GetUpdateFactor</a> (const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model)</td></tr>
+<tr class="separator:a8cc6eef012e8d79dd1f5df88f6f5bde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6007425a8fceab044a2dfd9d41223cb9"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a6007425a8fceab044a2dfd9d41223cb9">GetFgCount</a> (const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model)</td></tr>
+<tr class="separator:a6007425a8fceab044a2dfd9d41223cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa14d172453c64bc9b12672fd8c2d2f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#acfa14d172453c64bc9b12672fd8c2d2f">libvibeModel_Sequential_SetMatchingThreshold</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint32_t matchingThreshold)</td></tr>
+<tr class="separator:acfa14d172453c64bc9b12672fd8c2d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e2890c016ae226febfd9b914d3277e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a10e2890c016ae226febfd9b914d3277e">libvibeModel_Sequential_SetMatchingNumber</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint32_t matchingNumber)</td></tr>
+<tr class="separator:a10e2890c016ae226febfd9b914d3277e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829161a63a4c50661450f3c36d7aeee4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a829161a63a4c50661450f3c36d7aeee4">libvibeModel_Sequential_SetUpdateFactor</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint32_t updateFactor)</td></tr>
+<tr class="separator:a829161a63a4c50661450f3c36d7aeee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472980fbda807d923c83cfbe03c4026b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a472980fbda807d923c83cfbe03c4026b">libvibeModel_Sequential_Free</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model)</td></tr>
+<tr class="memdesc:a472980fbda807d923c83cfbe03c4026b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees all the memory used by the <code>model</code> and deallocates the structure.  <a href="vibe-background-sequential_8c.html#a472980fbda807d923c83cfbe03c4026b">更多...</a><br /></td></tr>
+<tr class="separator:a472980fbda807d923c83cfbe03c4026b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e0169506ba0dc69d7abae2ebd15d0d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a52e0169506ba0dc69d7abae2ebd15d0d">libvibeModel_Sequential_AllocInit_8u_C1R</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint8_t *image_data, const uint32_t width, const uint32_t height)</td></tr>
+<tr class="separator:a52e0169506ba0dc69d7abae2ebd15d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3c2d8a07349614e218a58064d42269"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a2e3c2d8a07349614e218a58064d42269">libvibeModel_Sequential_Segmentation_8u_C1R</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint8_t *image_data, uint8_t *segmentation_map)</td></tr>
+<tr class="separator:a2e3c2d8a07349614e218a58064d42269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f305588766558e5628e601f93ef888"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a97f305588766558e5628e601f93ef888">libvibeModel_Sequential_Update_8u_C1R</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint8_t *image_data, uint8_t *updating_mask, uint8_t *hist, uint8_t *bgmodel)</td></tr>
+<tr class="separator:a97f305588766558e5628e601f93ef888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ddab8089f1035eee0c1465365f844c7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a6ddab8089f1035eee0c1465365f844c7">libvibeModel_Sequential_AllocInit_8u_C3R</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint8_t *image_data, const uint32_t width, const uint32_t height)</td></tr>
+<tr class="separator:a6ddab8089f1035eee0c1465365f844c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa30269c83bec37562abf5d386948f6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a2fa30269c83bec37562abf5d386948f6">libvibeModel_Sequential_Segmentation_8u_C3R</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint8_t *image_data, uint8_t *segmentation_map)</td></tr>
+<tr class="separator:a2fa30269c83bec37562abf5d386948f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123f2632660de1e2e59420df62dd30e5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vibe-background-sequential_8c.html#a123f2632660de1e2e59420df62dd30e5">libvibeModel_Sequential_Update_8u_C3R</a> (<a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *model, const uint8_t *image_data, uint8_t *updating_mask)</td></tr>
+<tr class="separator:a123f2632660de1e2e59420df62dd30e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Implementation of <a class="el" href="vibe-background-sequential_8h.html">vibe-background-sequential.h</a> </p>
+<dl class="section author"><dt>作者</dt><dd>Marc Van Droogenbroeck</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>May 2014 </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a00d24c7231be28dbaf71f5408f30e44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d24c7231be28dbaf71f5408f30e44c">&#9670;&nbsp;</a></span>inline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define inline&#160;&#160;&#160;_inline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f18ed762cbe7b8a8391745b4f749ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f18ed762cbe7b8a8391745b4f749ac6">&#9670;&nbsp;</a></span>NUMBER_OF_HISTORY_IMAGES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUMBER_OF_HISTORY_IMAGES&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a172efc4d0959a70a8aafcba5f97c8de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172efc4d0959a70a8aafcba5f97c8de8">&#9670;&nbsp;</a></span>abs_uint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int abs_uint </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a48ce50e5a937709ae0337bc4223be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a48ce50e5a937709ae0337bc4223be2">&#9670;&nbsp;</a></span>distance_is_close_8u_C3R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t distance_is_close_8u_C3R </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>g1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>g2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="vibe-background-sequential_8c_a7a48ce50e5a937709ae0337bc4223be2_cgraph.png" border="0" usemap="#avibe-background-sequential_8c_a7a48ce50e5a937709ae0337bc4223be2_cgraph" alt=""/></div>
+<map name="avibe-background-sequential_8c_a7a48ce50e5a937709ae0337bc4223be2_cgraph" id="avibe-background-sequential_8c_a7a48ce50e5a937709ae0337bc4223be2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,184,32"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#a172efc4d0959a70a8aafcba5f97c8de8" title=" " alt="" coords="232,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6007425a8fceab044a2dfd9d41223cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6007425a8fceab044a2dfd9d41223cb9">&#9670;&nbsp;</a></span>GetFgCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* GetFgCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52e0169506ba0dc69d7abae2ebd15d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e0169506ba0dc69d7abae2ebd15d0d">&#9670;&nbsp;</a></span>libvibeModel_Sequential_AllocInit_8u_C1R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_AllocInit_8u_C1R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>image_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The two following functions allocate the required memory according to the model parameters and the dimensions of the input images. You must use the "C1R" function for grayscale images and the "C3R" for color images. These 2 functions also initialize the background model using the content of *image_data which is the pixel buffer of the first image of your stream. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">image_data</td><td></td></tr>
+    <tr><td class="paramname">width</td><td></td></tr>
+    <tr><td class="paramname">height</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a6ddab8089f1035eee0c1465365f844c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddab8089f1035eee0c1465365f844c7">&#9670;&nbsp;</a></span>libvibeModel_Sequential_AllocInit_8u_C3R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_AllocInit_8u_C3R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>image_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pixel values of color images are arranged in the following order RGBRGBRGB... (or HSVHSVHSVHSVHSVHSV...)</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">image_data</td><td></td></tr>
+    <tr><td class="paramname">width</td><td></td></tr>
+    <tr><td class="paramname">height</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a472980fbda807d923c83cfbe03c4026b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472980fbda807d923c83cfbe03c4026b">&#9670;&nbsp;</a></span>libvibeModel_Sequential_Free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_Free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees all the memory used by the <code>model</code> and deallocates the structure. </p>
+<p>This function frees all the memory allocated by libvibeModel_SequentialNew and <a class="el" href="vibe-background-sequential_8h.html#a52e0169506ba0dc69d7abae2ebd15d0d">libvibeModel_Sequential_AllocInit_8u_C1R</a> or <a class="el" href="vibe-background-sequential_8h.html#a6ddab8089f1035eee0c1465365f844c7">libvibeModel_Sequential_AllocInit_8u_C3R</a>. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a9ab0ccf3f4a76348e153943592f3cc7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab0ccf3f4a76348e153943592f3cc7a">&#9670;&nbsp;</a></span>libvibeModel_Sequential_GetMatchingNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t libvibeModel_Sequential_GetMatchingNumber </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aad983de0f08a3c3acb7e4138754de4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad983de0f08a3c3acb7e4138754de4d6">&#9670;&nbsp;</a></span>libvibeModel_Sequential_GetMatchingThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t libvibeModel_Sequential_GetMatchingThreshold </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a46d1c6c1c63814cb45dfa4a988b150a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d1c6c1c63814cb45dfa4a988b150a5">&#9670;&nbsp;</a></span>libvibeModel_Sequential_GetNumberOfSamples()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t libvibeModel_Sequential_GetNumberOfSamples </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a8cc6eef012e8d79dd1f5df88f6f5bde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc6eef012e8d79dd1f5df88f6f5bde5">&#9670;&nbsp;</a></span>libvibeModel_Sequential_GetUpdateFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t libvibeModel_Sequential_GetUpdateFactor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a8448d01d9b655a6eae95f85345f4618f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8448d01d9b655a6eae95f85345f4618f">&#9670;&nbsp;</a></span>libvibeModel_Sequential_New()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a>* libvibeModel_Sequential_New </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocation of a new data structure where the background model will be stored. Please note that this function only creates the structure to host the data. This data structures will only be filled with a call to <a class="el" href="vibe-background-sequential_8h.html#a52e0169506ba0dc69d7abae2ebd15d0d">libvibeModel_Sequential_AllocInit_8u_C1R</a>.</p>
+<dl class="section return"><dt>返回</dt><dd>A pointer to a newly allocated <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> structure, or <code>NULL</code> in the case of an error. </dd></dl>
+
+</div>
+</div>
+<a id="a8f802a8b63b52b1f4c66a1e4e5facbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f802a8b63b52b1f4c66a1e4e5facbee">&#9670;&nbsp;</a></span>libvibeModel_Sequential_PrintParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t libvibeModel_Sequential_PrintParameters </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ViBe uses several parameters. You can print and change some of them if you want. However, default value should meet your needs for most videos.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="vibe-background-sequential_8c_a8f802a8b63b52b1f4c66a1e4e5facbee_cgraph.png" border="0" usemap="#avibe-background-sequential_8c_a8f802a8b63b52b1f4c66a1e4e5facbee_cgraph" alt=""/></div>
+<map name="avibe-background-sequential_8c_a8f802a8b63b52b1f4c66a1e4e5facbee_cgraph" id="avibe-background-sequential_8c_a8f802a8b63b52b1f4c66a1e4e5facbee_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,165,145"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#a9ab0ccf3f4a76348e153943592f3cc7a" title=" " alt="" coords="213,5,373,47"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#aad983de0f08a3c3acb7e4138754de4d6" title=" " alt="" coords="213,71,373,112"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#a46d1c6c1c63814cb45dfa4a988b150a5" title=" " alt="" coords="213,136,373,177"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#a8cc6eef012e8d79dd1f5df88f6f5bde5" title=" " alt="" coords="213,201,373,243"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e3c2d8a07349614e218a58064d42269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3c2d8a07349614e218a58064d42269">&#9670;&nbsp;</a></span>libvibeModel_Sequential_Segmentation_8u_C1R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_Segmentation_8u_C1R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>image_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>segmentation_map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">image_data</td><td></td></tr>
+    <tr><td class="paramname">segmentation_map</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="vibe-background-sequential_8c_a2e3c2d8a07349614e218a58064d42269_cgraph.png" border="0" usemap="#avibe-background-sequential_8c_a2e3c2d8a07349614e218a58064d42269_cgraph" alt=""/></div>
+<map name="avibe-background-sequential_8c_a2e3c2d8a07349614e218a58064d42269_cgraph" id="avibe-background-sequential_8c_a2e3c2d8a07349614e218a58064d42269_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#a172efc4d0959a70a8aafcba5f97c8de8" title=" " alt="" coords="216,13,287,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2fa30269c83bec37562abf5d386948f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa30269c83bec37562abf5d386948f6">&#9670;&nbsp;</a></span>libvibeModel_Sequential_Segmentation_8u_C3R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_Segmentation_8u_C3R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>image_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>segmentation_map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pixel values of color images are arranged in the following order RGBRGBRGB... (or HSVHSVHSVHSVHSVHSV...)</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">image_data</td><td></td></tr>
+    <tr><td class="paramname">segmentation_map</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="vibe-background-sequential_8c_a2fa30269c83bec37562abf5d386948f6_cgraph.png" border="0" usemap="#avibe-background-sequential_8c_a2fa30269c83bec37562abf5d386948f6_cgraph" alt=""/></div>
+<map name="avibe-background-sequential_8c_a2fa30269c83bec37562abf5d386948f6_cgraph" id="avibe-background-sequential_8c_a2fa30269c83bec37562abf5d386948f6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#a7a48ce50e5a937709ae0337bc4223be2" title=" " alt="" coords="216,13,395,39"/>
+<area shape="rect" href="vibe-background-sequential_8c.html#a172efc4d0959a70a8aafcba5f97c8de8" title=" " alt="" coords="443,13,513,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10e2890c016ae226febfd9b914d3277e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e2890c016ae226febfd9b914d3277e">&#9670;&nbsp;</a></span>libvibeModel_Sequential_SetMatchingNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_SetMatchingNumber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>matchingNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">matchingNumber</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="acfa14d172453c64bc9b12672fd8c2d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa14d172453c64bc9b12672fd8c2d2f">&#9670;&nbsp;</a></span>libvibeModel_Sequential_SetMatchingThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_SetMatchingThreshold </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>matchingThreshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">matchingThreshold</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a829161a63a4c50661450f3c36d7aeee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829161a63a4c50661450f3c36d7aeee4">&#9670;&nbsp;</a></span>libvibeModel_Sequential_SetUpdateFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_SetUpdateFactor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>updateFactor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">updateFactor</td><td>New value for the update factor. Please note that the update factor is to be understood as a probability of updating. More specifically, an update factor of 16 means that 1 out of every 16 background pixels is updated. Likewise, an update factor of 1 means that every background pixel is updated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a97f305588766558e5628e601f93ef888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f305588766558e5628e601f93ef888">&#9670;&nbsp;</a></span>libvibeModel_Sequential_Update_8u_C1R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_Update_8u_C1R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>image_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>updating_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>hist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>bgmodel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">image_data</td><td></td></tr>
+    <tr><td class="paramname">updating_mask</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a123f2632660de1e2e59420df62dd30e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123f2632660de1e2e59420df62dd30e5">&#9670;&nbsp;</a></span>libvibeModel_Sequential_Update_8u_C3R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t libvibeModel_Sequential_Update_8u_C3R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vibe-background-sequential_8h.html#afff61a395cbf49ea34176b385def6392">vibeModel_Sequential_t</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>image_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>updating_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pixel values of color images are arranged in the following order RGBRGBRGB... (or HSVHSVHSVHSVHSVHSV...)</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The data structure with ViBe's background subtraction model and parameters. </td></tr>
+    <tr><td class="paramname">image_data</td><td></td></tr>
+    <tr><td class="paramname">updating_mask</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
