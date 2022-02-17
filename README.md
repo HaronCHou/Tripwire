@@ -1,19 +1,5 @@
 # Tripwire
-
-![](./20220216_143523.mp4)
-
-<iframe height=362 width=644 src='20220216_143523.mp4'>
-</iframe>
-
-```HTML
-<video src="20220216_143523.mp4" controls="controls" width="644" height="362"></video>
-```
-
-```HTML
-<video width="320" height="240" controls>
-    <source src="./20220216_143523.mp4" type="video/mp4">
-</video>
-```
+视频效果见：20220216_143523.mp4 和 https://blog.csdn.net/haronchou/article/details/122963314?spm=1001.2014.3001.5501
 
 1. 博客参考：https://helloagain.blog.csdn.net/article/details/122963314
 2. 方案原理：
